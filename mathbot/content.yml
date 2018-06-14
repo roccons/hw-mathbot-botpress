@@ -1,0 +1,81 @@
+
+welcome:
+  - Welcome! Please use the menu to try out the different features.
+
+fallback:
+  - Sorry I don't understand
+
+trivia-question:
+  - text: "}"
+    quick_replies:
+      
+      - "<> }"
+      
+
+trivia-good:
+  - text:
+    - Yay! Good answer :)
+    - You rock!
+    - Good answer!
+
+trivia-bad:
+  - text:
+    - Nope
+    - You're not good
+    - That's not the right answer..
+    - Not exactly what I expected of you
+
+
+# welcome:
+#   - Bienvenido! Te preguntaré la tabla del 3!
+#   - typing true
+#   - Estate atento
+
+# first:
+#   - Ok, ¿cuánto es 3 x 2?
+
+# answerfisrt:
+#   - Excelentemente bien
+#   - typing true
+#   - Va otra más dificil
+
+# answerfisrterror:
+#   - NO!, muy mal :(
+# second:
+#   - Una más
+#   - typing: true
+#   - 
+
+# fallback:
+#   - Lo siento, no te he entendido :/
+
+# multiplication-question:
+#   - text: "}"
+#     quick_replies:
+
+#       - "<> }"
+
+# multiplication-good:
+#   - text:
+#     - ¡Excelente!
+#     - ¡Eres un genio!
+#     - Buena respuesta :)
+
+# multiplication-bad:
+#     - text:
+#       - no
+#       - Creo que te has equivocado
+#       - Bastante cerca, o quiza no tanto 
+#       - No era exactamente lo que esperaba
+#       - Necesitas estudiar más
+
+# bye:
+#   - Good bye!!
+
+
+# answer:
+#   - Muy bien, aqui te va la pregunta
+#   - Cuanto es 3 X 2 {name}
+
+# askFirst:
+#   - Que cosas haces?

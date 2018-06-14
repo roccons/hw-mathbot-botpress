@@ -1,0 +1,17 @@
+{
+  "name": "mathbot",
+  "version": "0.0.1",
+  "description": "I am a bot that can teach you the multiplication tables",
+  "main": "index.js",
+  "dependencies": {
+    "botpress": "1.x",
+    "botpress-web": "^1.2.3",
+    "lodash": "^4.17.10"
+  },
+  "scripts": {
+    "start": "botpress start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "habitat web",
+  "license": "Botpress Proprietary License"
+}
