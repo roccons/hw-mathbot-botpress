@@ -1,140 +1,143 @@
 const _ = require('lodash')
 
-module.exports = function(bp) {  
-  
-  bp.hear(/GET_STARTED|hello|hi|test|hey|holla/i, (event, next) => {
-    event.reply('#welcome')
-  })
-
-  bp.hear(/^question$/i, (event, next) => {
-    bp.contentManager.listCategoryItems('trivia')
-    .then(items => {
-      const random = _.first(_.shuffle(items))  
-      event.reply('#!' + random.id)
-    })
-  })
-
-  bp.hear(/TRIVIA_GOOD/i, (event, next) => {
-    event.reply('#trivia-good')
-  })
-
-  bp.hear(/TRIVIA_BAD/i, (event, next) => {
-    event.reply('#trivia-bad')
-  })
-
-  bp.fallbackHandler = (event, next) => {
-    if (event.type === 'message' || event.type === 'text') {
-      event.reply('#fallback')
-    }
-  }
-}
-
-/* *****************************
-module.exports = function (bp) {
-
-  bp.hear(/GET_STARTED|hello|hola|hi|test|holis/i, (event, next) => {
-    event.reply('#welcome')
-  })
-
-  bp.hear(/PRIMERA|primera|ok|sale|lanzala|preguntame/i, (event, next) => {
-    event.reply('#first')
-  })
-
-  bp.hear(/6|seis/i, (event, next) => {
-    event.reply('#answerfisrt')
-  })
-
-  bp.hear(/[\d!\6]|[\w!seis]/i, (event, next) => {
-    event.reply('#answerfisrterror')
-  })
-  */
-
-  ///---------------------------------------------------------
-  // bp.hear(/^question$/i, (event, next) => {
-  //   bp.contentManager.listCategoryItems('multiplication')
-  //   .then(items => {
-  //     const random = items[Math.floor(Math.random() * items.length)][0]
-  //     event.reply('#!' + random.id)
-  //   })
-  // })
-
-  // bp.hear({
-  //   type: /message|text/i,
-  //   text: /ok|preguntame|adelante|sale/i
-  // }, (event, next) => {
-  //   event.reply('#answer', {
-  //     name: 'marco'
-  //   })
-  // })
-// }
-/*
-  bp.hear(/MULTIPLICATION_GOOD/i, (event, next) => {
-    event.reply('#multiplication-good')
-  })
-
-  bp.hear(/MULTIPLICATION_BAD/i, (event, next) => {
-    event.reply('#multiplication-bad')
-  })
-
-  bp.fallbackHandler = (event, next) => {
-    if (event.type === 'message' || event.type === 'text') {
-      event.reply('#fallback')
-    }
-  }
-  bp.convo.start(event, convo => {
-    convo.threads['default'].addQuestion('#askFirst', response => {
-      const res = /(\d)/
-      if (!res.test(response.text)) {
-        convo.repeat()
-      }
-    })
-  })
-}
-/*
-  CONGRATULATIONS on creating your first Botpress bot!
-
-  This is the programmatic entry point of your bot.
-  Your bot's logic resides here.
-  
-  Here's the next steps for you:
-  1. Read this file to understand how this simple bot works
-  2. Read the `content.yml` file to understand how messages are sent
-  3. Install a connector module (Facebook Messenger and/or Slack)
-  4. Customize your bot!
-
-  Happy bot building!
-
-  The Botpress Team
-  ----
-  Getting Started (Youtube Video): https://www.youtube.com/watch?v=HTpUmDz9kRY
-  Documentation: https://botpress.io/docs
-  Our Slack Community: https://slack.botpress.io
-*
-
 module.exports = function(bp) {
-  // Listens for a first message (this is a Regex)
-  // GET_STARTED is the first message you get on Facebook Messenger
-  bp.hear(/GET_STARTED|hello|hi|test|hey|holla/i, (event, next) => {
-    event.reply('#welcome') // See the file `content.yml` to see the block
+
+  bp.middlewares.load()
+
+  const utterances = {
+    good: /good|great|bien|excelente|fantastico|fine|ok|excellent|fantastic/i,
+    bad: /bad|sad|not good|not great|bof|mal|maso|mas o menos|queti/i,
+    stop: /stop|cancel|abort/i
+  }
+
+  const variants = {
+    feeling_good: () => _.sample(['¡Excelente!', '¡Genial!', 'Yay!']),
+    feeling_bad: () => _.sample(['Que mal', ':('])
+  }
+
+  bp.hear(utterances.stop, (event, next) => {
+    const convo = bp.convo.find(event)
+    convo && convo.stop('aborted')
   })
 
-  // You can also pass a matcher object to better filter events
-  bp.hear({
-    type: /message|text/i,
-    text: /exit|bye|goodbye|quit|done|leave|stop/i
-  }, (event, next) => {
-    event.reply('#goodbye', {
-      // You can pass data to the UMM bloc!
-      reason: 'unknown'
-    })
-  })
+  bp.hear(/hello/i, (event, next) => {
+    
+    const txt = txt => txt
 
-  bp.hear({
-    type: /message|text/i,
-    text: /question/i,
-  }, (event, next) => {
-    event.reply('#question', {
-      wich: 'number'
+    bp.convo.start(event, convo => {
+
+      convo.threads['default'].addQuestion(txt('Hola, bienvenido. ¿Cómo estas?'), [
+        { 
+          pattern: utterances.good,
+          callback: () => {
+            convo.set('feeling', 'good')
+            convo.say(txt(variants.feeling_good()))
+            convo.switchTo('table3')
+          }
+        },
+        { 
+          pattern: utterances.bad,
+          callback: () => {
+            convo.set('feeling', 'bad')
+            convo.say(txt(variants.feeling_bad()))
+            convo.say(txt('Anyway..!'))
+            convo.switchTo('table3')
+          }
+        },
+        {
+          default: true,
+          callback: () => {
+            // Order of messages are preserved, i.e. this message will show up after the image has been sent
+            convo.say(txt('Sorry I dont understand'))
+
+            // Repeats the last question / message
+            convo.repeat()
+          }
+        }
+      ])
+
+      convo.createThread('table3')
+      convo.threads['table3'].addMessage('Ahora voy a preguntarte la tabla del 3')
+      convo.threads['table3'].addQuestion('¿Estás listo?', [
+        {
+          pattern: /claro|ok|si|maso|puesto|creo/i,
+          callback: () => {
+            convo.say('¡Perfecto!')
+            convo.next()
+          }
+        },
+        {
+          pattern: /no/i,
+          callback: () => {
+            convo.say('De igual manera te preguntaré')
+            convo.next()
+          }
+        }
+      ])
+
+      convo.threads['table3'].addQuestion('¿Cuánto es 3 x 2?', [
+        {
+          pattern: /6|seis/i,
+          callback: () => {
+            convo.say('muy bien'),
+            convo.next()
+          }
+        },
+        {
+          default: true,
+          callback: (response) => {
+            console.log(response)
+            convo.say(response +  ' no es la respuesta que esperaba 🤔 te pregunto de nuevo')
+            convo.repeat()
+          }
+        }
+      ])
+      convo.threads['table3'].addQuestion('¿Cuánto es 3 x 3?', [
+        {
+          pattern: /9|nueve/i,
+          callback: () => {
+            convo.say('Has estado estudiando 😉'),
+            convo.switchTo('table5')
+          }
+        },
+        {
+          default: true,
+          callback: (response) => {
+
+            convo.say('mmm nop, ,mejor probemos con otra')
+            convo.switchTo('table5')
+          }
+        }
+      ])
+      
+
+      convo.createThread('table5')
+      convo.threads['table5'].addQuestion('¿Cuánto es 5 x 2?', [
+        {
+          pattern: /10|diez|dies/i,
+          callback: () => {
+            convo.say('Muy bien 😉'),
+            convo.next()
+          }
+        },
+        {
+          default: true,
+          callback: (response) => {
+            convo.say('mmm nop')
+            convo.repeat()
+          }
+        }
+      ])
+
+      convo.on('done', () => {
+        convo.say(txt(`Terminamos`))
+      })
+
+      convo.on('aborted', () => {
+        convo.say(txt('Ni modo. ¡Adios!'))
+      })
+
     })
+
   })
-} */
+}
