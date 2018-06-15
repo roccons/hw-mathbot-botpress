@@ -10,7 +10,9 @@ start:
 startTable:
   - text:
     - ¡Excelente!, vamos con la tabla del {{table}}
-
+    - Muy bien ¡Comencemos!
+  - text: 'Cuando quieras cambiar de tabla en cualquier momento me lo puedes decir, por ejemplo "tabla del 6"'
+    typing: 2ms
 table':
   - text:
     - Cuanto es {{ question }}
@@ -23,3 +25,13 @@ dontGetIt:
   - text:
     - Lo siento, no entiendo
     - Opción no válida, intenta de nuevo.
+
+goodAnswer:
+  - text:
+    - ¡Perfecto! 🤯
+    -  Bien, ¡Has estado estudiando! 😉
+
+badAnswer:
+  - text:
+    - Esa no es la respuesta que esperaba. Intentemos de nuevo
+    - mmm no 😥. Va otra vez
