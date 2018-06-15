@@ -40,7 +40,26 @@ module.exports = {
                 convo.createThread(`table${i}${question.number}`)
                 convo.threads[`table${i}${question.number}`].addQuestion(`${questionBloc}`, [
                     {
-                        pattern: /(\d+)/,
+                        pattern: /tabla del (\d+)/i,
+                        callback: response => {
+                            const numberSelected = response.text.match(/(\d+)/)[0]
+
+                            if (numberSelected > 0 && numberSelected <= 10) {
+
+                                const operand = Math.floor(Math.random() * 10) + 1
+                                
+                                convo.say('#startTable', {
+                                  table: numberSelected 
+                                })
+                                convo.switchTo(`table${numberSelected}${operand}`)
+                              } else {
+                                convo.say('#startFail')
+                                convo.repeat()
+                              }
+                        }
+                    },
+                    {
+                        pattern: /(\d+)/i,
                         callback: response => {
                             if (response.match == question.answer) {
                                 const nextNumber = this.getNextNumber(question.number)
@@ -55,7 +74,7 @@ module.exports = {
                     {
                         default: true,
                         callback: () => {
-                            convo.say('Eso ni siquiera es un número')
+                            convo.say('#badAnswer')
                             convo.repeat()
                         }
                     }

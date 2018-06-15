@@ -24,7 +24,6 @@ startFail:
 dontGetIt:
   - text:
     - Lo siento, no entiendo
-    - Opción no válida, intenta de nuevo.
 
 goodAnswer:
   - text:
@@ -35,3 +34,7 @@ badAnswer:
   - text:
     - Esa no es la respuesta que esperaba. Intentemos de nuevo
     - mmm no 😥. Va otra vez
+
+bye:
+  - text:
+    - Espero que regreses a practicar pronto

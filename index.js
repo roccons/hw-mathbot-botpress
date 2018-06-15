@@ -21,11 +21,11 @@ module.exports = function(bp) {
       convo.createThread('start')
       convo.threads['start'].addQuestion('#start', [
         { 
-          pattern: /la tabla del (\d+)|la del (\d+)|(\d+)/i,
+          pattern: /del (\d+)|(\d+)/i,
           callback: response => {
             
             const numberSelected = response.text.match(/\d+/)[0]
-            
+
             if (numberSelected > 0 && numberSelected <= 10) {
 
               const operand = Math.floor(Math.random() * 10) + 1
@@ -57,7 +57,7 @@ module.exports = function(bp) {
       })
 
       convo.on('aborted', () => {
-        convo.say('Ni modo. ¡Adios!')
+        convo.say('#bye')
       })
 
     })
