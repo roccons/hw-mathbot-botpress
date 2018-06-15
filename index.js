@@ -41,63 +41,6 @@ module.exports = function(bp) {
         }
       ])
 
-      
-      /*
-      convo.createThread('table')
-      convo.threads['table'].addQuestion(), [
-        {
-          pattern: /5/i,
-          callback: () => {
-            console.log(convo.get('number'))
-            convo.say('muy bien'),
-            convo.next()
-          }
-        },
-        {
-          default: true,
-          callback: (response) => {
-            convo.say(response +  ' no es la respuesta que esperaba 🤔 te pregunto de nuevo')
-            convo.repeat()
-          }
-        }
-      ])
-      convo.threads['table'].addQuestion('¿Cuánto es 3 x 3?', [
-        {
-          pattern: /9|nueve/i,
-          callback: () => {
-            convo.say('Has estado estudiando 😉'),
-            convo.switchTo('table5')
-          }
-        },
-        {
-          default: true,
-          callback: (response) => {
-
-            convo.say('mmm nop, ,mejor probemos con otra')
-            convo.switchTo('table5')
-          }
-        }
-      ])
-      */
-      /*
-      convo.createThread('table5')
-      convo.threads['table5'].addQuestion('¿Cuánto es 5 x 2?', [
-        {
-          pattern: /10|diez|dies/i,
-          callback: () => {
-            convo.say('Muy bien 😉'),
-            convo.next()
-          }
-        },
-        {
-          default: true,
-          callback: (response) => {
-            convo.say('mmm nop')
-            convo.repeat()
-          }
-        }
-      ])
-      */
       convo.on('done', () => {
         convo.say(`Terminamos`)
       })
