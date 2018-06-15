@@ -1,0 +1,25 @@
+hi:
+  - text: ¡Hola!
+    typing: 200ms
+  - text: Soy el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar
+    typing: 1s
+
+start:
+  - text: ¿Cuá tabla quieres practicar?
+
+startTable:
+  - text:
+    - ¡Excelente!, vamos con la tabla del {{table}}
+
+table':
+  - text:
+    - Cuanto es {{ question }}
+
+startFail:
+  - text:
+    - ¡Esa no me la se! ¿Alguna otra? 😳
+
+dontGetIt:
+  - text:
+    - Lo siento, no entiendo
+    - Opción no válida, intenta de nuevo.
