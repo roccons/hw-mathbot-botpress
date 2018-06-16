@@ -11,12 +11,42 @@ module.exports = function(bp) {
 
   bp.hear(/hola|hi|iniciar|inicio/i, (event, next) => {
     
+    let participant = table.getParticipant()
+
     bp.convo.start(event, convo => {
 
-      convo.threads['default'].addMessage('#hi', () => {
-        convo.switchTo('start')
-        return {}
-      })
+      if (participant !== null) {
+        convo.threads['default'].addMessage('#hiAgain', () => {
+          convo.switchTo('startAgain')
+          return {}
+        })
+      } else {
+        convo.threads['default'].addMessage('#hi', () => {
+          convo.switchTo('start')
+          return {}
+        })
+      }
+
+      convo.createThread('startAgain')
+      convo.threads['startAgain'].addQuestion('#askContinue', [
+        {
+          pattern: /si|por supuesto|claro|asi es|ok/i,
+          callback: response => {
+            convo.say('Bien Continuemos')
+            if (participant.table !== null) {
+              convo.switchTo(`table${participant.table}{1}`)
+            } else {
+              convo.switchTo('start')
+            }
+          }
+        },
+        {
+          pattern: /no/i,
+          callback: response => {
+            convo.switchTo('start')
+          }
+        }
+      ])
 
       convo.createThread('start')
       convo.threads['start'].addQuestion('#start', [

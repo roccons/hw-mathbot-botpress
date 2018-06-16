@@ -1,6 +1,10 @@
-const request = require('http').ClientRequest
-
 module.exports = {
+
+    getParticipant () {
+        return null
+    },
+
+    saveParticipant (table) { },
 
     generateTable (number) {
         let table = []
@@ -59,6 +63,7 @@ module.exports = {
                         callback: response => {
                             if (response.match == question.answer) {
                                 const nextNumber = this.getNextNumber(question.number)
+                                this.saveParticipant(i)
                                 convo.say('#goodAnswer')
                                 convo.switchTo(`table${i}${nextNumber}`)
                             } else {
