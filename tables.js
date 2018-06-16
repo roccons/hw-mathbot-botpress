@@ -1,3 +1,5 @@
+const request = require('http').ClientRequest
+
 module.exports = {
 
     generateTable (number) {
@@ -9,15 +11,7 @@ module.exports = {
                 answer: i * number
             })
         }
-        return { number: number, table: table }
-    },
-
-    generateTables () {
-        let tables = []
-        for (let i = 1; i <= 10; i++) {
-            tables.push(this.generateTable(i));
-        }
-        return tables;
+        return { number, table }
     },
 
     getNextNumber(number) {
@@ -35,11 +29,12 @@ module.exports = {
 
             table.table.forEach(question => {
 
-                const questionBloc = `¿Cuánto es ${i} x ${question.number}?`
+                const questionBlock = `¿Cuánto es ${i} x ${question.number}?`
 
                 convo.createThread(`table${i}${question.number}`)
-                convo.threads[`table${i}${question.number}`].addQuestion(`${questionBloc}`, [
+                convo.threads[`table${i}${question.number}`].addQuestion(`${questionBlock}`, [
                     {
+                        // Change to another table
                         pattern: /tabla del (\d+)/i,
                         callback: response => {
                             const numberSelected = response.text.match(/(\d+)/)[0]
@@ -54,11 +49,12 @@ module.exports = {
                                 convo.switchTo(`table${numberSelected}${operand}`)
                               } else {
                                 convo.say('#startFail')
-                                convo.repeat()
+                                convo.switchTo('start')
                               }
                         }
                     },
                     {
+                        // answer of the question
                         pattern: /(\d+)/i,
                         callback: response => {
                             if (response.match == question.answer) {

@@ -1,25 +1,27 @@
 hi:
-  - text: ¡Hola!
+  - text: ¡Hola! 🙋🏻‍♂️
     typing: 200ms
   - text: Soy el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar
     typing: 1s
 
 start:
-  - text: ¿Cuá tabla quieres practicar?
+  - text: ¿Cuál tabla quieres practicar?
 
 startTable:
   - text:
     - ¡Excelente!, vamos con la tabla del {{table}}
     - Muy bien ¡Comencemos!
-  - text: 'Cuando quieras cambiar de tabla en cualquier momento me lo puedes decir, por ejemplo "tabla del 6"'
+  - text: Cuando quieras cambiar de tabla en cualquier momento me lo puedes decir
     typing: 2ms
-table':
-  - text:
-    - Cuanto es {{ question }}
+  - text: Por ejemplo "tabla del 6"
 
 startFail:
+  - text: ¡Esa no me la se! 😳
+  - text: ¿Alguna otra?
+
+tooEasy:
   - text:
-    - ¡Esa no me la se! ¿Alguna otra? 😳
+    - Demasiado fácil 🙄
 
 dontGetIt:
   - text:
@@ -29,6 +31,8 @@ goodAnswer:
   - text:
     - ¡Perfecto! 🤯
     -  Bien, ¡Has estado estudiando! 😉
+    - ¡Excelente! Sigue así 🕺🏻
+    - Así se hace 😎
 
 badAnswer:
   - text:
@@ -38,3 +42,4 @@ badAnswer:
 bye:
   - text:
     - Espero que regreses a practicar pronto
+  - text: ¡Adios!

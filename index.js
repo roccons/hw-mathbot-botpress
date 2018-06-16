@@ -9,7 +9,7 @@ module.exports = function(bp) {
     convo && convo.stop('aborted')
   })
 
-  bp.hear(/hello|hola|hi|iniciar|inicio/i, (event, next) => {
+  bp.hear(/hola|hi|iniciar|inicio/i, (event, next) => {
     
     bp.convo.start(event, convo => {
 
