@@ -1,3 +1,4 @@
+# Start Bot
 hi:
   - text: ¡Hola!
     typing: 200ms
@@ -5,23 +6,27 @@ hi:
     typing: 1s
 
 hiAgain:
-  - text: ¡Hola de nuevo!botp
+  - text: ¡Hola de nuevo!
 
-start:
+startPractice:
   - text: ¿Cuál tabla quieres practicar?
+    quick_replies:
+      - <QR_YES> Si
+      - <QR_NO> No
 
 startTable:
   - text:
     - ¡Excelente!, vamos con la tabla del {{table}}
     - Muy bien ¡Comencemos!
-  - text: Cuando quieras cambiar de tabla en cualquier momento me lo puedes decir
-    typing: 2ms
-  - text: Por ejemplo "tabla del 6"
+  - text: ¡Pssst! Puedes cambiar de tabla en cualquier momento escribiendo por ejemplo "tabla del..."
+
+
 
 askContinue:
   - text:
     - La última tabla que practicaste fue la del {{ lastTable }}
   - text: ¿Quieres continuar?
+    quick_replies: 
 
 continue:
   - text: ¡Excelente! Continuemos

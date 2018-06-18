@@ -56,7 +56,7 @@ module.exports = {
                     },
                     [{
                         // Change to another table
-                        pattern: /tabla del (\d+)/i,
+                        pattern: /del (\d+)/i,
                         callback: response => {
                             const numberSelected = response.text.match(/(\d+)/)[0]
 

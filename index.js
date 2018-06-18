@@ -9,7 +9,7 @@ module.exports = function (bp) {
         convo && convo.stop('aborted')
     })
 
-    bp.hear(/hola|hi|iniciar|inicio/i, (event, next) => {
+    bp.hear(/hola|hi|iniciar|inicio|reiniciar/i, (event, next) => {
 
         let lastTable = table.getLastTable(event)
 
@@ -22,7 +22,7 @@ module.exports = function (bp) {
                 })
             } else {
                 convo.threads['default'].addMessage('#hi', () => {
-                    convo.switchTo('start')
+                    convo.switchTo('startPractice')
                     return {}
                 })
             }
@@ -36,20 +36,20 @@ module.exports = function (bp) {
                         if (lastTable !== null) {
                             convo.switchTo(`table${lastTable}{1}`)
                         } else {
-                            convo.switchTo('start')
+                            convo.switchTo('startPractice')
                         }
                     }
                 },
                 {
                     pattern: /no/i,
                     callback: response => {
-                        convo.switchTo('start')
+                        convo.switchTo('startPractice')
                     }
                 }
             ])
 
-            convo.createThread('start')
-            convo.threads['start'].addQuestion('#start', [
+            convo.createThread('startPractice')
+            convo.threads['startPractice'].addQuestion('#startPractice', [
                 {
                     pattern: /del (\d+)|(\d+)/i,
                     callback: response => {
