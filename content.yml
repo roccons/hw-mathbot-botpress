@@ -28,21 +28,17 @@ askContinue:
   - text: ¿Quieres continuar?
     quick_replies: 
 
+question:
+  - text:
+    - ¿{{operand1}} x {{operand2}}?
+    - ¿{{operand2}} x {{operand1}}?
+
 continue:
   - text: ¡Excelente! Continuemos
 
 startFail:
   - text: ¡Esa no me la se! 😳
   - text: ¿Alguna otra?
-
-question:
-  - text:
-    - ¿{{operand1}} x {{operand2}}?
-    - ¿{{operand2}} x {{operand1}}?
-
-tooEasy:
-  - text:
-    - Demasiado fácil 🙄
 
 dontGetIt:
   - text:
