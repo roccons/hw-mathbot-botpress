@@ -8,9 +8,9 @@ botConvoDescription: '-'
 welcomeMsgEnable: true
 welcomeMsgDelay: 1000
 welcomeMsgText: | ## Welcome message that shows at on pop-up (multi-lines)
-  Hey guys!
-  Curious about our offer?
-  This is the default message...
+  ¡Hola!
+  Soy el bot matemático
+  Soy el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar
 
 # COLOR SETTINGS
 backgroundColor: '#ffffff' ## Color of the background 
