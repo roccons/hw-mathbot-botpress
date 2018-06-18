@@ -10,7 +10,7 @@ welcomeMsgDelay: 1000
 welcomeMsgText: | ## Welcome message that shows at on pop-up (multi-lines)
   ¡Hola!
   Soy el bot matemático
-  Soy el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar
+  Estoy aquí para ayudarte a practicar las tablas de multiplicar
 
 # COLOR SETTINGS
 backgroundColor: '#ffffff' ## Color of the background 
