@@ -5,14 +5,16 @@
   "main": "index.js",
   "dependencies": {
     "botpress": "1.x",
-    "botpress-slack": "^1.0.23",
-    "botpress-web": "^1.2.3",
-    "lodash": "^4.17.10"
+    "botpress-mod-webchat": "^0.5.0",
+    "botpress-web": "^1.2.3"
   },
   "scripts": {
     "start": "botpress start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "habitat web",
-  "license": "Botpress Proprietary License"
+  "license": "Botpress Proprietary License",
+  "engines": {
+    "node": "8.8.1"
+  }
 }

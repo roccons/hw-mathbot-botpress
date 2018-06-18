@@ -33,7 +33,7 @@ module.exports = {
 
             table.table.forEach(question => {
 
-                const questionBlock = `¿Cuánto es ${i} x ${question.number}?`
+                const questionBlock = `¿${i} x ${question.number}?`
 
                 convo.createThread(`table${i}${question.number}`)
                 convo.threads[`table${i}${question.number}`].addQuestion(`${questionBlock}`, [

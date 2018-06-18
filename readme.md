@@ -2,22 +2,28 @@
 
 ## Setup
 
-Clone this respositorie
+Instala botpress como dependencia global
+
+`npm install -g botpress`
+
+Clona este repositorio
 
 `git clone git@github.com:roccons/hw-mathbot.git`
 
-Go to directory
+Ingresa a la carpeta que se creó después de clonar
 
 `cd hw-mathbot`
 
-Install the packages
+Instala los paquetes usando npm
 
 `npm install`
 
-Run the chatbot
+Ejecuta el chatbot con el siguiente comando
 
 `botpress start`
 
-Open in a browser
+Ingresa a la siguiente dirección desde cualquier navegador web
 
 `http://localhost:3002`
+
+
