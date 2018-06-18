@@ -1,17 +1,32 @@
 module.exports = {
 
-    getParticipant () {
-        return null
+    user: null,
+
+    bp: null,
+
+    getLastTable (event) {
+        const table = null;
+        this.user = event.user
+        this.bp.users.hasTag(this.user.id, 'table').then(hasTag => {
+            if (hasTag) {
+                this.bp.users.getTag(this.user.id, 'table').then(table => {
+                    table = table
+                })
+            }
+        })
+
+        return table
     },
 
-    saveParticipant (table) { },
+    saveParticipant (table) {
+        this.bp.users.tag(this.user.id, 'table', table)
+     },
 
     generateTable (number) {
         let table = []
         for (let i = 1; i <= 10; i++) {
             table.push({
                 number: i,
-                question: `${number} x ${i}`,
                 answer: i * number
             })
         }
@@ -26,7 +41,7 @@ module.exports = {
         return next
     },
 
-    makeQuestions (convo) {
+    makeQuestions (bp, convo) {
         for (let i = 1; i <= 10; i++) {
 
             const table = this.generateTable(i)

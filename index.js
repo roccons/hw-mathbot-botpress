@@ -2,6 +2,8 @@ const _ = require('lodash')
 const table = require('./tables.js')
 module.exports = function(bp) {
 
+  table.bp = bp
+
   bp.hear(/salir|adios|bye/i, (event, next) => {
     const convo = bp.convo.find(event)
     convo && convo.stop('aborted')
@@ -9,12 +11,13 @@ module.exports = function(bp) {
 
   bp.hear(/hola|hi|iniciar|inicio/i, (event, next) => {
     
-    let participant = table.getParticipant()
+    let lastTable = table.getLastTable(event)
 
     bp.convo.start(event, convo => {
 
-      if (participant !== null) {
+      if (lastTable !== null) {
         convo.threads['default'].addMessage('#hiAgain', () => {
+          console.log('lasttable', lastTable)
           convo.switchTo('startAgain')
           return {}
         })
@@ -26,13 +29,13 @@ module.exports = function(bp) {
       }
 
       convo.createThread('startAgain')
-      convo.threads['startAgain'].addQuestion('#askContinue', [
+      convo.threads['startAgain'].addQuestion('#askContinue', { lastTable: lastTable }, [
         {
           pattern: /si|por supuesto|claro|asi es|ok/i,
           callback: response => {
-            convo.say('Bien Continuemos')
-            if (participant.table !== null) {
-              convo.switchTo(`table${participant.table}{1}`)
+            convo.say('#continue')
+            if (lastTable !== null) {
+              convo.switchTo(`table${lastTable}{1}`)
             } else {
               convo.switchTo('start')
             }
@@ -78,10 +81,10 @@ module.exports = function(bp) {
         }
       ])
 
-      table.makeQuestions(convo)
+      table.makeQuestions(bp, convo)
 
       convo.on('done', () => {
-        convo.say(`Terminamos`)
+        convo.say('#bye')
       })
 
       convo.on('aborted', () => {

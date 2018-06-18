@@ -4,6 +4,9 @@ hi:
   - text: Soy el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar
     typing: 1s
 
+hiAgain:
+  - text: ¡Hola de nuevo!botp
+
 start:
   - text: ¿Cuál tabla quieres practicar?
 
@@ -14,6 +17,14 @@ startTable:
   - text: Cuando quieras cambiar de tabla en cualquier momento me lo puedes decir
     typing: 2ms
   - text: Por ejemplo "tabla del 6"
+
+askContinue:
+  - text:
+    - La última tabla que practicaste fue la del {{ lastTable }}
+  - text: ¿Quieres continuar?
+
+continue:
+  - text: ¡Excelente! Continuemos
 
 startFail:
   - text: ¡Esa no me la se! 😳
