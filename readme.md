@@ -1,6 +1,12 @@
 # Mathbot
 
-## Setup
+Mathbot es un chatbot con el que puedes practicar las tablas de multiplicar
+
+Creado para que niños, o adultos también, puedan practicar y dominar las tablas
+de una manera divertida
+
+
+## Instalación
 
 Instala botpress como dependencia global
 
@@ -26,4 +32,5 @@ Ingresa a la siguiente dirección desde cualquier navegador web
 
 `http://localhost:3002`
 
+Di `Hola` en el chat y solo sigue las instrucciones
 

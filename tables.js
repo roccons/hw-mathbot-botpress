@@ -4,7 +4,7 @@ module.exports = {
 
     bp: null,
 
-    getLastTable (event) {
+    getLastTable(event) {
         const table = null
         this.user = event.user
         this.bp.users.hasTag(this.user.id, 'table').then(hasTag => {
@@ -17,11 +17,11 @@ module.exports = {
         return table
     },
 
-    saveParticipant (table) {
+    saveParticipant(table) {
         this.bp.users.tag(this.user.id, 'table', table)
-     },
+    },
 
-    generateTable (number) {
+    generateTable(number) {
         let table = []
         for (let i = 1; i <= 10; i++) {
             table.push({
@@ -40,7 +40,7 @@ module.exports = {
         return next
     },
 
-    makeQuestions (bp, convo) {
+    makeQuestions(bp, convo) {
         for (let i = 1; i <= 10; i++) {
 
             const table = this.generateTable(i)
@@ -49,11 +49,11 @@ module.exports = {
 
                 convo.createThread(`table${i}${question.number}`)
                 convo.threads[`table${i}${question.number}`].addQuestion(
-                    '#question', 
+                    '#question',
                     {
                         operand1: i,
                         operand2: question.number
-                    }, 
+                    },
                     [{
                         // Change to another table
                         pattern: /tabla del (\d+)/i,
@@ -63,15 +63,15 @@ module.exports = {
                             if (numberSelected > 0 && numberSelected <= 10) {
 
                                 const operand = Math.floor(Math.random() * 10) + 1
-                                
+
                                 convo.say('#startTable', {
-                                  table: numberSelected 
+                                    table: numberSelected
                                 })
                                 convo.switchTo(`table${numberSelected}${operand}`)
-                              } else {
+                            } else {
                                 convo.say('#startFail')
                                 convo.switchTo('start')
-                              }
+                            }
                         }
                     },
                     {
@@ -96,7 +96,7 @@ module.exports = {
                             convo.repeat()
                         }
                     }
-                ])
+                    ])
             })
         }
     }
