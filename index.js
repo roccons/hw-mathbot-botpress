@@ -17,7 +17,6 @@ module.exports = function(bp) {
 
       if (lastTable !== null) {
         convo.threads['default'].addMessage('#hiAgain', () => {
-          console.log('lasttable', lastTable)
           convo.switchTo('startAgain')
           return {}
         })

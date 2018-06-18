@@ -5,16 +5,15 @@ module.exports = {
     bp: null,
 
     getLastTable (event) {
-        const table = null;
+        const table = null
         this.user = event.user
         this.bp.users.hasTag(this.user.id, 'table').then(hasTag => {
             if (hasTag) {
-                this.bp.users.getTag(this.user.id, 'table').then(table => {
-                    table = table
+                this.bp.users.getTag(this.user.id, 'table').then(tableStore => {
+                    table = tableStore
                 })
             }
         })
-
         return table
     },
 
