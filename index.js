@@ -2,8 +2,6 @@ const _ = require('lodash')
 const table = require('./tables')
 module.exports = function(bp) {
 
-  bp.middlewares.load()
-
   bp.hear(/salir|adios|bye/i, (event, next) => {
     const convo = bp.convo.find(event)
     convo && convo.stop('aborted')
