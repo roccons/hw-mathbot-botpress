@@ -1,5 +1,5 @@
 const _ = require('lodash')
-const table = require('./tables')
+const table = require('./tables.js')
 module.exports = function(bp) {
 
   bp.hear(/salir|adios|bye/i, (event, next) => {

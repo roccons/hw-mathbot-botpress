@@ -36,7 +36,7 @@ module.exports = {
                 const questionBlock = `¿${i} x ${question.number}?`
 
                 convo.createThread(`table${i}${question.number}`)
-                convo.threads[`table${i}${question.number}`].addQuestion(`${questionBlock}`, [
+                convo.threads[`table${i}${question.number}`].addQuestion(questionBlock, [
                     {
                         // Change to another table
                         pattern: /tabla del (\d+)/i,
@@ -67,7 +67,7 @@ module.exports = {
                                 convo.say('#goodAnswer')
                                 convo.switchTo(`table${i}${nextNumber}`)
                             } else {
-                                convo.say('#badAnswer')
+                                convo.say('bad answer from resp')
                                 convo.repeat()
                             }
                         }
@@ -75,7 +75,7 @@ module.exports = {
                     {
                         default: true,
                         callback: () => {
-                            convo.say('#badAnswer')
+                            convo.say('no !')
                             convo.repeat()
                         }
                     }
