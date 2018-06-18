@@ -19,6 +19,10 @@ startFail:
   - text: ¡Esa no me la se! 😳
   - text: ¿Alguna otra?
 
+question:
+  - text:
+    - ¿{{question}}?
+
 tooEasy:
   - text:
     - Demasiado fácil 🙄
