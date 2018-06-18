@@ -33,11 +33,14 @@ module.exports = {
 
             table.table.forEach(question => {
 
-                const questionBlock = `${i} x ${question.number}`
-
                 convo.createThread(`table${i}${question.number}`)
-                convo.threads[`table${i}${question.number}`].addQuestion('#question', {question: questionBlock}, [
+                convo.threads[`table${i}${question.number}`].addQuestion(
+                    '#question', 
                     {
+                        operand1: i,
+                        operand2: question.number
+                    }, 
+                    [{
                         // Change to another table
                         pattern: /tabla del (\d+)/i,
                         callback: response => {

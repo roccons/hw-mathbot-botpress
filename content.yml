@@ -21,7 +21,8 @@ startFail:
 
 question:
   - text:
-    - ¿{{question}}?
+    - ¿{{operand1}} x {{operand2}}?
+    - ¿{{operand2}} x {{operand1}}?
 
 tooEasy:
   - text:
