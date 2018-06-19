@@ -10,9 +10,6 @@ hiAgain:
 
 startPractice:
   - text: ¿Cuál tabla quieres practicar?
-    quick_replies:
-      - <QR_YES> Si
-      - <QR_NO> No
 
 startTable:
   - text:
