@@ -9,11 +9,7 @@ module.exports = function (bp) {
         convo && convo.stop('aborted')
     })
 
-    bp.convo.start(event, convo => {
-        convo.say('#hi')
-    })
-
-    bp.hear(/hola|hi|iniciar|inicio|reiniciar/i, (event, next) => {
+    bp.hear(/hola|hi|iniciar|inicio|reiniciar|/i, (event, next) => {
 
         let lastTable = table.getLastTable(event)
 

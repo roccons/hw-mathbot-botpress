@@ -5,9 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "botpress": "1.x",
-    "botpress-dialog": "^1.0.17",
     "botpress-mod-webchat": "^0.5.0",
-    "botpress-web": "^1.2.3"
+    "botpress-web": "^1.2.3",
+    "sqlite3": "^4.0.0"
   },
   "scripts": {
     "start": "botpress start",
