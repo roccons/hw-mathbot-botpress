@@ -1,13 +1,10 @@
 # Start Bot
 
 hi:
-  - text: ¡Hola!
+  - text: ¡Hola! 👋
     typing: 200ms
-  - text: Soy el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar
+  - text: Soy el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar.
     typing: 1s
-
-hiAgain:
-  - text: ¡Hola de nuevo!
 
 startPractice:
   - text: ¿Cuál tabla quieres practicar?
@@ -15,8 +12,10 @@ startPractice:
 startTable:
   - text:
     - ¡Excelente!, vamos con la tabla del {{table}}
-    - Muy bien ¡Comencemos!
+    - Muy bien ¡A practicar la tabla del {{table}}!
+    typing: 0.7s
   - text: ¡Pssst! Puedes cambiar de tabla en cualquier momento escribiendo por ejemplo "tabla del..."
+    typing: 0.5s
 
 
 # table's texts and questions
@@ -26,35 +25,41 @@ question:
     - ¿{{operand1}} x {{operand2}}?
     - ¿{{operand2}} x {{operand1}}?
 
-continue:
-  - text: ¡Excelente! Continuemos
-
 startFail:
-  - text: ¡Esa no me la se! 😳
+  - text: 
+    - ¡Esa no me la se! 😳
+    - ¡La tabla del {{table}} no me la enseñaron!
   - text: ¿Alguna otra?
 
 goodAnswer:
   - text:
-    - ¡Perfecto! 🤯
-    -  Bien, ¡Has estado estudiando! 😉
-    - ¡Excelente! Sigue así 🕺🏻
+    - ¡Perfecto!
+    - Bien, ¡Has estado estudiando! 😉
+    - ¡Excelente! Sigue así. 🕺🏻
     - Así se hace 😎
+    - 👍
 
 badAnswer:
   - text:
-    - Esa no es la respuesta que esperaba. Intentemos de nuevo
-    - mmm no 😥. Va otra vez
+    - Esa no es la respuesta que esperaba. Intentemos de nuevo.
+    - mmm no 😥. Va otra vez.
+    - Concéntrate... ¡yo se que puedes!
+    typing: 0.7s
 
 
 # unexpected User input  
 
 dontGetIt:
   - text:
-    - Lo siento, no entendí 😳
+    - Lo siento, no entendí. 😳
+    - Recuerda que si quieres practicar otra tabla solo tienes que escribir "tabla del..."
+    typing: 0.7s
 
 # Finished bot
 
 bye:
+  - text: ¡Nos vemos!
   - text:
-    - Espero que regreses a practicar pronto
-  - text: ¡Adios!
+    - Espero que regreses a practicar pronto.
+    - Yo aquí estaré listo para tu siguiente práctica.
+    typing: 1s
