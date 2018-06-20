@@ -39,7 +39,7 @@ startFail:
 
 dontGetIt:
   - text:
-    - Lo siento, no entiendo
+    - Lo siento, no entiendí 😳
 
 goodAnswer:
   - text:

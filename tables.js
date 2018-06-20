@@ -1,25 +1,6 @@
 module.exports = {
 
-    user: null,
-
     bp: null,
-
-    getLastTable(event) {
-        const table = null
-        this.user = event.user
-        this.bp.users.hasTag(this.user.id, 'table').then(hasTag => {
-            if (hasTag) {
-                this.bp.users.getTag(this.user.id, 'table').then(tableStore => {
-                    table = tableStore
-                })
-            }
-        })
-        return table
-    },
-
-    saveParticipant(table) {
-        this.bp.users.tag(this.user.id, 'table', table)
-    },
 
     generateTable(number) {
         let table = []
@@ -80,7 +61,6 @@ module.exports = {
                         callback: response => {
                             if (response.match == question.answer) {
                                 const nextNumber = this.getNextNumber(question.number)
-                                this.saveParticipant(i)
                                 convo.say('#goodAnswer')
                                 convo.switchTo(`table${i}${nextNumber}`)
                             } else {
@@ -92,7 +72,7 @@ module.exports = {
                     {
                         default: true,
                         callback: () => {
-                            convo.say('#badAnswer')
+                            convo.say('#dontGetIt')
                             convo.repeat()
                         }
                     }

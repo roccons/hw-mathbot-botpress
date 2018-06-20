@@ -9,45 +9,15 @@ module.exports = function (bp) {
         convo && convo.stop('aborted')
     })
 
-    bp.hear(/hola|hi|iniciar|inicio|reiniciar|/i, (event, next) => {
-
-        let lastTable = table.getLastTable(event)
+    bp.hear(/hola|hi|iniciar|inicio|reiniciar|otra vez|hello|hallo/i, (event, next) => {
 
         bp.convo.start(event, convo => {
 
-            if (lastTable !== null) {
-                convo.threads['default'].addMessage('#hiAgain', () => {
-                    convo.switchTo('startAgain')
-                    return {}
-                })
-            } else {
-                convo.threads['default'].addMessage('#hi', () => {
-                    convo.switchTo('startPractice')
-                    return {}
-                })
-            }
-
-            convo.createThread('startAgain')
-            convo.threads['startAgain'].addQuestion('#askContinue', { lastTable: lastTable }, [
-                {
-                    pattern: /si|por supuesto|claro|asi es|ok/i,
-                    callback: response => {
-                        convo.say('#continue')
-                        if (lastTable !== null) {
-                            convo.switchTo(`table${lastTable}{1}`)
-                        } else {
-                            convo.switchTo('startPractice')
-                        }
-                    }
-                },
-                {
-                    pattern: /no/i,
-                    callback: response => {
-                        convo.switchTo('startPractice')
-                    }
-                }
-            ])
-
+            convo.threads['default'].addMessage('#hi', () => {
+                convo.switchTo('startPractice')
+                return {}
+            })
+        
             convo.createThread('startPractice')
             convo.threads['startPractice'].addQuestion('#startPractice', [
                 {
@@ -74,8 +44,7 @@ module.exports = function (bp) {
                 {
                     default: true,
                     callback: () => {
-                        convo.say('Opción no valida')
-                        convo.repeat()
+                        convo.switchTo('default')
                     }
                 }
             ])
@@ -93,4 +62,5 @@ module.exports = function (bp) {
         })
 
     })
+
 }

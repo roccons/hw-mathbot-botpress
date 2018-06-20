@@ -5,12 +5,12 @@ botConvoTitle: 'Bot Matemático' ## Title of the first conversation with the bot
 botConvoDescription: 'Mathbot'
 
 # POPUP CONVERSATION SETTINGS
-welcomeMsgEnable: false
+welcomeMsgEnable: true
 welcomeMsgDelay: 100
 welcomeMsgText: | ## Welcome message that shows at on pop-up (multi-lines)
   ¡Hola!
-  Soy el bot matemático
-  Estoy aquí para ayudarte a practicar las tablas de multiplicar
+  Soy el bot matemático. Estoy aquí para ayudarte a practicar las tablas de multiplicar
+  Escribe un saludo
 
 # COLOR SETTINGS
 backgroundColor: '#ffffff' ## Color of the background 
