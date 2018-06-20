@@ -4,7 +4,7 @@ module.exports = function (bp) {
 
     table.bp = bp
 
-    bp.hear(/salir|adios|bye/i, (event, next) => {
+    bp.hear(/salir|adios|bye|fin|terminar/i, (event, next) => {
         const convo = bp.convo.find(event)
         convo && convo.stop('aborted')
     })
