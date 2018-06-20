@@ -8,21 +8,35 @@ de una manera divertida
 
 ## Instalación
 
-Instala botpress como dependencia global
+Primero instala botpress CLI como dependencia global.
 
-`npm install -g botpress`
+```
+// usando npm
+npm install -g botpress@1.x
+```
 
-Clona este repositorio
+```
+// usando yarn
+yarn global add botpress@1.x
+```
+
+Clona el repositorio
 
 `git clone git@github.com:roccons/hw-mathbot.git`
 
-Ingresa a la carpeta que se creó después de clonar
+Ingresa a la carpeta creada
 
 `cd hw-mathbot`
 
-Instala los paquetes usando npm
+Instala las dependencias
 
-`npm install`
+```
+// usando npm
+npm install
+
+// usando yarn
+yarn install
+```
 
 Ejecuta el chatbot con el siguiente comando
 
