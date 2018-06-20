@@ -1,4 +1,5 @@
 # Start Bot
+
 hi:
   - text: ¡Hola!
     typing: 200ms
@@ -18,12 +19,7 @@ startTable:
   - text: ¡Pssst! Puedes cambiar de tabla en cualquier momento escribiendo por ejemplo "tabla del..."
 
 
-
-askContinue:
-  - text:
-    - La última tabla que practicaste fue la del {{ lastTable }}
-  - text: ¿Quieres continuar?
-    quick_replies: 
+# table's texts and questions
 
 question:
   - text:
@@ -37,10 +33,6 @@ startFail:
   - text: ¡Esa no me la se! 😳
   - text: ¿Alguna otra?
 
-dontGetIt:
-  - text:
-    - Lo siento, no entiendí 😳
-
 goodAnswer:
   - text:
     - ¡Perfecto! 🤯
@@ -52,6 +44,15 @@ badAnswer:
   - text:
     - Esa no es la respuesta que esperaba. Intentemos de nuevo
     - mmm no 😥. Va otra vez
+
+
+# unexpected User input  
+
+dontGetIt:
+  - text:
+    - Lo siento, no entendí 😳
+
+# Finished bot
 
 bye:
   - text:
