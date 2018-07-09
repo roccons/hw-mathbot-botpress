@@ -1,24 +1,55 @@
+const isProd = process.env.NODE_ENV === 'production'
+const port = process.env.BOTPRESS_PORT || process.env.PORT || 3000
+const botUrl = process.env.BOTPRESS_URL || `http://localhost:${port}`
+
 module.exports = {
   /*
-    Where the content is stored
-    You can access this property from `bp.dataLocation`
-  */
-  dataDir: process.env.BOTPRESS_DATA_DIR || './data',
+    The bot's base URL where the bot is reachable from the internet
+   */
+  botUrl: botUrl,
+
+  /*
+    The botpress environment, useful to disambiguate multiple 
+    instances of the same bot running in different environments.
+    e.g. "dev", "staging", "production"
+   */
+  env: process.env.BOTPRESS_ENV || 'dev',
 
   /*
     The port on which the API and UI will be available
    */
-  port: process.env.BOTPRESS_PORT || process.env.PORT || 3002,
+  port: port,
+
+  /*
+    Where the content is stored
+    You can access this property from `bp.dataLocation`
+  */
+  dataDir: process.env.BOTPRESS_DATA_DIR || './.data',
 
   /*
     Some modules might generate static configuration files
    */
-  modulesConfigDir: process.env.BOTPRESS_CONFIG_DIR || './modules_config',
+  modulesConfigDir: process.env.BOTPRESS_CONFIG_DIR || './config',
 
   /*
-    Path to Content Forms
+    Path to Content Types
    */
-  formsDir: './forms',
+  contentDir: './src/content',
+
+  /*
+    Path to Flows
+   */
+  flowsDir: './generated/flows',
+
+  /*
+    Path to Content Types Data
+   */
+  contentDataDir: './generated/content',
+
+  /*
+    Path to media / file uploads
+   */
+  mediaDir: './generated/media',
 
   /*
     By default logs are enabled and available in `dataDir`
@@ -27,6 +58,21 @@ module.exports = {
   log: {
     file: 'bot.log',
     maxSize: 1e6 // 1mb
+  },
+
+  /*
+    The web server API config
+   */
+  api: {
+    bodyMaxSize: '1mb'
+  },
+
+  /*
+    Dialog Manager (DM)
+  */
+  dialogs: {
+    timeoutInterval: '2m',
+    janitorInterval: '10s'
   },
 
   /*
@@ -44,10 +90,18 @@ module.exports = {
   },
 
   /*
+    By default ghost content management is only activated in production
+   */
+  ghostContent: {
+    enabled: process.env.NODE_ENV === 'production' || process.env.BOTPRESS_GHOST_ENABLED
+  },
+
+  /*
     Access control of admin panel
   */
   login: {
     enabled: process.env.NODE_ENV === 'production',
+    useCloud: process.env.BOTPRESS_CLOUD_ENABLED,
     tokenExpiry: '6 hours',
     password: process.env.BOTPRESS_PASSWORD || 'password',
     maxAttempts: 3,
@@ -69,25 +123,11 @@ module.exports = {
     ssl: process.env.PG_SSL || false
   },
 
-  umm: {
-    /*
-      The file containing the UMM Content (Universal Message Markdown)
-      Can be an absolute or relative path (to your bot location)
-    */
-    contentPath: 'content.yml'
-  },
-
   middleware: {
     /*
       By default Botpress will automatically load all the middlewares before starting your bot
       If this is set to false, you should call `bp.middlewares.load` manually
      */
     autoLoading: true
-  },
-
-  // **** Update this if you bought a Botpress license ****
-  license: {
-    // customerId: process.env.BOTPRESS_CUSTOMER_ID || 'your_customer_id_here',
-    // licenseKey: process.env.BOTPRESS_LICENSE_KEY || 'your_key_here'
   }
 }
