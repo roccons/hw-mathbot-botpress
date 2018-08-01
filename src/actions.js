@@ -7,4 +7,16 @@ async function yourCustomAction(state, event, params) {
   return state
 }
 
-module.exports = { yourCustomAction }
+async function tableQuestion(state, event, params) {
+
+  const answer = params.tableNumber * params.operand
+
+  return {
+    ...state,
+    tableNumber: params.tableNumber,
+    operand: params.operand,
+    answer
+  }
+}
+
+module.exports = { yourCustomAction, tableQuestion }

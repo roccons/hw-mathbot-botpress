@@ -3,7 +3,10 @@
     "id": "builtin_text-pSsHWg",
     "formData": {
       "text": "👋, {{state.$r}}!",
-      "variations": ["Hello, {{state.$r}}!", "Welcome to Botpress, {{state.$r}}!"],
+      "variations": [
+        "Hello, {{state.$r}}!",
+        "Welcome to Botpress, {{state.$r}}!"
+      ],
       "typing": true
     },
     "createdBy": "admin",
@@ -62,5 +65,23 @@
     },
     "createdBy": "admin",
     "createdOn": "2018-05-14T01:17:55.317Z"
+  },
+  {
+    "id": "builtin_text-XZxS8o",
+    "formData": {
+      "text": "Soy el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-06-19T14:27:46.426Z"
+  },
+  {
+    "id": "builtin_text-AcmttM",
+    "formData": {
+      "text": "¿Cuál tabla quieres prácticas?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-06-19T14:33:02.990Z"
   }
 ]

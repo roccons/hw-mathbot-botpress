@@ -1,0 +1,981 @@
+{"level":"info","message":"Creating data directory: C:\\Users\\marco\\Documents\\Projects\\bots\\botpress\\.data","timestamp":"2018-07-09T02:10:47.296Z"}
+{"level":"info","message":"Starting botpress version 10.17.3","timestamp":"2018-07-09T02:10:47.298Z"}
+{"level":"info","message":"[Ghost Content Manager] (transparent) Initialized","timestamp":"2018-07-09T02:10:47.702Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\media, doing nothing.","timestamp":"2018-07-09T02:10:47.713Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\flows, doing nothing.","timestamp":"2018-07-09T02:10:47.716Z"}
+{"level":"info","message":"[Skills] Initiated","timestamp":"2018-07-09T02:10:47.718Z"}
+{"level":"info","message":"Loaded @botpress/audience, version 10.17.3","timestamp":"2018-07-09T02:10:47.736Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\intents, doing nothing.","timestamp":"2018-07-09T02:10:48.474Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\entities, doing nothing.","timestamp":"2018-07-09T02:10:48.477Z"}
+{"level":"info","message":"Loaded @botpress/nlu, version 10.17.3","timestamp":"2018-07-09T02:10:48.479Z"}
+{"level":"info","message":"Configuration for module \"@botpress/skill-choice\" has been created at C:\\Users\\marco\\Documents\\Projects\\bots\\botpress\\config\\skill-choice.json","timestamp":"2018-07-09T02:10:48.489Z"}
+{"level":"info","message":"Loaded @botpress/skill-choice, version 10.17.3","timestamp":"2018-07-09T02:10:48.493Z"}
+{"level":"info","message":"Loaded @botpress/hitl, version 10.17.3","timestamp":"2018-07-09T02:10:48.499Z"}
+{"level":"verbose","message":"[Renderers] Enabled for webchat.","timestamp":"2018-07-09T02:10:48.932Z"}
+{"level":"info","message":"Loaded @botpress/channel-web, version 10.17.3","timestamp":"2018-07-09T02:10:48.933Z"}
+{"level":"info","message":"Loaded 5 modules","timestamp":"2018-07-09T02:10:48.933Z"}
+{"level":"info","message":"[Skills] Loaded 1 skills","timestamp":"2018-07-09T02:10:48.936Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\content, doing nothing.","timestamp":"2018-07-09T02:10:48.938Z"}
+{"level":"debug","message":"Loading middleware: rendering.instrumentation","timestamp":"2018-07-09T02:10:49.000Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureInMessages","timestamp":"2018-07-09T02:10:49.001Z"}
+{"level":"debug","message":"Loading middleware: nlu.incoming","timestamp":"2018-07-09T02:10:49.002Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-07-09T02:10:49.002Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureOutMessages","timestamp":"2018-07-09T02:10:49.003Z"}
+{"level":"debug","message":"Loading middleware: webchat.sendMessages","timestamp":"2018-07-09T02:10:49.003Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-07-09T02:10:49.004Z"}
+{"level":"debug","message":"Loading data for builtin_text from builtin_text.json","timestamp":"2018-07-09T02:10:49.074Z"}
+{"level":"info","message":"Read 7 item(s) from builtin_text.json","timestamp":"2018-07-09T02:10:49.091Z"}
+{"level":"info","message":"Starting botpress version 10.17.3","timestamp":"2018-07-09T02:11:41.563Z"}
+{"level":"info","message":"[Ghost Content Manager] (transparent) Initialized","timestamp":"2018-07-09T02:11:41.826Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\media, doing nothing.","timestamp":"2018-07-09T02:11:41.836Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\flows, doing nothing.","timestamp":"2018-07-09T02:11:41.842Z"}
+{"level":"info","message":"[Skills] Initiated","timestamp":"2018-07-09T02:11:41.843Z"}
+{"level":"info","message":"Loaded @botpress/audience, version 10.17.3","timestamp":"2018-07-09T02:11:41.863Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\intents, doing nothing.","timestamp":"2018-07-09T02:11:42.553Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\entities, doing nothing.","timestamp":"2018-07-09T02:11:42.554Z"}
+{"level":"info","message":"Loaded @botpress/nlu, version 10.17.3","timestamp":"2018-07-09T02:11:42.556Z"}
+{"level":"info","message":"Loaded @botpress/skill-choice, version 10.17.3","timestamp":"2018-07-09T02:11:42.564Z"}
+{"level":"info","message":"Loaded @botpress/hitl, version 10.17.3","timestamp":"2018-07-09T02:11:42.571Z"}
+{"level":"verbose","message":"[Renderers] Enabled for webchat.","timestamp":"2018-07-09T02:11:42.954Z"}
+{"level":"info","message":"Loaded @botpress/channel-web, version 10.17.3","timestamp":"2018-07-09T02:11:42.955Z"}
+{"level":"info","message":"Loaded 5 modules","timestamp":"2018-07-09T02:11:42.955Z"}
+{"level":"info","message":"[Skills] Loaded 1 skills","timestamp":"2018-07-09T02:11:42.957Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\content, doing nothing.","timestamp":"2018-07-09T02:11:42.958Z"}
+{"level":"debug","message":"Loading middleware: rendering.instrumentation","timestamp":"2018-07-09T02:11:43.016Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureInMessages","timestamp":"2018-07-09T02:11:43.017Z"}
+{"level":"debug","message":"Loading middleware: nlu.incoming","timestamp":"2018-07-09T02:11:43.018Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-07-09T02:11:43.019Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureOutMessages","timestamp":"2018-07-09T02:11:43.020Z"}
+{"level":"debug","message":"Loading middleware: webchat.sendMessages","timestamp":"2018-07-09T02:11:43.021Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-07-09T02:11:43.021Z"}
+{"level":"debug","message":"Loading data for builtin_text from builtin_text.json","timestamp":"2018-07-09T02:11:43.095Z"}
+{"level":"info","message":"\u001b[32m\u001b[1mBot launched. Visit: http://localhost:3000\u001b[22m\u001b[39m","timestamp":"2018-07-09T02:11:43.121Z"}
+{"level":"info","message":"Read 7 item(s) from builtin_text.json","timestamp":"2018-07-09T02:11:43.129Z"}
+{"level":"debug","message":"Loading data for builtin_image from builtin_image.json","timestamp":"2018-07-09T02:11:43.150Z"}
+{"level":"debug","message":"Loading data for builtin_single-choice from builtin_single-choice.json","timestamp":"2018-07-09T02:11:43.157Z"}
+{"level":"debug","message":"Loading data for builtin_card from builtin_card.json","timestamp":"2018-07-09T02:11:43.161Z"}
+{"level":"debug","message":"Loading data for builtin_action-button from builtin_action-button.json","timestamp":"2018-07-09T02:11:43.165Z"}
+{"level":"debug","message":"Loading data for builtin_carousel from builtin_carousel.json","timestamp":"2018-07-09T02:11:43.167Z"}
+{"level":"debug","message":"Loading data for builtin_raw from builtin_raw.json","timestamp":"2018-07-09T02:11:43.169Z"}
+{"level":"debug","message":"[NLU::Native] The model needs to be updated","timestamp":"2018-07-09T02:11:43.915Z"}
+{"level":"debug","message":"[NLU::Native] Started training model from 21 samples","timestamp":"2018-07-09T02:11:43.921Z"}
+{"level":"info","message":"[NLU::Native] Synced model","timestamp":"2018-07-09T02:11:43.938Z"}
+{"level":"info","message":"------------","timestamp":"2018-07-09T02:11:43.940Z"}
+{"level":"info","message":"Webchat available at http://localhost:3000/s/chat","timestamp":"2018-07-09T02:11:43.941Z"}
+{"level":"info","message":"------------","timestamp":"2018-07-09T02:11:43.941Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-07-09T02:12:07.697Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hola\"","timestamp":"2018-07-09T02:12:07.748Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:07.749Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:07.751Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:07.763Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:07.777Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:07.779Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:07.783Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:07.784Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"true\"","timestamp":"2018-07-09T02:12:07.788Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"ask-name\"","timestamp":"2018-07-09T02:12:07.788Z"}
+{"level":"debug","message":"Dialog: [main] (ask-name)                    !!  ENTR \t ","timestamp":"2018-07-09T02:12:07.801Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-z0J9q\"","timestamp":"2018-07-09T02:12:07.802Z"}
+{"level":"debug","message":"Dialog: [main] (ask-name)                    <~  RECV \t \"nel\"","timestamp":"2018-07-09T02:12:11.334Z"}
+{"level":"debug","message":"Dialog: [main] (ask-name)                    !!  KALL \t ","timestamp":"2018-07-09T02:12:11.334Z"}
+{"level":"debug","message":"Dialog: [main] (ask-name)                    ..  KALL \t ","timestamp":"2018-07-09T02:12:11.335Z"}
+{"level":"debug","message":"Dialog: [main] (ask-name)                    ?X  KALL \t ","timestamp":"2018-07-09T02:12:11.339Z"}
+{"level":"debug","message":"Dialog: [main] (ask-name)                    !!  RECV \t ","timestamp":"2018-07-09T02:12:11.339Z"}
+{"level":"debug","message":"Dialog: [main] (ask-name)                    !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-07-09T02:12:11.340Z"}
+{"level":"debug","message":"Dialog: [main] (ask-name)                    !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:11.349Z"}
+{"level":"debug","message":"Dialog: [main] (ask-name)                    !!  SSET \t ","timestamp":"2018-07-09T02:12:11.352Z"}
+{"level":"debug","message":"Dialog: [main] (ask-name)                    ..  RECV \t ","timestamp":"2018-07-09T02:12:11.354Z"}
+{"level":"debug","message":"Dialog: [main] (ask-name)                    ??  MTCH \t cond = \"true\"","timestamp":"2018-07-09T02:12:11.355Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:11.355Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:11.362Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:11.363Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:11.364Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:11.371Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:11.372Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:11.377Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:11.377Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:11.388Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:11.389Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:11.391Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:11.437Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"ok nel\"","timestamp":"2018-07-09T02:12:16.548Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:16.549Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:16.549Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:16.552Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:16.563Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:16.564Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:16.566Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:16.567Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:16.570Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:16.571Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:16.580Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:16.581Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:16.582Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:16.589Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:16.593Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:16.599Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:16.600Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:16.618Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:16.619Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:16.620Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:16.672Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"bye\"","timestamp":"2018-07-09T02:12:22.530Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:22.531Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:22.531Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:22.534Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:22.544Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:22.545Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:22.549Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:22.551Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:22.554Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:22.555Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:22.568Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:22.569Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:22.570Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:22.575Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:22.576Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:22.583Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:22.584Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:22.602Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:22.603Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:22.604Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:22.639Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:27.484Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:27.485Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:27.486Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:27.488Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:27.497Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:27.498Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:27.500Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:27.500Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:27.502Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:27.503Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:27.513Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:27.514Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:27.515Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:27.519Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:27.519Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:27.524Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:27.525Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:27.536Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:27.537Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:27.538Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:27.576Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"w\"","timestamp":"2018-07-09T02:12:27.973Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:27.973Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:27.974Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:27.976Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:27.982Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:27.983Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:27.985Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:27.985Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:27.987Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:27.988Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:27.999Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:28.000Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:28.001Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:28.005Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:28.005Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:28.013Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:28.013Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:28.022Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:28.023Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:28.026Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:28.050Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:28.511Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:28.512Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:28.512Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:28.515Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:28.525Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:28.526Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:28.528Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:28.529Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:28.532Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:28.532Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:28.538Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:28.539Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:28.540Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:28.544Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:28.545Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:28.552Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:28.552Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:28.653Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:28.653Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:28.655Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:28.688Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"t\"","timestamp":"2018-07-09T02:12:29.002Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:29.003Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:29.003Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:29.005Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:29.017Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:29.017Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:29.019Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:29.020Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:29.022Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:29.023Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:29.036Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:29.037Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:29.038Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:29.041Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:29.042Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:29.049Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:29.049Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:29.060Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:29.061Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:29.063Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:29.076Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:37.999Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:38.000Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:38.000Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:38.004Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.016Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:38.017Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:38.019Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.020Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:38.023Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:38.025Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.039Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:38.040Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:38.042Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:38.046Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.046Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:38.050Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:38.051Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.064Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:38.065Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.068Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:38.109Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:38.220Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:38.220Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:38.221Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:38.226Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.239Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:38.240Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:38.242Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.243Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:38.245Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:38.246Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.265Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:38.266Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:38.267Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:38.269Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.270Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:38.275Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:38.276Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.287Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:38.288Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.289Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:38.302Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:38.404Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:38.405Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:38.406Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:38.410Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.415Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:38.418Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:38.420Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.420Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:38.426Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:38.426Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.447Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:38.448Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:38.449Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:38.453Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.453Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:38.462Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:38.463Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.471Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:38.472Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.473Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:38.483Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:38.637Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:38.638Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:38.639Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:38.642Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.652Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:38.653Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:38.657Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.658Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:38.661Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:38.662Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.676Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:38.677Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:38.678Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:38.681Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.681Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:38.687Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:38.688Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.701Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:38.702Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.704Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:38.724Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:38.868Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:38.869Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:38.870Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:38.876Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.887Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:38.888Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:38.895Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.895Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:38.898Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:38.899Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.926Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:38.928Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:38.929Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:38.937Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.938Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:38.953Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:38.954Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:38.968Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:38.970Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:38.973Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:38.986Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:39.201Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:39.202Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:39.203Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:39.207Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:39.217Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:39.217Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:39.219Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:39.220Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:39.222Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:39.223Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:39.234Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:39.236Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:39.237Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:39.240Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:39.241Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:39.247Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:39.247Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:39.258Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:39.259Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:39.260Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:39.282Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:39.410Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:39.411Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:39.411Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:39.416Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:39.424Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:39.425Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:39.427Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:39.428Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:39.430Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:39.431Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:39.444Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:39.445Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:39.446Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:39.449Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:39.450Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:39.456Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:39.457Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:39.470Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:39.471Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:39.472Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:39.482Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:39.595Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:39.596Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:39.597Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:39.625Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:39.638Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:39.639Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:39.642Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:39.643Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:39.646Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:39.647Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:39.659Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:39.661Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:39.662Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:39.665Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:39.666Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:39.670Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:39.671Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:39.793Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:39.794Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:39.795Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:39.815Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:39.930Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:39.931Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:39.932Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:39.937Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:39.945Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:39.946Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:39.949Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:39.950Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:39.952Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:39.953Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:39.965Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:39.966Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:39.967Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:39.970Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:39.971Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:39.977Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:39.979Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:39.998Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:39.999Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:40.002Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:40.016Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:40.243Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:40.243Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:40.244Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:40.246Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:40.256Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:40.257Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:40.259Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:40.260Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:40.262Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:40.262Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:40.277Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:40.278Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:40.279Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:40.282Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:40.283Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:40.292Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:40.292Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:40.306Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:40.308Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:40.311Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:40.332Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:40.463Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:40.464Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:40.464Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:40.466Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:40.478Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:40.479Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:40.483Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:40.485Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:40.496Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:40.496Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:40.506Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:40.507Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:40.509Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:40.512Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:40.512Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:40.519Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:40.519Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:40.533Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:40.535Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:40.542Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:40.561Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:40.677Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:40.677Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:40.678Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:40.680Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:40.688Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:40.689Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:40.691Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:40.692Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:40.694Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:40.695Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:40.708Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:40.709Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:40.710Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:40.713Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:40.714Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:40.720Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:40.720Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:40.732Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:40.733Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:40.735Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:40.758Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:40.881Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:40.882Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:40.882Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:40.886Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:40.897Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:40.898Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:40.900Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:40.901Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:40.905Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:40.908Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:40.936Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:40.937Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:40.939Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:40.944Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:40.945Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:40.950Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:40.951Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:40.969Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:40.970Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:40.971Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:41.010Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:41.083Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:41.084Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:41.084Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:41.087Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:41.093Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:41.094Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:41.096Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:41.097Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:41.099Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:41.100Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:41.118Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:41.119Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:41.120Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:41.132Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:41.135Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:41.140Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:41.141Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:41.151Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:41.152Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:41.158Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:41.226Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:41.401Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:41.402Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:41.402Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:41.405Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:41.417Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:41.418Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:41.420Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:41.421Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:41.424Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:41.425Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:41.431Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:41.432Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:41.433Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:41.437Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:41.438Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:41.446Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:41.447Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:41.460Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:41.462Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:41.463Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:41.476Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:41.634Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:41.634Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:41.635Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:41.643Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:41.659Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:41.661Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:41.663Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:41.664Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:41.668Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:41.669Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:41.677Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:41.678Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:41.679Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:41.682Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:41.684Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:41.692Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:41.693Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:41.708Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:41.709Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:41.710Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:41.722Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:41.846Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:41.847Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:41.847Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:41.849Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:41.871Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:41.872Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:41.874Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:41.875Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:41.878Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:41.879Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:41.893Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:41.893Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:41.894Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:41.898Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:41.898Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:41.902Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:41.903Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:41.918Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:41.919Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:41.920Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:41.971Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:42.118Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:42.118Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:42.119Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:42.124Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:42.129Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:42.130Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:42.133Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:42.133Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:42.136Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:42.136Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:42.151Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:42.152Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:42.155Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:42.159Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:42.160Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:42.170Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:42.171Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:42.185Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:42.186Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:42.188Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:42.207Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:42.368Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:42.369Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:42.370Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:42.373Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:42.384Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:42.384Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:42.387Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:42.387Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:42.390Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:42.391Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:42.404Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:42.405Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:42.406Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:42.411Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:42.412Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:42.417Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:42.418Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:42.432Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:42.433Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:42.435Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:42.473Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:42.555Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:42.556Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:42.557Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:42.561Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:42.582Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:42.583Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:42.586Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:42.589Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:42.593Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:42.593Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:42.608Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:42.616Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:42.619Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:42.630Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:42.631Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:42.635Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:42.635Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:42.742Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:42.743Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:42.746Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:42.771Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:42.879Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:42.880Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:42.881Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:42.884Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:42.900Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:42.901Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:42.903Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:42.905Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:42.909Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:42.910Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:42.927Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:42.929Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:42.933Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:42.943Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:42.946Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:42.958Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:42.958Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:42.974Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:42.975Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:42.976Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:43.011Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:43.150Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:43.150Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:43.151Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:43.153Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:43.165Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:43.166Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:43.168Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:43.170Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:43.176Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:43.176Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:43.191Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:43.192Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:43.193Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:43.197Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:43.198Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:43.210Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:43.211Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:43.224Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:43.225Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:43.227Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:43.244Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:43.389Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:43.390Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:43.391Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:43.394Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:43.402Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:43.404Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:43.409Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:43.410Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:43.413Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:43.414Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:43.427Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:43.428Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:43.429Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:43.432Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:43.434Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:43.440Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:43.441Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:43.453Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:43.453Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:43.454Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:43.464Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:43.578Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:43.578Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:43.579Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:43.581Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:43.592Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:43.593Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:43.594Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:43.595Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:43.597Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:43.598Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:43.608Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:43.609Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:43.610Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:43.614Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:43.615Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:43.620Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:43.620Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:43.634Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:43.635Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:43.637Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:43.649Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:43.777Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:43.778Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:43.779Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:43.781Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:43.793Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:43.794Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:43.796Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:43.799Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:43.801Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:43.802Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:43.816Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:43.817Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:43.818Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:43.822Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:43.823Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:43.832Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:43.833Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:43.845Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:43.846Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:43.847Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:43.867Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:44.010Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:44.010Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:44.011Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:44.014Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.025Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:44.026Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:44.028Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.029Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:44.032Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:44.035Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.053Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:44.054Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:44.057Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:44.064Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.065Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:44.073Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:44.074Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.087Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:44.089Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.092Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:44.138Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:44.227Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:44.229Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:44.230Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:44.235Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.249Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:44.250Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:44.252Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.252Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:44.257Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:44.258Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.433Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:44.434Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:44.434Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:44.459Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.460Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:44.471Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:44.472Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.486Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:44.489Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.492Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:44.552Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"ee\"","timestamp":"2018-07-09T02:12:44.677Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:44.678Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:44.679Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:44.682Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:44.683Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:44.684Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:44.684Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:44.687Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.698Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:44.699Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.704Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:44.705Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:44.708Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.709Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:44.712Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:44.713Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:44.717Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.718Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:44.721Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:44.721Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.730Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:44.731Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:44.732Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.740Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:44.741Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:44.742Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:44.745Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.745Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:44.749Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:44.750Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:44.751Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.753Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:44.762Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:44.763Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.772Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:44.773Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.774Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.780Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:44.781Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.782Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:44.811Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:44.812Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:44.899Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:44.904Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:44.906Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:44.908Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.917Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:44.918Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:44.920Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.922Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:44.925Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:44.926Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.951Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:44.952Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:44.953Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:44.960Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.961Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:44.966Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:44.970Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:44.981Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:44.982Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:44.983Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:45.007Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:45.081Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:45.082Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:45.082Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:45.085Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:45.093Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:45.094Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:45.096Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:45.097Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:45.105Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:45.106Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:45.124Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:45.125Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:45.126Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:45.129Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:45.130Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:45.140Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:45.141Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:45.154Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:45.158Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:45.160Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:45.178Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"e\"","timestamp":"2018-07-09T02:12:45.268Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:12:45.268Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:12:45.269Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:12:45.274Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  ENTR \t ","timestamp":"2018-07-09T02:12:45.288Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:12:45.289Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       !!  SSET \t ","timestamp":"2018-07-09T02:12:45.292Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ..  NOWT \t ","timestamp":"2018-07-09T02:12:45.292Z"}
+{"level":"debug","message":"Dialog: [main] (entry)                       ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:12:45.294Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:12:45.295Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:12:45.393Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:12:45.393Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:12:45.394Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:12:45.398Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:12:45.398Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:12:45.402Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:12:45.402Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:12:45.417Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:12:45.418Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:12:45.418Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:12:45.431Z"}
+{"level":"info","message":"Starting botpress version 10.17.3","timestamp":"2018-07-09T02:53:13.520Z"}
+{"level":"info","message":"[Ghost Content Manager] (transparent) Initialized","timestamp":"2018-07-09T02:53:13.781Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\media, doing nothing.","timestamp":"2018-07-09T02:53:13.792Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\flows, doing nothing.","timestamp":"2018-07-09T02:53:13.795Z"}
+{"level":"info","message":"[Skills] Initiated","timestamp":"2018-07-09T02:53:13.797Z"}
+{"level":"info","message":"Loaded @botpress/audience, version 10.17.3","timestamp":"2018-07-09T02:53:13.816Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\intents, doing nothing.","timestamp":"2018-07-09T02:53:14.632Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\entities, doing nothing.","timestamp":"2018-07-09T02:53:14.633Z"}
+{"level":"info","message":"Loaded @botpress/nlu, version 10.17.3","timestamp":"2018-07-09T02:53:14.634Z"}
+{"level":"info","message":"Loaded @botpress/skill-choice, version 10.17.3","timestamp":"2018-07-09T02:53:14.644Z"}
+{"level":"info","message":"Loaded @botpress/hitl, version 10.17.3","timestamp":"2018-07-09T02:53:14.652Z"}
+{"level":"verbose","message":"[Renderers] Enabled for webchat.","timestamp":"2018-07-09T02:53:15.063Z"}
+{"level":"info","message":"Loaded @botpress/channel-web, version 10.17.3","timestamp":"2018-07-09T02:53:15.064Z"}
+{"level":"info","message":"Loaded 5 modules","timestamp":"2018-07-09T02:53:15.064Z"}
+{"level":"info","message":"[Skills] Loaded 1 skills","timestamp":"2018-07-09T02:53:15.067Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\content, doing nothing.","timestamp":"2018-07-09T02:53:15.071Z"}
+{"level":"debug","message":"Loading middleware: rendering.instrumentation","timestamp":"2018-07-09T02:53:15.132Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureInMessages","timestamp":"2018-07-09T02:53:15.133Z"}
+{"level":"debug","message":"Loading middleware: nlu.incoming","timestamp":"2018-07-09T02:53:15.134Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-07-09T02:53:15.134Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureOutMessages","timestamp":"2018-07-09T02:53:15.137Z"}
+{"level":"debug","message":"Loading middleware: webchat.sendMessages","timestamp":"2018-07-09T02:53:15.138Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-07-09T02:53:15.138Z"}
+{"level":"debug","message":"Loading data for builtin_text from builtin_text.json","timestamp":"2018-07-09T02:53:15.198Z"}
+{"level":"info","message":"\u001b[32m\u001b[1mBot launched. Visit: http://localhost:3000\u001b[22m\u001b[39m","timestamp":"2018-07-09T02:53:15.222Z"}
+{"level":"info","message":"Read 9 item(s) from builtin_text.json","timestamp":"2018-07-09T02:53:15.232Z"}
+{"level":"debug","message":"Loading data for builtin_image from builtin_image.json","timestamp":"2018-07-09T02:53:15.240Z"}
+{"level":"debug","message":"Loading data for builtin_single-choice from builtin_single-choice.json","timestamp":"2018-07-09T02:53:15.244Z"}
+{"level":"debug","message":"Loading data for builtin_card from builtin_card.json","timestamp":"2018-07-09T02:53:15.245Z"}
+{"level":"debug","message":"Loading data for builtin_action-button from builtin_action-button.json","timestamp":"2018-07-09T02:53:15.246Z"}
+{"level":"debug","message":"Loading data for builtin_carousel from builtin_carousel.json","timestamp":"2018-07-09T02:53:15.247Z"}
+{"level":"debug","message":"Loading data for builtin_raw from builtin_raw.json","timestamp":"2018-07-09T02:53:15.248Z"}
+{"level":"debug","message":"[NLU::Native] Model is up to date","timestamp":"2018-07-09T02:53:15.802Z"}
+{"level":"info","message":"------------","timestamp":"2018-07-09T02:53:15.803Z"}
+{"level":"info","message":"Webchat available at http://localhost:3000/s/chat","timestamp":"2018-07-09T02:53:15.804Z"}
+{"level":"info","message":"------------","timestamp":"2018-07-09T02:53:15.804Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-07-09T02:53:42.470Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hi\"","timestamp":"2018-07-09T02:53:42.538Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:53:42.539Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:53:42.540Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:53:42.546Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-07-09T02:53:42.557Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:53:42.559Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-07-09T02:53:42.563Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-07-09T02:53:42.564Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-07-09T02:53:42.566Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-07-09T02:53:42.567Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:53:42.571Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:53:42.572Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:53:42.587Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:53:42.588Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:53:42.589Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:53:42.599Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:53:42.600Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:53:42.603Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:53:42.607Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:53:42.623Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:53:42.625Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:53:42.630Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:53:42.666Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"9\"","timestamp":"2018-07-09T02:53:48.663Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-07-09T02:53:48.664Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-07-09T02:53:48.665Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-07-09T02:53:48.669Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-07-09T02:53:48.680Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-07-09T02:53:48.681Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-07-09T02:53:48.683Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-07-09T02:53:48.684Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-07-09T02:53:48.686Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-07-09T02:53:48.688Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-07-09T02:53:48.691Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-07-09T02:53:48.691Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-07-09T02:53:48.704Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-07-09T02:53:48.704Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-07-09T02:53:48.706Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-07-09T02:53:48.712Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-07-09T02:53:48.713Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-07-09T02:53:48.717Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-07-09T02:53:48.718Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-07-09T02:53:48.730Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:53:48.731Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:53:48.734Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:53:48.761Z"}
