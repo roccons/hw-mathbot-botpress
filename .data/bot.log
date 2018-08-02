@@ -979,3 +979,146 @@
 {"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-07-09T02:53:48.731Z"}
 {"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-07-09T02:53:48.734Z"}
 {"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-07-09T02:53:48.761Z"}
+{"level":"info","message":"Starting botpress version 10.17.3","timestamp":"2018-08-01T20:44:03.202Z"}
+{"level":"info","message":"[Ghost Content Manager] (transparent) Initialized","timestamp":"2018-08-01T20:44:03.620Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\media, doing nothing.","timestamp":"2018-08-01T20:44:03.635Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\flows, doing nothing.","timestamp":"2018-08-01T20:44:03.638Z"}
+{"level":"info","message":"[Skills] Initiated","timestamp":"2018-08-01T20:44:03.642Z"}
+{"level":"info","message":"Loaded @botpress/audience, version 10.17.3","timestamp":"2018-08-01T20:44:03.662Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\intents, doing nothing.","timestamp":"2018-08-01T20:44:04.887Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\entities, doing nothing.","timestamp":"2018-08-01T20:44:04.891Z"}
+{"level":"info","message":"Loaded @botpress/nlu, version 10.17.3","timestamp":"2018-08-01T20:44:04.891Z"}
+{"level":"info","message":"Loaded @botpress/skill-choice, version 10.17.3","timestamp":"2018-08-01T20:44:04.911Z"}
+{"level":"info","message":"Loaded @botpress/hitl, version 10.17.3","timestamp":"2018-08-01T20:44:04.923Z"}
+{"level":"verbose","message":"[Renderers] Enabled for webchat.","timestamp":"2018-08-01T20:44:05.815Z"}
+{"level":"info","message":"Loaded @botpress/channel-web, version 10.17.3","timestamp":"2018-08-01T20:44:05.819Z"}
+{"level":"info","message":"Loaded 5 modules","timestamp":"2018-08-01T20:44:05.819Z"}
+{"level":"info","message":"[Skills] Loaded 1 skills","timestamp":"2018-08-01T20:44:05.819Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\content, doing nothing.","timestamp":"2018-08-01T20:44:05.823Z"}
+{"level":"debug","message":"Loading middleware: rendering.instrumentation","timestamp":"2018-08-01T20:44:05.898Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureInMessages","timestamp":"2018-08-01T20:44:05.898Z"}
+{"level":"debug","message":"Loading middleware: nlu.incoming","timestamp":"2018-08-01T20:44:05.898Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-08-01T20:44:05.898Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureOutMessages","timestamp":"2018-08-01T20:44:05.898Z"}
+{"level":"debug","message":"Loading middleware: webchat.sendMessages","timestamp":"2018-08-01T20:44:05.902Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-08-01T20:44:05.902Z"}
+{"level":"debug","message":"Loading data for builtin_text from builtin_text.json","timestamp":"2018-08-01T20:44:06.002Z"}
+{"level":"info","message":"Read 9 item(s) from builtin_text.json","timestamp":"2018-08-01T20:44:06.018Z"}
+{"level":"info","message":"\u001b[32m\u001b[1mBot launched. Visit: http://localhost:3000\u001b[22m\u001b[39m","timestamp":"2018-08-01T20:44:06.034Z"}
+{"level":"debug","message":"Loading data for builtin_image from builtin_image.json","timestamp":"2018-08-01T20:44:06.042Z"}
+{"level":"debug","message":"Loading data for builtin_single-choice from builtin_single-choice.json","timestamp":"2018-08-01T20:44:06.046Z"}
+{"level":"debug","message":"Loading data for builtin_card from builtin_card.json","timestamp":"2018-08-01T20:44:06.050Z"}
+{"level":"debug","message":"Loading data for builtin_action-button from builtin_action-button.json","timestamp":"2018-08-01T20:44:06.050Z"}
+{"level":"debug","message":"Loading data for builtin_carousel from builtin_carousel.json","timestamp":"2018-08-01T20:44:06.050Z"}
+{"level":"debug","message":"Loading data for builtin_raw from builtin_raw.json","timestamp":"2018-08-01T20:44:06.050Z"}
+{"level":"debug","message":"[NLU::Native] Model is up to date","timestamp":"2018-08-01T20:44:06.744Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-01T20:44:06.748Z"}
+{"level":"info","message":"Webchat available at http://localhost:3000/s/chat","timestamp":"2018-08-01T20:44:06.748Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-01T20:44:06.748Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-08-01T20:44:42.306Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hola\"","timestamp":"2018-08-01T20:44:42.362Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-01T20:44:42.362Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-01T20:44:42.374Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-01T20:44:42.390Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-01T20:44:42.402Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-01T20:44:42.406Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-01T20:44:42.410Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-01T20:44:42.410Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-01T20:44:42.422Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-01T20:44:42.422Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-01T20:44:42.426Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-01T20:44:42.426Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-01T20:44:42.442Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-08-01T20:44:42.442Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-08-01T20:44:42.446Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-01T20:44:42.458Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-08-01T20:44:42.462Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-08-01T20:44:42.466Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-08-01T20:44:42.470Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-08-01T20:44:42.502Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-08-01T20:44:42.506Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-08-01T20:44:42.506Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-08-01T20:44:42.570Z"}
+{"level":"info","message":"Starting botpress version 10.17.3","timestamp":"2018-08-01T23:57:39.821Z"}
+{"level":"info","message":"[Ghost Content Manager] (transparent) Initialized","timestamp":"2018-08-01T23:57:40.330Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\media, doing nothing.","timestamp":"2018-08-01T23:57:40.365Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\flows, doing nothing.","timestamp":"2018-08-01T23:57:40.371Z"}
+{"level":"info","message":"[Skills] Initiated","timestamp":"2018-08-01T23:57:40.373Z"}
+{"level":"info","message":"Loaded @botpress/audience, version 10.17.3","timestamp":"2018-08-01T23:57:40.397Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\intents, doing nothing.","timestamp":"2018-08-01T23:57:42.072Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\entities, doing nothing.","timestamp":"2018-08-01T23:57:42.173Z"}
+{"level":"info","message":"Loaded @botpress/nlu, version 10.17.3","timestamp":"2018-08-01T23:57:42.175Z"}
+{"level":"info","message":"Loaded @botpress/skill-choice, version 10.17.3","timestamp":"2018-08-01T23:57:42.191Z"}
+{"level":"info","message":"Loaded @botpress/hitl, version 10.17.3","timestamp":"2018-08-01T23:57:42.205Z"}
+{"level":"verbose","message":"[Renderers] Enabled for webchat.","timestamp":"2018-08-01T23:57:42.872Z"}
+{"level":"info","message":"Loaded @botpress/channel-web, version 10.17.3","timestamp":"2018-08-01T23:57:42.873Z"}
+{"level":"info","message":"Loaded 5 modules","timestamp":"2018-08-01T23:57:42.873Z"}
+{"level":"info","message":"[Skills] Loaded 1 skills","timestamp":"2018-08-01T23:57:42.875Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\content, doing nothing.","timestamp":"2018-08-01T23:57:42.877Z"}
+{"level":"debug","message":"Loading middleware: rendering.instrumentation","timestamp":"2018-08-01T23:57:42.968Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureInMessages","timestamp":"2018-08-01T23:57:42.968Z"}
+{"level":"debug","message":"Loading middleware: nlu.incoming","timestamp":"2018-08-01T23:57:42.969Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-08-01T23:57:42.969Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureOutMessages","timestamp":"2018-08-01T23:57:42.970Z"}
+{"level":"debug","message":"Loading middleware: webchat.sendMessages","timestamp":"2018-08-01T23:57:42.970Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-08-01T23:57:42.971Z"}
+{"level":"debug","message":"Loading data for builtin_text from builtin_text.json","timestamp":"2018-08-01T23:57:43.077Z"}
+{"level":"info","message":"\u001b[32m\u001b[1mBot launched. Visit: http://localhost:3000\u001b[22m\u001b[39m","timestamp":"2018-08-01T23:57:43.226Z"}
+{"level":"info","message":"Read 9 item(s) from builtin_text.json","timestamp":"2018-08-01T23:57:43.239Z"}
+{"level":"debug","message":"Loading data for builtin_image from builtin_image.json","timestamp":"2018-08-01T23:57:43.255Z"}
+{"level":"debug","message":"Loading data for builtin_single-choice from builtin_single-choice.json","timestamp":"2018-08-01T23:57:43.259Z"}
+{"level":"debug","message":"Loading data for builtin_card from builtin_card.json","timestamp":"2018-08-01T23:57:43.261Z"}
+{"level":"debug","message":"Loading data for builtin_action-button from builtin_action-button.json","timestamp":"2018-08-01T23:57:43.266Z"}
+{"level":"debug","message":"Loading data for builtin_carousel from builtin_carousel.json","timestamp":"2018-08-01T23:57:43.274Z"}
+{"level":"debug","message":"Loading data for builtin_raw from builtin_raw.json","timestamp":"2018-08-01T23:57:43.279Z"}
+{"level":"debug","message":"[NLU::Native] Model is up to date","timestamp":"2018-08-01T23:57:44.238Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-01T23:57:44.240Z"}
+{"level":"info","message":"Webchat available at http://localhost:3000/s/chat","timestamp":"2018-08-01T23:57:44.241Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-01T23:57:44.241Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-08-02T09:31:20.353Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hola\"","timestamp":"2018-08-02T09:32:04.659Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-02T09:32:04.659Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-02T09:32:04.661Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-02T09:32:04.670Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-02T09:32:04.683Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-02T09:32:04.685Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-02T09:32:04.689Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-02T09:32:04.690Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-02T09:32:04.693Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-02T09:32:04.694Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-02T09:32:04.696Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-02T09:32:04.697Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-02T09:32:04.718Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-08-02T09:32:04.719Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-08-02T09:32:04.720Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-02T09:32:04.725Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-08-02T09:32:04.725Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-08-02T09:32:04.729Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-08-02T09:32:04.730Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-08-02T09:32:04.744Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-08-02T09:32:04.745Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-08-02T09:32:04.746Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-08-02T09:32:04.798Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hola\"","timestamp":"2018-08-02T13:53:11.036Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-02T13:53:11.037Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-02T13:53:11.037Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-02T13:53:11.040Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-02T13:53:11.050Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-02T13:53:11.051Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-02T13:53:11.054Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-02T13:53:11.054Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-02T13:53:11.055Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-02T13:53:11.056Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-02T13:53:11.058Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-02T13:53:11.059Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-02T13:53:11.072Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pSsHW\"","timestamp":"2018-08-02T13:53:11.073Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getTotalNumberOfConversations\"","timestamp":"2018-08-02T13:53:11.075Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-02T13:53:11.078Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  NOWT \t ","timestamp":"2018-08-02T13:53:11.079Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$r > 0\"","timestamp":"2018-08-02T13:53:11.082Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"many-times\"","timestamp":"2018-08-02T13:53:11.083Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  !!  ENTR \t ","timestamp":"2018-08-02T13:53:11.096Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bFsOm\"","timestamp":"2018-08-02T13:53:11.096Z"}
+{"level":"debug","message":"Dialog: [main] (many-times)                  ..  NOWT \t ","timestamp":"2018-08-02T13:53:11.097Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-08-02T13:53:11.115Z"}

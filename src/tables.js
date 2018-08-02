@@ -1,26 +1,44 @@
 module.exports = {
 
+    /**
+     * current user
+     */
     user: null,
 
-    bp: null,
-
-    getLastTable(event) {
-        const table = null
-        this.user = event.user
-        this.bp.users.hasTag(this.user.id, 'table').then(hasTag => {
-            if (hasTag) {
-                this.bp.users.getTag(this.user.id, 'table').then(tableStore => {
-                    table = tableStore
-                })
-            }
-        })
-        return table
+    state: {
+        currentTable: 0,
+        currentQuestion: {
+            operand: 0
+        },
+        nextQuestion: 0,
     },
 
+    store: null,
+
+    getStore () {
+
+    },
+
+    /**
+     * get the last table practiced from store, if any
+     * @param {*} event 
+     */
+    getLastTable() {
+        return this.store.last_table;
+    },
+
+    /**
+     * Save last table played by user
+     * @param {*} table 
+     */
     saveParticipant(table) {
-        this.bp.users.tag(this.user.id, 'table', table)
+        this.tag(this.user.id, 'table', table)
     },
 
+    /**
+     * Generate a object with all table number given questions
+     * @param {int} number 
+     */
     generateTable(number) {
         let table = []
         for (let i = 1; i <= 10; i++) {
@@ -32,6 +50,10 @@ module.exports = {
         return { number, table }
     },
 
+    /**
+     * Get the next question
+     * @param {int} number 
+     */
     getNextNumber(number) {
         let next = Math.floor(Math.random() * 10) + 1
         while (number == next) {
@@ -40,64 +62,79 @@ module.exports = {
         return next
     },
 
-    makeQuestions(bp, convo) {
+    /**
+     * Show a message when the user write a wrong word
+     * @param {string} response 
+     */
+    dontGetIt (response) {
+        // do something
+    },
+
+    /**
+     * Repeat the current question
+     * @param {Int} response 
+     */
+    repeatQuestion (number) {
+        // do something
+    },
+
+    /**
+     * Build all posible questions and actions
+     */
+    makeQuestions() {
         for (let i = 1; i <= 10; i++) {
 
             const table = this.generateTable(i)
 
-            table.table.forEach(question => {
+            table.table.map(question => {
 
-                convo.createThread(`table${i}${question.number}`)
-                convo.threads[`table${i}${question.number}`].addQuestion(
-                    '#question',
-                    {
-                        operand1: i,
-                        operand2: question.number
-                    },
-                    [{
-                        // Change to another table
+                return {
+
+                    operand_1: i,
+                    operand_2: question.number,
+                    that: this,
+
+                    change: {
                         pattern: /del (\d+)/i,
                         callback: response => {
-                            const numberSelected = response.text.match(/(\d+)/)[0]
+                            const numberSelected = response.match(/(\d+)/)[0]
 
                             if (numberSelected > 0 && numberSelected <= 10) {
 
                                 const operand = Math.floor(Math.random() * 10) + 1
 
-                                convo.say('#startTable', {
-                                    table: numberSelected
-                                })
-                                convo.switchTo(`table${numberSelected}${operand}`)
+                                // Next table
+                                // table: numberSelected
+                                // Move to next table
+                                //switchTo(`table${numberSelected}${operand}`)
                             } else {
-                                convo.say('#startFail')
-                                convo.switchTo('start')
+                                // say wrong answer
                             }
                         }
                     },
-                    {
-                        // answer of the question
+                    answer: {
                         pattern: /(\d+)/i,
                         callback: response => {
-                            if (response.match == question.answer) {
-                                const nextNumber = this.getNextNumber(question.number)
-                                this.saveParticipant(i)
-                                convo.say('#goodAnswer')
-                                convo.switchTo(`table${i}${nextNumber}`)
+                            if (response.match(/(\d+)/)[0] == question.answer) {
+                                const nextNumber = that.getNextNumber(question.number)
+                                // Say good answer
+                                // switch to next question
+                                // switchTo(`table${i}${nextNumber}`)
                             } else {
-                                convo.say('#badAnswer')
-                                convo.repeat()
+                                // Sayworng answer and repeat
+                                // repeatQuestion()
                             }
                         }
                     },
-                    {
-                        default: true,
-                        callback: () => {
-                            convo.say('#badAnswer')
-                            convo.repeat()
+
+                    default: {
+                        callback: response => {
+                            dontGetIt()
+                            repeatQuestion()
                         }
                     }
-                    ])
-            })
+                }
+            }
         }
     }
 }
