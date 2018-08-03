@@ -15,8 +15,7 @@
       "id": "bda0320009",
       "name": "welcome",
       "onEnter": [
-        "say #!builtin_text-pSsHWg",
-        "getTotalNumberOfConversations {}"
+        "say #!builtin_text-pSsHWg"
       ],
       "onReceive": null,
       "next": [

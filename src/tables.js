@@ -117,12 +117,12 @@ module.exports = {
                         callback: response => {
                             if (response.match(/(\d+)/)[0] == question.answer) {
                                 const nextNumber = that.getNextNumber(question.number)
-                                // Say good answer
+                                this.sayGoodAns()
                                 // switch to next question
-                                // switchTo(`table${i}${nextNumber}`)
+                                this.switchTo(`table${i}${nextNumber}`)
                             } else {
                                 // Sayworng answer and repeat
-                                // repeatQuestion()
+                                this.repeatQuestion()
                             }
                         }
                     },
