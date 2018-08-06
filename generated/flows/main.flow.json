@@ -14,39 +14,63 @@
     {
       "id": "bda0320009",
       "name": "welcome",
-      "onEnter": [
-        "say #!builtin_text-pSsHWg"
+      "onEnter": [],
+      "onReceive": [
+        "initTable {\"name\":\"tableNumber\",\"value\":\"{{ event.texr }}\"}",
+        "tagUser {\"tag\":\"tableNumber\",\"value\":\"{{event.text}}\"}",
+        "setUserVariable {\"name\":\"tableNumber\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}",
+        "getUserVariable {\"name\":\"tableNumber\",\"output\":\"$tableNumber\"}"
       ],
-      "onReceive": null,
       "next": [
         {
-          "condition": "state.$r === 0",
-          "node": "first-time"
+          "condition": "isNaN(state.$tableNumber)",
+          "node": "invalidInput"
         },
         {
-          "condition": "state.$r > 0",
-          "node": "many-times"
+          "condition": "state.$tableNumber > 0 && state.$tableNumber <=10",
+          "node": "initTableQuestions"
+        },
+        {
+          "condition": "state.$tableNumber <= 0 || state.$tableNumber > 10",
+          "node": "invalidNumber"
         }
       ]
     },
     {
       "id": "7099199f90",
-      "name": "first-time",
-      "next": [],
+      "name": "invalidInput",
+      "next": [
+        {
+          "condition": "always",
+          "node": "welcome"
+        }
+      ],
       "onEnter": [
-        "say #!builtin_text-AY5SSW",
-        "say #!builtin_text-X069Le"
+        "say #!builtin_text-B8I3ds",
+        "say #!builtin_text-49ixXn"
       ],
       "onReceive": null
     },
     {
       "id": "c69ee2d71f",
-      "name": "many-times",
-      "next": [],
-      "onEnter": [
-        "say #!builtin_text-bFsOmf"
+      "name": "tableQuestion",
+      "next": [
+        {
+          "condition": "state.isCorrect",
+          "node": "goodAnswer"
+        },
+        {
+          "condition": "!state.isCorrect",
+          "node": "badAnswer"
+        }
       ],
-      "onReceive": null
+      "onEnter": [
+        "tableQuestion {}",
+        "say #!builtin_text-yOrr5X"
+      ],
+      "onReceive": [
+        "checkAnswer {\"resp\":\"{{event.text}}\"}"
+      ]
     },
     {
       "id": "4f50a2e9fd",
@@ -95,6 +119,64 @@
         "setUserVariable {\"name\":\"nickname\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}",
         "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}"
       ]
+    },
+    {
+      "id": "b77c47de7b",
+      "name": "invalidNumber",
+      "next": [
+        {
+          "condition": "always",
+          "node": "welcome"
+        }
+      ],
+      "onEnter": [
+        "",
+        "say #!builtin_text-AMBWx5"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "693c6bbe90",
+      "name": "goodAnswer",
+      "next": [
+        {
+          "condition": "always",
+          "node": "tableQuestion"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-cbJsVV",
+        "nextQuestion {}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "72424e210a",
+      "name": "badAnswer",
+      "next": [
+        {
+          "condition": "always",
+          "node": "tableQuestion"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-lQlXD~"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "815de7bc24",
+      "name": "initTableQuestions",
+      "next": [
+        {
+          "condition": "always",
+          "node": "tableQuestion"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-4ICRHC"
+      ],
+      "onReceive": null
     }
   ]
 }

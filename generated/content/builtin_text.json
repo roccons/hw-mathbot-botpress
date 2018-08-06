@@ -83,5 +83,81 @@
     },
     "createdBy": "admin",
     "createdOn": "2018-06-19T14:33:02.990Z"
+  },
+  {
+    "id": "builtin_text-4ICRHC",
+    "formData": {
+      "text": "Perfecto! practiquemos la tabla del {{ event.text }}",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-06T11:41:49.826Z"
+  },
+  {
+    "id": "builtin_text-B8I3ds",
+    "formData": {
+      "text": "Esa es no la respuesta que esperaba 🤨",
+      "variations": [
+        "Creo que has tecleado mal 😅"
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-06T12:23:53.660Z"
+  },
+  {
+    "id": "builtin_text-49ixXn",
+    "formData": {
+      "text": "Intentemos de nuevo ¿Cuál quieres practicar?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-06T12:25:36.905Z"
+  },
+  {
+    "id": "builtin_text-AMBWx5",
+    "formData": {
+      "text": "Esa no me la sé 😅 ¿Intentamos con otra?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-06T12:27:46.091Z"
+  },
+  {
+    "id": "builtin_text-yOrr5X",
+    "formData": {
+      "text": "¿Cuánto es {{state.$op1}} x {{state.$op2}}?",
+      "variations": [
+        "¿Cuánto es {{state.$op2}} x {{state.$op1}}?"
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-06T14:04:53.174Z"
+  },
+  {
+    "id": "builtin_text-cbJsVV",
+    "formData": {
+      "text": "Muy bien!",
+      "variations": [
+        "¡Excelente!",
+        "Has estado estudiando"
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-06T14:27:49.094Z"
+  },
+  {
+    "id": "builtin_text-lQlXD~",
+    "formData": {
+      "text": "No es la respuesta que esperaba",
+      "variations": [
+        "No :("
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-06T14:29:01.990Z"
   }
 ]

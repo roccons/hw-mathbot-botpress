@@ -7,16 +7,54 @@ async function yourCustomAction(state, event, params) {
   return state
 }
 
-async function tableQuestion(state, event, params) {
-
-  const answer = params.tableNumber * params.operand
-
+async function initTable(state, event, params) {
   return {
     ...state,
     tableNumber: params.tableNumber,
-    operand: params.operand,
+  }
+}
+
+async function tableQuestion(state, event, params) {
+
+  const operando = state.$op2 || Math.floor(Math.random() * 10 + 1)
+  const answer = operando * state.$tableNumber
+
+  return {
+    ...state,
+    $op1: state.$tableNumber,
+    $op2: operando,
     answer
   }
 }
 
-module.exports = { yourCustomAction, tableQuestion }
+async function checkAnswer(state, event, params) {
+  const resp = parseInt(event.text)
+  return {
+    ...state,
+    isCorrect: resp === state.answer
+  }
+}
+
+function getRndNumber(number) {
+  let operando = Math.floor(Math.random() * 10 + 1)
+  while (number === operando) {
+    operando = Math.floor(Math.random() * 10 + 1)
+  }
+  return operando;
+}
+
+async function nextQuestion(state, event, params) {
+  return {
+    ...state,
+    $op1: state.$tableNumber,
+    $op2: getRndNumber(state.$op2)
+  }
+}
+
+module.exports = { 
+  yourCustomAction, 
+  tableQuestion, 
+  initTable,
+  checkAnswer,
+  nextQuestion
+}
