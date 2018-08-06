@@ -78,7 +78,7 @@
   {
     "id": "builtin_text-AcmttM",
     "formData": {
-      "text": "¿Cuál tabla quieres prácticas?",
+      "text": "¿Cuál tabla quieres prácticar?",
       "typing": true
     },
     "createdBy": "admin",
@@ -87,7 +87,7 @@
   {
     "id": "builtin_text-4ICRHC",
     "formData": {
-      "text": "Perfecto! practiquemos la tabla del {{ event.text }}",
+      "text": "Perfecto! practiquemos la tabla del {{ state.$op1 }}",
       "typing": true
     },
     "createdBy": "admin",
@@ -128,7 +128,9 @@
     "formData": {
       "text": "¿Cuánto es {{state.$op1}} x {{state.$op2}}?",
       "variations": [
-        "¿Cuánto es {{state.$op2}} x {{state.$op1}}?"
+        "¿Cuánto es {{state.$op2}} x {{state.$op1}}?",
+        "¿{{state.$op1}} x {{state.$op2}}?",
+        "¿{{state.$op1}} x {{state.$op2}}?"
       ],
       "typing": true
     },
@@ -141,7 +143,11 @@
       "text": "Muy bien!",
       "variations": [
         "¡Excelente!",
-        "Has estado estudiando"
+        "Bien, ¡Has estado estudiando! 😉",
+        "¡Perfecto!",
+        "¡Excelente! Sigue así. 🕺🏻",
+        "Así se hace 😎",
+        "👍"
       ],
       "typing": true
     },
@@ -151,13 +157,33 @@
   {
     "id": "builtin_text-lQlXD~",
     "formData": {
-      "text": "No es la respuesta que esperaba",
+      "text": "Esa no es la respuesta que esperaba. Intentemos de nuevo.",
       "variations": [
-        "No :("
+        "mmm no 😥. Va otra vez.",
+        "Concéntrate... ¡yo se que puedes!"
       ],
       "typing": true
     },
     "createdBy": "admin",
     "createdOn": "2018-08-06T14:29:01.990Z"
+  },
+  {
+    "id": "builtin_text-cpUzLF",
+    "formData": {
+      "text": "¡Hola! 👋",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-06T17:45:53.520Z"
+  },
+  {
+    "id": "builtin_text-pAytKD",
+    "formData": {
+      "text": "¡Pssst! Puedes cambiar de tabla en cualquier momento escribiendo por ejemplo \"tabla del...\"",
+      "variations": [],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-06T19:37:07.550Z"
   }
 ]

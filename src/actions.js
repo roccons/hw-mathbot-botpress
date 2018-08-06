@@ -1,52 +1,41 @@
-/**
- * Description of the action goes here
- * @param  {String} params.name=value Description of the parameter goes here
- * @param  {Number} [params.age] Optional parameter
- */
-async function yourCustomAction(state, event, params) {
-  return state
-}
-
-async function initTable(state, event, params) {
-  return {
-    ...state,
-    tableNumber: params.tableNumber,
-    toChange: false
-  }
-}
-
 async function tableQuestion(state, event, params) {
 
   const operando = state.$op2 || Math.floor(Math.random() * 10 + 1)
-  const answer = operando * state.$tableNumber
 
   return {
     ...state,
-    $op1: state.$tableNumber,
+    $op1: state.$op1 || getNumberFromText(state.$tableNumber),
     $op2: operando,
-    answer,
-    toChange: false
+    toChange: false,
+    finish: false,
+    answer: operando * getNumberFromText(state.$tableNumber)
   }
 }
 
 async function checkAnswer(state, event, params) {
 
-  if (isNaN(event.text)) {
-    if (event.text.includes('la del')) {
-      const numberSelected = event.text.match(/(\d+)/)[0]
-      return {
-        ...state,
-        toChange: true,
-        $tableNumber: numberSelected
-      }
+  if (event.text.includes('la del')) {
+    return {
+      ...state,
+      toChange: true,
+      finish: false,
+      $op1: parseInt(getNumberFromText(event.text))
     }
   }
 
-  const resp = parseInt(event.text)
+  if (event.text.includes('adios')) {
+    return {
+      ...state,
+      finish: true
+    }
+  }
 
+  const resp = parseInt(getNumberFromText(event.text))
+  console.log(resp, state)
   return {
     ...state,
-    isCorrect: resp === state.answer
+    isCorrect: resp === state.$op1 * state.$op2,
+    finish: false,
   }
 }
 
@@ -58,18 +47,34 @@ function getRndNumber(number) {
   return operando;
 }
 
+function getNumberFromText(text) {
+  if (text.match(/(\d+)/)) {
+    return text.match(/(\d+)/)[0]
+  }
+  return null
+}
+
 async function nextQuestion(state, event, params) {
+
   return {
     ...state,
-    $op1: state.$tableNumber,
-    $op2: getRndNumber(state.$op2)
+    $op1: getNumberFromText(state.$tableNumber),
+    $op2: getRndNumber(state.$op2),
+    finish: false,
   }
 }
 
-module.exports = { 
-  yourCustomAction, 
+function notChange(state, event, params) {
+  return {
+    ... state,
+    toChange : false,
+    finish: false,
+  }
+}
+
+module.exports = {
   tableQuestion, 
-  initTable,
   checkAnswer,
-  nextQuestion
+  nextQuestion,
+  notChange
 }

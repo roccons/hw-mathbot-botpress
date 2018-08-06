@@ -16,22 +16,21 @@
       "name": "welcome",
       "onEnter": [],
       "onReceive": [
-        "initTable {\"name\":\"tableNumber\",\"value\":\"{{ event.texr }}\"}",
-        "tagUser {\"tag\":\"tableNumber\",\"value\":\"{{event.text}}\"}",
         "setUserVariable {\"name\":\"tableNumber\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}",
-        "getUserVariable {\"name\":\"tableNumber\",\"output\":\"$tableNumber\"}"
+        "getUserVariable {\"name\":\"tableNumber\",\"output\":\"$tableNumber\"}",
+        "tableQuestion {}"
       ],
       "next": [
         {
-          "condition": "isNaN(state.$tableNumber)",
+          "condition": "state.$op1 == null",
           "node": "invalidInput"
         },
         {
-          "condition": "state.$tableNumber > 0 && state.$tableNumber <=10",
+          "condition": "state.$op1 > 0 && state.$op1 <=12",
           "node": "initTableQuestions"
         },
         {
-          "condition": "state.$tableNumber <= 0 || state.$tableNumber > 10",
+          "condition": "state.$op1 <= 0 || state.$op1 > 12",
           "node": "invalidNumber"
         }
       ]
@@ -69,7 +68,6 @@
         }
       ],
       "onEnter": [
-        "tableQuestion {}",
         "say #!builtin_text-yOrr5X"
       ],
       "onReceive": [
@@ -91,8 +89,9 @@
       "id": "a54a82eb7c",
       "name": "start_bot",
       "onEnter": [
-        "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}",
+        "say #!builtin_text-cpUzLF",
         "say #!builtin_text-XZxS8o",
+        "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}",
         "say #!builtin_text-AcmttM"
       ],
       "onReceive": null,
@@ -173,12 +172,22 @@
       "name": "initTableQuestions",
       "next": [
         {
-          "condition": "always",
+          "condition": "state.$op1 == null",
+          "node": "invalidInput"
+        },
+        {
+          "condition": "state.$op1 > 0 && state.$op1 <=12",
           "node": "tableQuestion"
+        },
+        {
+          "condition": "state.$op1 <= 0 || state.$op1 > 12",
+          "node": "invalidNumber"
         }
       ],
       "onEnter": [
-        "say #!builtin_text-4ICRHC"
+        "notChange {}",
+        "say #!builtin_text-4ICRHC",
+        "say #!builtin_text-pAytKD"
       ],
       "onReceive": null
     }
