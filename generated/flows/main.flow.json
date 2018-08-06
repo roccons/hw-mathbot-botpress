@@ -56,12 +56,16 @@
       "name": "tableQuestion",
       "next": [
         {
-          "condition": "state.isCorrect",
+          "condition": "!state.toChange && state.isCorrect",
           "node": "goodAnswer"
         },
         {
-          "condition": "!state.isCorrect",
+          "condition": "!state.toChange && !state.isCorrect",
           "node": "badAnswer"
+        },
+        {
+          "condition": "state.toChange",
+          "node": "initTableQuestions"
         }
       ],
       "onEnter": [

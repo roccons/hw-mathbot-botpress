@@ -11,6 +11,7 @@ async function initTable(state, event, params) {
   return {
     ...state,
     tableNumber: params.tableNumber,
+    toChange: false
   }
 }
 
@@ -23,12 +24,26 @@ async function tableQuestion(state, event, params) {
     ...state,
     $op1: state.$tableNumber,
     $op2: operando,
-    answer
+    answer,
+    toChange: false
   }
 }
 
 async function checkAnswer(state, event, params) {
+
+  if (isNaN(event.text)) {
+    if (event.text.includes('la del')) {
+      const numberSelected = event.text.match(/(\d+)/)[0]
+      return {
+        ...state,
+        toChange: true,
+        $tableNumber: numberSelected
+      }
+    }
+  }
+
   const resp = parseInt(event.text)
+
   return {
     ...state,
     isCorrect: resp === state.answer
