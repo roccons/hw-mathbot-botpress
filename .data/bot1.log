@@ -1285,3 +1285,1274 @@
 {"level":"info","message":"Webchat available at http://localhost:3000/s/chat","timestamp":"2018-08-06T22:20:31.447Z"}
 {"level":"info","message":"------------","timestamp":"2018-08-06T22:20:31.447Z"}
 {"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-08-06T22:40:32.991Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-08-06T23:45:38.817Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hola\"","timestamp":"2018-08-06T23:45:38.869Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-06T23:45:38.869Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-06T23:45:38.869Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-06T23:45:38.877Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-06T23:45:38.889Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-cpUzL\"","timestamp":"2018-08-06T23:45:38.893Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-06T23:45:38.897Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-06T23:45:38.897Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-06T23:45:38.913Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-06T23:45:38.913Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-06T23:45:38.913Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-06T23:45:38.917Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-06T23:45:38.917Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-06T23:45:38.929Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"adios\"","timestamp":"2018-08-06T23:45:44.377Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-06T23:45:44.377Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-06T23:45:44.377Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-06T23:45:44.381Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-06T23:45:44.381Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-06T23:45:44.381Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-06T23:45:44.393Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:45:44.397Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-06T23:45:44.397Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:45:44.397Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-06T23:45:44.397Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 == null\"","timestamp":"2018-08-06T23:45:44.401Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidInput\"","timestamp":"2018-08-06T23:45:44.401Z"}
+{"level":"debug","message":"Dialog: [main] (invalidInput)                !!  ENTR \t ","timestamp":"2018-08-06T23:45:44.417Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-B8I3d\"","timestamp":"2018-08-06T23:45:44.417Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-49ixX\"","timestamp":"2018-08-06T23:45:44.417Z"}
+{"level":"debug","message":"Dialog: [main] (invalidInput)                ..  NOWT \t ","timestamp":"2018-08-06T23:45:44.417Z"}
+{"level":"debug","message":"Dialog: [main] (invalidInput)                ??  MTCH \t cond = \"always\"","timestamp":"2018-08-06T23:45:44.421Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-06T23:45:44.421Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-06T23:45:44.425Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"3\"","timestamp":"2018-08-06T23:45:48.736Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-06T23:45:48.740Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-06T23:45:48.740Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-06T23:45:48.744Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-06T23:45:48.744Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-06T23:45:48.744Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-06T23:45:48.752Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:45:48.756Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-06T23:45:48.756Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:45:48.756Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-06T23:45:48.756Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-06T23:45:48.760Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-06T23:45:48.760Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-06T23:45:48.768Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-06T23:45:48.772Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-06T23:45:48.772Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-06T23:45:48.772Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-06T23:45:48.772Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-06T23:45:48.776Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-06T23:45:48.784Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-06T23:45:48.784Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-06T23:45:48.800Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-06T23:45:48.800Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"12\"","timestamp":"2018-08-06T23:45:53.354Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-06T23:45:53.354Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-06T23:45:53.354Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-06T23:45:53.358Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-06T23:45:53.358Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-06T23:45:53.358Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-06T23:45:53.362Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-06T23:45:53.362Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"!state.toChange && state.isCorrect\"","timestamp":"2018-08-06T23:45:53.362Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"goodAnswer\"","timestamp":"2018-08-06T23:45:53.366Z"}
+{"level":"debug","message":"Dialog: [main] (goodAnswer)                  !!  ENTR \t ","timestamp":"2018-08-06T23:45:53.378Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-cbJsV\"","timestamp":"2018-08-06T23:45:53.378Z"}
+{"level":"debug","message":"Dialog: [main] (goodAnswer)                  !!  EXEC \t func \"nextQuestion\"","timestamp":"2018-08-06T23:45:53.378Z"}
+{"level":"debug","message":"Dialog: [main] (goodAnswer)                  !!  SSET \t ","timestamp":"2018-08-06T23:45:53.382Z"}
+{"level":"debug","message":"Dialog: [main] (goodAnswer)                  ..  NOWT \t ","timestamp":"2018-08-06T23:45:53.382Z"}
+{"level":"debug","message":"Dialog: [main] (goodAnswer)                  ??  MTCH \t cond = \"always\"","timestamp":"2018-08-06T23:45:53.382Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-06T23:45:53.382Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-06T23:45:53.394Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-06T23:45:53.394Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"adios\"","timestamp":"2018-08-06T23:45:56.690Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-06T23:45:56.690Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-06T23:45:56.690Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-06T23:45:56.694Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-06T23:45:56.694Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-06T23:45:56.694Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-06T23:45:56.694Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-06T23:45:56.698Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"!state.toChange && !state.isCorrect\"","timestamp":"2018-08-06T23:45:56.702Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"badAnswer\"","timestamp":"2018-08-06T23:45:56.702Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   !!  ENTR \t ","timestamp":"2018-08-06T23:45:56.714Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-lQlXD\"","timestamp":"2018-08-06T23:45:56.714Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ..  NOWT \t ","timestamp":"2018-08-06T23:45:56.714Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ??  MTCH \t cond = \"always\"","timestamp":"2018-08-06T23:45:56.718Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-06T23:45:56.718Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-06T23:45:56.726Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-06T23:45:56.726Z"}
+{"level":"info","message":"Starting botpress version 10.17.3","timestamp":"2018-08-06T23:48:04.805Z"}
+{"level":"info","message":"[Ghost Content Manager] (transparent) Initialized","timestamp":"2018-08-06T23:48:05.101Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\media, doing nothing.","timestamp":"2018-08-06T23:48:05.117Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\flows, doing nothing.","timestamp":"2018-08-06T23:48:05.117Z"}
+{"level":"info","message":"[Skills] Initiated","timestamp":"2018-08-06T23:48:05.121Z"}
+{"level":"info","message":"Loaded @botpress/audience, version 10.17.3","timestamp":"2018-08-06T23:48:05.149Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\intents, doing nothing.","timestamp":"2018-08-06T23:48:06.004Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\entities, doing nothing.","timestamp":"2018-08-06T23:48:06.008Z"}
+{"level":"info","message":"Loaded @botpress/nlu, version 10.17.3","timestamp":"2018-08-06T23:48:06.008Z"}
+{"level":"info","message":"Loaded @botpress/skill-choice, version 10.17.3","timestamp":"2018-08-06T23:48:06.020Z"}
+{"level":"info","message":"Loaded @botpress/hitl, version 10.17.3","timestamp":"2018-08-06T23:48:06.028Z"}
+{"level":"verbose","message":"[Renderers] Enabled for webchat.","timestamp":"2018-08-06T23:48:06.476Z"}
+{"level":"info","message":"Loaded @botpress/channel-web, version 10.17.3","timestamp":"2018-08-06T23:48:06.480Z"}
+{"level":"info","message":"Loaded 5 modules","timestamp":"2018-08-06T23:48:06.480Z"}
+{"level":"info","message":"[Skills] Loaded 1 skills","timestamp":"2018-08-06T23:48:06.480Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\content, doing nothing.","timestamp":"2018-08-06T23:48:06.480Z"}
+{"level":"debug","message":"Loading middleware: rendering.instrumentation","timestamp":"2018-08-06T23:48:06.548Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureInMessages","timestamp":"2018-08-06T23:48:06.548Z"}
+{"level":"debug","message":"Loading middleware: nlu.incoming","timestamp":"2018-08-06T23:48:06.552Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-08-06T23:48:06.552Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureOutMessages","timestamp":"2018-08-06T23:48:06.552Z"}
+{"level":"debug","message":"Loading middleware: webchat.sendMessages","timestamp":"2018-08-06T23:48:06.552Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-08-06T23:48:06.552Z"}
+{"level":"debug","message":"Loading data for builtin_text from builtin_text.json","timestamp":"2018-08-06T23:48:06.640Z"}
+{"level":"info","message":"\u001b[32m\u001b[1mBot launched. Visit: http://localhost:3000\u001b[22m\u001b[39m","timestamp":"2018-08-06T23:48:06.672Z"}
+{"level":"info","message":"Read 19 item(s) from builtin_text.json","timestamp":"2018-08-06T23:48:06.684Z"}
+{"level":"debug","message":"Loading data for builtin_image from builtin_image.json","timestamp":"2018-08-06T23:48:06.696Z"}
+{"level":"debug","message":"Loading data for builtin_single-choice from builtin_single-choice.json","timestamp":"2018-08-06T23:48:06.700Z"}
+{"level":"debug","message":"Loading data for builtin_card from builtin_card.json","timestamp":"2018-08-06T23:48:06.700Z"}
+{"level":"debug","message":"Loading data for builtin_action-button from builtin_action-button.json","timestamp":"2018-08-06T23:48:06.700Z"}
+{"level":"debug","message":"Loading data for builtin_carousel from builtin_carousel.json","timestamp":"2018-08-06T23:48:06.700Z"}
+{"level":"debug","message":"Loading data for builtin_raw from builtin_raw.json","timestamp":"2018-08-06T23:48:06.704Z"}
+{"level":"debug","message":"[NLU::Native] Model is up to date","timestamp":"2018-08-06T23:48:07.744Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-06T23:48:07.748Z"}
+{"level":"info","message":"Webchat available at http://localhost:3000/s/chat","timestamp":"2018-08-06T23:48:07.748Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-06T23:48:07.748Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-08-06T23:48:11.558Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"hola\"","timestamp":"2018-08-06T23:48:18.282Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-06T23:48:18.286Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-06T23:48:18.286Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-06T23:48:18.294Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-06T23:48:18.294Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-06T23:48:18.298Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-06T23:48:18.302Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-06T23:48:18.302Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"!state.toChange && !state.isCorrect\"","timestamp":"2018-08-06T23:48:18.306Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"badAnswer\"","timestamp":"2018-08-06T23:48:18.306Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   !!  ENTR \t ","timestamp":"2018-08-06T23:48:18.326Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-lQlXD\"","timestamp":"2018-08-06T23:48:18.326Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ..  NOWT \t ","timestamp":"2018-08-06T23:48:18.330Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ??  MTCH \t cond = \"always\"","timestamp":"2018-08-06T23:48:18.330Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-06T23:48:18.330Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-06T23:48:18.342Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-06T23:48:18.342Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"hola\"","timestamp":"2018-08-06T23:48:39.415Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-06T23:48:39.419Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-06T23:48:39.419Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-06T23:48:39.419Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-06T23:48:39.419Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-06T23:48:39.424Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-06T23:48:39.424Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-06T23:48:39.424Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"!state.toChange && !state.isCorrect\"","timestamp":"2018-08-06T23:48:39.428Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"badAnswer\"","timestamp":"2018-08-06T23:48:39.428Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   !!  ENTR \t ","timestamp":"2018-08-06T23:48:39.439Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-lQlXD\"","timestamp":"2018-08-06T23:48:39.439Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ..  NOWT \t ","timestamp":"2018-08-06T23:48:39.441Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ??  MTCH \t cond = \"always\"","timestamp":"2018-08-06T23:48:39.441Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-06T23:48:39.441Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-06T23:48:39.449Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-06T23:48:39.449Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hola\"","timestamp":"2018-08-06T23:48:45.124Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-06T23:48:45.128Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-06T23:48:45.128Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-06T23:48:45.128Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-06T23:48:45.136Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-cpUzL\"","timestamp":"2018-08-06T23:48:45.136Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-06T23:48:45.136Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-06T23:48:45.136Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-06T23:48:45.144Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-06T23:48:45.144Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-06T23:48:45.148Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-06T23:48:45.148Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-06T23:48:45.152Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-06T23:48:45.164Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"32\"","timestamp":"2018-08-06T23:48:56.002Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-06T23:48:56.002Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-06T23:48:56.002Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-06T23:48:56.006Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-06T23:48:56.006Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-06T23:48:56.010Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-06T23:48:56.015Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:48:56.019Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-06T23:48:56.019Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:48:56.023Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-06T23:48:56.023Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-06T23:48:56.031Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-06T23:48:56.031Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-06T23:48:56.047Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-06T23:48:56.047Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-06T23:48:56.051Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-06T23:48:56.051Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-06T23:48:56.051Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-06T23:48:56.051Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-06T23:48:56.063Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"1\"","timestamp":"2018-08-06T23:49:02.646Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-06T23:49:02.650Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-06T23:49:02.650Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-06T23:49:02.650Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-06T23:49:02.654Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-06T23:49:02.654Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-06T23:49:02.662Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:49:02.666Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-06T23:49:02.666Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:49:02.666Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-06T23:49:02.666Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-06T23:49:02.674Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-06T23:49:02.674Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-06T23:49:02.686Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-06T23:49:02.686Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-06T23:49:02.686Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-06T23:49:02.690Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-06T23:49:02.694Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-06T23:49:02.694Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-06T23:49:02.702Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"2\"","timestamp":"2018-08-06T23:49:09.981Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-06T23:49:09.981Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-06T23:49:09.985Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-06T23:49:09.985Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-06T23:49:09.985Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-06T23:49:09.989Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-06T23:49:09.997Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:49:09.997Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-06T23:49:10.001Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:49:10.001Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-06T23:49:10.001Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-06T23:49:10.009Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-06T23:49:10.009Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-06T23:49:10.021Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-06T23:49:10.025Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-06T23:49:10.025Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-06T23:49:10.029Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-06T23:49:10.029Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-06T23:49:10.029Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-06T23:49:10.037Z"}
+{"level":"info","message":"Starting botpress version 10.17.3","timestamp":"2018-08-06T23:49:31.463Z"}
+{"level":"info","message":"[Ghost Content Manager] (transparent) Initialized","timestamp":"2018-08-06T23:49:31.707Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\media, doing nothing.","timestamp":"2018-08-06T23:49:31.719Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\flows, doing nothing.","timestamp":"2018-08-06T23:49:31.723Z"}
+{"level":"info","message":"[Skills] Initiated","timestamp":"2018-08-06T23:49:31.723Z"}
+{"level":"info","message":"Loaded @botpress/audience, version 10.17.3","timestamp":"2018-08-06T23:49:31.743Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\intents, doing nothing.","timestamp":"2018-08-06T23:49:32.415Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\entities, doing nothing.","timestamp":"2018-08-06T23:49:32.426Z"}
+{"level":"info","message":"Loaded @botpress/nlu, version 10.17.3","timestamp":"2018-08-06T23:49:32.438Z"}
+{"level":"info","message":"Loaded @botpress/skill-choice, version 10.17.3","timestamp":"2018-08-06T23:49:32.459Z"}
+{"level":"info","message":"Loaded @botpress/hitl, version 10.17.3","timestamp":"2018-08-06T23:49:32.466Z"}
+{"level":"verbose","message":"[Renderers] Enabled for webchat.","timestamp":"2018-08-06T23:49:32.854Z"}
+{"level":"info","message":"Loaded @botpress/channel-web, version 10.17.3","timestamp":"2018-08-06T23:49:32.854Z"}
+{"level":"info","message":"Loaded 5 modules","timestamp":"2018-08-06T23:49:32.858Z"}
+{"level":"info","message":"[Skills] Loaded 1 skills","timestamp":"2018-08-06T23:49:32.858Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\content, doing nothing.","timestamp":"2018-08-06T23:49:32.862Z"}
+{"level":"debug","message":"Loading middleware: rendering.instrumentation","timestamp":"2018-08-06T23:49:32.950Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureInMessages","timestamp":"2018-08-06T23:49:32.954Z"}
+{"level":"debug","message":"Loading middleware: nlu.incoming","timestamp":"2018-08-06T23:49:32.954Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-08-06T23:49:32.954Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureOutMessages","timestamp":"2018-08-06T23:49:32.954Z"}
+{"level":"debug","message":"Loading middleware: webchat.sendMessages","timestamp":"2018-08-06T23:49:32.954Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-08-06T23:49:32.958Z"}
+{"level":"debug","message":"Loading data for builtin_text from builtin_text.json","timestamp":"2018-08-06T23:49:33.062Z"}
+{"level":"info","message":"\u001b[32m\u001b[1mBot launched. Visit: http://localhost:3000\u001b[22m\u001b[39m","timestamp":"2018-08-06T23:49:33.106Z"}
+{"level":"info","message":"Read 19 item(s) from builtin_text.json","timestamp":"2018-08-06T23:49:33.134Z"}
+{"level":"debug","message":"Loading data for builtin_image from builtin_image.json","timestamp":"2018-08-06T23:49:33.242Z"}
+{"level":"debug","message":"Loading data for builtin_single-choice from builtin_single-choice.json","timestamp":"2018-08-06T23:49:33.250Z"}
+{"level":"debug","message":"Loading data for builtin_card from builtin_card.json","timestamp":"2018-08-06T23:49:33.250Z"}
+{"level":"debug","message":"Loading data for builtin_action-button from builtin_action-button.json","timestamp":"2018-08-06T23:49:33.250Z"}
+{"level":"debug","message":"Loading data for builtin_carousel from builtin_carousel.json","timestamp":"2018-08-06T23:49:33.250Z"}
+{"level":"debug","message":"Loading data for builtin_raw from builtin_raw.json","timestamp":"2018-08-06T23:49:33.254Z"}
+{"level":"debug","message":"[NLU::Native] Model is up to date","timestamp":"2018-08-06T23:49:33.878Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-06T23:49:33.878Z"}
+{"level":"info","message":"Webchat available at http://localhost:3000/s/chat","timestamp":"2018-08-06T23:49:33.878Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-06T23:49:33.878Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-08-06T23:49:37.203Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hola\"","timestamp":"2018-08-06T23:49:53.056Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-06T23:49:53.056Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-06T23:49:53.056Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-06T23:49:53.064Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-06T23:49:53.072Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-cpUzL\"","timestamp":"2018-08-06T23:49:53.072Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-06T23:49:53.072Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-06T23:49:53.076Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-06T23:49:53.088Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-06T23:49:53.088Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-06T23:49:53.088Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-06T23:49:53.096Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-06T23:49:53.096Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-06T23:49:53.118Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"34\"","timestamp":"2018-08-06T23:49:59.530Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-06T23:49:59.530Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-06T23:49:59.534Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-06T23:49:59.534Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-06T23:49:59.538Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-06T23:49:59.538Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-06T23:49:59.546Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:49:59.546Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-06T23:49:59.550Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:49:59.550Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-06T23:49:59.550Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-06T23:49:59.562Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-06T23:49:59.562Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-06T23:49:59.578Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-06T23:49:59.578Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-06T23:49:59.578Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-06T23:49:59.582Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-06T23:49:59.582Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-06T23:49:59.582Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-06T23:49:59.590Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"2\"","timestamp":"2018-08-06T23:50:09.787Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-06T23:50:09.791Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-06T23:50:09.791Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-06T23:50:09.795Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-06T23:50:09.795Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-06T23:50:09.795Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-06T23:50:09.803Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:50:09.807Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-06T23:50:09.811Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:50:09.811Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-06T23:50:09.811Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-06T23:50:09.823Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-06T23:50:09.823Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-06T23:50:09.835Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-06T23:50:09.839Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-06T23:50:09.839Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-06T23:50:09.839Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-06T23:50:09.843Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-06T23:50:09.843Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-06T23:50:09.847Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"0\"","timestamp":"2018-08-06T23:50:27.755Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-06T23:50:27.755Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-06T23:50:27.755Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-06T23:50:27.759Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-06T23:50:27.759Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-06T23:50:27.759Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-06T23:50:27.767Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:50:27.771Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-06T23:50:27.771Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-06T23:50:27.771Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-06T23:50:27.771Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-06T23:50:27.779Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-06T23:50:27.779Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-06T23:50:27.787Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-06T23:50:27.787Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-06T23:50:27.791Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-06T23:50:27.791Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-06T23:50:27.791Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-06T23:50:27.791Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-06T23:50:27.799Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <>  NTHG \t ","timestamp":"2018-08-06T23:52:30.009Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-08-06T23:52:30.009Z"}
+{"level":"info","message":"Starting botpress version 10.17.3","timestamp":"2018-08-07T00:08:58.744Z"}
+{"level":"info","message":"[Ghost Content Manager] (transparent) Initialized","timestamp":"2018-08-07T00:08:59.064Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\media, doing nothing.","timestamp":"2018-08-07T00:08:59.092Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\flows, doing nothing.","timestamp":"2018-08-07T00:08:59.096Z"}
+{"level":"info","message":"[Skills] Initiated","timestamp":"2018-08-07T00:08:59.100Z"}
+{"level":"info","message":"Loaded @botpress/audience, version 10.17.3","timestamp":"2018-08-07T00:08:59.128Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\intents, doing nothing.","timestamp":"2018-08-07T00:08:59.848Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\entities, doing nothing.","timestamp":"2018-08-07T00:08:59.848Z"}
+{"level":"info","message":"Loaded @botpress/nlu, version 10.17.3","timestamp":"2018-08-07T00:08:59.852Z"}
+{"level":"info","message":"Loaded @botpress/skill-choice, version 10.17.3","timestamp":"2018-08-07T00:08:59.864Z"}
+{"level":"info","message":"Loaded @botpress/hitl, version 10.17.3","timestamp":"2018-08-07T00:08:59.872Z"}
+{"level":"verbose","message":"[Renderers] Enabled for webchat.","timestamp":"2018-08-07T00:09:00.312Z"}
+{"level":"info","message":"Loaded @botpress/channel-web, version 10.17.3","timestamp":"2018-08-07T00:09:00.312Z"}
+{"level":"info","message":"Loaded 5 modules","timestamp":"2018-08-07T00:09:00.312Z"}
+{"level":"info","message":"[Skills] Loaded 1 skills","timestamp":"2018-08-07T00:09:00.316Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\content, doing nothing.","timestamp":"2018-08-07T00:09:00.316Z"}
+{"level":"debug","message":"Loading middleware: rendering.instrumentation","timestamp":"2018-08-07T00:09:00.372Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureInMessages","timestamp":"2018-08-07T00:09:00.376Z"}
+{"level":"debug","message":"Loading middleware: nlu.incoming","timestamp":"2018-08-07T00:09:00.376Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-08-07T00:09:00.376Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureOutMessages","timestamp":"2018-08-07T00:09:00.376Z"}
+{"level":"debug","message":"Loading middleware: webchat.sendMessages","timestamp":"2018-08-07T00:09:00.376Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-08-07T00:09:00.376Z"}
+{"level":"debug","message":"Loading data for builtin_text from builtin_text.json","timestamp":"2018-08-07T00:09:00.444Z"}
+{"level":"info","message":"Read 19 item(s) from builtin_text.json","timestamp":"2018-08-07T00:09:00.464Z"}
+{"level":"info","message":"\u001b[32m\u001b[1mBot launched. Visit: http://localhost:3000\u001b[22m\u001b[39m","timestamp":"2018-08-07T00:09:00.480Z"}
+{"level":"debug","message":"Loading data for builtin_image from builtin_image.json","timestamp":"2018-08-07T00:09:00.552Z"}
+{"level":"debug","message":"Loading data for builtin_single-choice from builtin_single-choice.json","timestamp":"2018-08-07T00:09:00.552Z"}
+{"level":"debug","message":"Loading data for builtin_card from builtin_card.json","timestamp":"2018-08-07T00:09:00.556Z"}
+{"level":"debug","message":"Loading data for builtin_action-button from builtin_action-button.json","timestamp":"2018-08-07T00:09:00.556Z"}
+{"level":"debug","message":"Loading data for builtin_carousel from builtin_carousel.json","timestamp":"2018-08-07T00:09:00.560Z"}
+{"level":"debug","message":"Loading data for builtin_raw from builtin_raw.json","timestamp":"2018-08-07T00:09:00.560Z"}
+{"level":"debug","message":"[NLU::Native] Model is up to date","timestamp":"2018-08-07T00:09:01.159Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-07T00:09:01.159Z"}
+{"level":"info","message":"Webchat available at http://localhost:3000/s/chat","timestamp":"2018-08-07T00:09:01.159Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-07T00:09:01.159Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-08-07T00:09:03.819Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hola\"","timestamp":"2018-08-07T00:09:18.628Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-07T00:09:18.628Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-07T00:09:18.628Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-07T00:09:18.636Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-07T00:09:18.652Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-cpUzL\"","timestamp":"2018-08-07T00:09:18.656Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-07T00:09:18.660Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T00:09:18.664Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-07T00:09:18.676Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-07T00:09:18.680Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-07T00:09:18.680Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-07T00:09:18.684Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T00:09:18.684Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T00:09:18.698Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"la del 4\"","timestamp":"2018-08-07T00:09:24.103Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-07T00:09:24.103Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-07T00:09:24.103Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-07T00:09:24.103Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-07T00:09:24.107Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-07T00:09:24.107Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T00:09:24.115Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T00:09:24.115Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-07T00:09:24.119Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T00:09:24.119Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-07T00:09:24.119Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T00:09:24.127Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T00:09:24.127Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T00:09:24.140Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T00:09:24.140Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T00:09:24.140Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T00:09:24.144Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T00:09:24.144Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T00:09:24.144Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T00:09:24.152Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T00:09:24.156Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T00:09:24.168Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T00:09:24.168Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"la del 6\"","timestamp":"2018-08-07T00:09:30.287Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T00:09:30.287Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T00:09:30.287Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T00:09:30.291Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T00:09:30.291Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T00:09:30.291Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T00:09:30.295Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T00:09:30.295Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"state.toChange\"","timestamp":"2018-08-07T00:09:30.303Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T00:09:30.307Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T00:09:30.323Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T00:09:30.327Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T00:09:30.327Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T00:09:30.327Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T00:09:30.327Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T00:09:30.331Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T00:09:30.335Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T00:09:30.335Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T00:09:30.355Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T00:09:30.355Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"la del 43\"","timestamp":"2018-08-07T00:09:35.737Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T00:09:35.737Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T00:09:35.737Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T00:09:35.741Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T00:09:35.741Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T00:09:35.745Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T00:09:35.745Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T00:09:35.745Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"state.toChange\"","timestamp":"2018-08-07T00:09:35.749Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T00:09:35.749Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T00:09:35.765Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T00:09:35.765Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T00:09:35.765Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T00:09:35.765Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T00:09:35.765Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T00:09:35.769Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-07T00:09:35.773Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-07T00:09:35.777Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-07T00:09:35.797Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-07T00:09:35.797Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-07T00:09:35.797Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-07T00:09:35.801Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T00:09:35.801Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T00:09:35.801Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T00:09:35.813Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"la del 2\"","timestamp":"2018-08-07T00:09:43.059Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-07T00:09:43.059Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-07T00:09:43.063Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-07T00:09:43.063Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-07T00:09:43.063Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-07T00:09:43.067Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T00:09:43.075Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T00:09:43.075Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-07T00:09:43.079Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T00:09:43.079Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-07T00:09:43.079Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-07T00:09:43.087Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-07T00:09:43.087Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-07T00:09:43.099Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-07T00:09:43.103Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-07T00:09:43.103Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-07T00:09:43.107Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T00:09:43.107Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T00:09:43.107Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T00:09:43.115Z"}
+{"level":"info","message":"Starting botpress version 10.17.3","timestamp":"2018-08-07T00:11:49.510Z"}
+{"level":"info","message":"[Ghost Content Manager] (transparent) Initialized","timestamp":"2018-08-07T00:11:50.371Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\media, doing nothing.","timestamp":"2018-08-07T00:11:50.436Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\flows, doing nothing.","timestamp":"2018-08-07T00:11:50.448Z"}
+{"level":"info","message":"[Skills] Initiated","timestamp":"2018-08-07T00:11:50.456Z"}
+{"level":"info","message":"Loaded @botpress/audience, version 10.17.3","timestamp":"2018-08-07T00:11:50.564Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\intents, doing nothing.","timestamp":"2018-08-07T00:11:53.413Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\entities, doing nothing.","timestamp":"2018-08-07T00:11:53.606Z"}
+{"level":"info","message":"Loaded @botpress/nlu, version 10.17.3","timestamp":"2018-08-07T00:11:53.606Z"}
+{"level":"info","message":"Loaded @botpress/skill-choice, version 10.17.3","timestamp":"2018-08-07T00:11:53.645Z"}
+{"level":"info","message":"Loaded @botpress/hitl, version 10.17.3","timestamp":"2018-08-07T00:11:53.665Z"}
+{"level":"verbose","message":"[Renderers] Enabled for webchat.","timestamp":"2018-08-07T00:11:54.699Z"}
+{"level":"info","message":"Loaded @botpress/channel-web, version 10.17.3","timestamp":"2018-08-07T00:11:54.699Z"}
+{"level":"info","message":"Loaded 5 modules","timestamp":"2018-08-07T00:11:54.699Z"}
+{"level":"info","message":"[Skills] Loaded 1 skills","timestamp":"2018-08-07T00:11:54.699Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\content, doing nothing.","timestamp":"2018-08-07T00:11:54.716Z"}
+{"level":"debug","message":"Loading middleware: rendering.instrumentation","timestamp":"2018-08-07T00:11:54.891Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureInMessages","timestamp":"2018-08-07T00:11:54.891Z"}
+{"level":"debug","message":"Loading middleware: nlu.incoming","timestamp":"2018-08-07T00:11:54.891Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-08-07T00:11:54.891Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureOutMessages","timestamp":"2018-08-07T00:11:54.891Z"}
+{"level":"debug","message":"Loading middleware: webchat.sendMessages","timestamp":"2018-08-07T00:11:54.891Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-08-07T00:11:54.891Z"}
+{"level":"debug","message":"Loading data for builtin_text from builtin_text.json","timestamp":"2018-08-07T00:11:55.077Z"}
+{"level":"info","message":"Read 19 item(s) from builtin_text.json","timestamp":"2018-08-07T00:11:55.131Z"}
+{"level":"info","message":"\u001b[32m\u001b[1mBot launched. Visit: http://localhost:3000\u001b[22m\u001b[39m","timestamp":"2018-08-07T00:11:55.179Z"}
+{"level":"debug","message":"Loading data for builtin_image from builtin_image.json","timestamp":"2018-08-07T00:11:55.259Z"}
+{"level":"debug","message":"Loading data for builtin_single-choice from builtin_single-choice.json","timestamp":"2018-08-07T00:11:55.275Z"}
+{"level":"debug","message":"Loading data for builtin_card from builtin_card.json","timestamp":"2018-08-07T00:11:55.279Z"}
+{"level":"debug","message":"Loading data for builtin_action-button from builtin_action-button.json","timestamp":"2018-08-07T00:11:55.283Z"}
+{"level":"debug","message":"Loading data for builtin_carousel from builtin_carousel.json","timestamp":"2018-08-07T00:11:55.287Z"}
+{"level":"debug","message":"Loading data for builtin_raw from builtin_raw.json","timestamp":"2018-08-07T00:11:55.291Z"}
+{"level":"debug","message":"[NLU::Native] Model is up to date","timestamp":"2018-08-07T00:11:57.229Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-07T00:11:57.233Z"}
+{"level":"info","message":"Webchat available at http://localhost:3000/s/chat","timestamp":"2018-08-07T00:11:57.233Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-07T00:11:57.237Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-08-07T00:12:04.044Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <>  NTHG \t ","timestamp":"2018-08-07T00:12:05.342Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-08-07T00:12:05.416Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hola\"","timestamp":"2018-08-07T00:12:16.207Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-07T00:12:16.217Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-07T00:12:16.221Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-07T00:12:16.254Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-07T00:12:16.315Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-cpUzL\"","timestamp":"2018-08-07T00:12:16.321Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-07T00:12:16.332Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T00:12:16.340Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-07T00:12:16.391Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-07T00:12:16.395Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-07T00:12:16.395Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-07T00:12:16.407Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T00:12:16.407Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T00:12:16.467Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"la del 5\"","timestamp":"2018-08-07T00:12:22.017Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-07T00:12:22.021Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-07T00:12:22.021Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-07T00:12:22.033Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-07T00:12:22.033Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-07T00:12:22.045Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T00:12:22.073Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T00:12:22.081Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-07T00:12:22.089Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T00:12:22.093Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-07T00:12:22.101Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T00:12:22.127Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T00:12:22.127Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T00:12:22.165Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T00:12:22.167Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T00:12:22.167Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T00:12:22.171Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T00:12:22.171Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T00:12:22.178Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T00:12:22.214Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T00:12:22.225Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T00:12:22.263Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T00:12:22.263Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"la del 45\"","timestamp":"2018-08-07T00:12:27.935Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T00:12:27.941Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T00:12:27.941Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T00:12:27.955Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T00:12:27.963Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T00:12:27.971Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T00:12:27.975Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T00:12:27.977Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"state.toChange\"","timestamp":"2018-08-07T00:12:28.003Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T00:12:28.007Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T00:12:28.051Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T00:12:28.057Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T00:12:28.065Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T00:12:28.071Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T00:12:28.071Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T00:12:28.077Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-07T00:12:28.097Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-07T00:12:28.101Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-07T00:12:28.195Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-07T00:12:28.201Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-07T00:12:28.211Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-07T00:12:28.217Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T00:12:28.221Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T00:12:28.225Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T00:12:28.282Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"la del 3\"","timestamp":"2018-08-07T00:12:34.183Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-07T00:12:34.187Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-07T00:12:34.190Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-07T00:12:34.202Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-07T00:12:34.206Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-07T00:12:34.210Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T00:12:34.263Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T00:12:34.271Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-07T00:12:34.275Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T00:12:34.279Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-07T00:12:34.283Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T00:12:34.298Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T00:12:34.302Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T00:12:34.351Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T00:12:34.361Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T00:12:34.365Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T00:12:34.367Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T00:12:34.371Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T00:12:34.371Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T00:12:34.387Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T00:12:34.387Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T00:12:34.450Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T00:12:34.461Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"adios\"","timestamp":"2018-08-07T00:13:28.232Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T00:13:28.236Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T00:13:28.240Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T00:13:28.264Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T00:13:28.268Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T00:13:28.268Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T00:13:28.280Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T00:13:28.280Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"!state.toChange && !state.isCorrect\"","timestamp":"2018-08-07T00:13:28.300Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"badAnswer\"","timestamp":"2018-08-07T00:13:28.304Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   !!  ENTR \t ","timestamp":"2018-08-07T00:13:28.344Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-lQlXD\"","timestamp":"2018-08-07T00:13:28.348Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ..  NOWT \t ","timestamp":"2018-08-07T00:13:28.352Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T00:13:28.356Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T00:13:28.356Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T00:13:28.396Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T00:13:28.400Z"}
+{"level":"info","message":"Starting botpress version 10.17.3","timestamp":"2018-08-07T13:43:08.544Z"}
+{"level":"info","message":"[Ghost Content Manager] (transparent) Initialized","timestamp":"2018-08-07T13:43:08.843Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\media, doing nothing.","timestamp":"2018-08-07T13:43:08.851Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\flows, doing nothing.","timestamp":"2018-08-07T13:43:08.851Z"}
+{"level":"info","message":"[Skills] Initiated","timestamp":"2018-08-07T13:43:08.851Z"}
+{"level":"info","message":"Loaded @botpress/audience, version 10.17.3","timestamp":"2018-08-07T13:43:08.879Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\intents, doing nothing.","timestamp":"2018-08-07T13:43:09.882Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\entities, doing nothing.","timestamp":"2018-08-07T13:43:09.882Z"}
+{"level":"info","message":"Loaded @botpress/nlu, version 10.17.3","timestamp":"2018-08-07T13:43:09.898Z"}
+{"level":"info","message":"Loaded @botpress/skill-choice, version 10.17.3","timestamp":"2018-08-07T13:43:09.898Z"}
+{"level":"info","message":"Loaded @botpress/hitl, version 10.17.3","timestamp":"2018-08-07T13:43:09.914Z"}
+{"level":"verbose","message":"[Renderers] Enabled for webchat.","timestamp":"2018-08-07T13:43:10.461Z"}
+{"level":"info","message":"Loaded @botpress/channel-web, version 10.17.3","timestamp":"2018-08-07T13:43:10.461Z"}
+{"level":"info","message":"Loaded 5 modules","timestamp":"2018-08-07T13:43:10.461Z"}
+{"level":"info","message":"[Skills] Loaded 1 skills","timestamp":"2018-08-07T13:43:10.461Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\content, doing nothing.","timestamp":"2018-08-07T13:43:10.461Z"}
+{"level":"debug","message":"Loading middleware: rendering.instrumentation","timestamp":"2018-08-07T13:43:10.524Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureInMessages","timestamp":"2018-08-07T13:43:10.524Z"}
+{"level":"debug","message":"Loading middleware: nlu.incoming","timestamp":"2018-08-07T13:43:10.528Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-08-07T13:43:10.528Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureOutMessages","timestamp":"2018-08-07T13:43:10.528Z"}
+{"level":"debug","message":"Loading middleware: webchat.sendMessages","timestamp":"2018-08-07T13:43:10.528Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-08-07T13:43:10.528Z"}
+{"level":"debug","message":"Loading data for builtin_text from builtin_text.json","timestamp":"2018-08-07T13:43:10.620Z"}
+{"level":"info","message":"\u001b[32m\u001b[1mBot launched. Visit: http://localhost:3000\u001b[22m\u001b[39m","timestamp":"2018-08-07T13:43:10.640Z"}
+{"level":"info","message":"Read 19 item(s) from builtin_text.json","timestamp":"2018-08-07T13:43:10.648Z"}
+{"level":"debug","message":"Loading data for builtin_image from builtin_image.json","timestamp":"2018-08-07T13:43:10.664Z"}
+{"level":"debug","message":"Loading data for builtin_single-choice from builtin_single-choice.json","timestamp":"2018-08-07T13:43:10.664Z"}
+{"level":"debug","message":"Loading data for builtin_card from builtin_card.json","timestamp":"2018-08-07T13:43:10.664Z"}
+{"level":"debug","message":"Loading data for builtin_action-button from builtin_action-button.json","timestamp":"2018-08-07T13:43:10.668Z"}
+{"level":"debug","message":"Loading data for builtin_carousel from builtin_carousel.json","timestamp":"2018-08-07T13:43:10.668Z"}
+{"level":"debug","message":"Loading data for builtin_raw from builtin_raw.json","timestamp":"2018-08-07T13:43:10.668Z"}
+{"level":"debug","message":"[NLU::Native] Model is up to date","timestamp":"2018-08-07T13:43:11.349Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-07T13:43:11.349Z"}
+{"level":"info","message":"Webchat available at http://localhost:3000/s/chat","timestamp":"2018-08-07T13:43:11.349Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-07T13:43:11.349Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-08-07T13:43:23.347Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <>  NTHG \t ","timestamp":"2018-08-07T13:43:23.364Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-08-07T13:43:23.376Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hola\"","timestamp":"2018-08-07T13:48:57.901Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-07T13:48:57.901Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-07T13:48:57.901Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-07T13:48:57.909Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-07T13:48:57.913Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-cpUzL\"","timestamp":"2018-08-07T13:48:57.917Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-07T13:48:57.917Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T13:48:57.921Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-07T13:48:57.929Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-07T13:48:57.929Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-07T13:48:57.929Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-07T13:48:57.933Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T13:48:57.933Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T13:48:57.941Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"hola\"","timestamp":"2018-08-07T13:49:03.577Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-07T13:49:03.577Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-07T13:49:03.577Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-07T13:49:03.577Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-07T13:49:03.581Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-07T13:49:03.581Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T13:49:03.589Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T13:49:03.589Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-07T13:49:03.589Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T13:49:03.589Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-07T13:49:03.589Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 == null\"","timestamp":"2018-08-07T13:49:03.593Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidInput\"","timestamp":"2018-08-07T13:49:03.593Z"}
+{"level":"debug","message":"Dialog: [main] (invalidInput)                !!  ENTR \t ","timestamp":"2018-08-07T13:49:03.601Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-B8I3d\"","timestamp":"2018-08-07T13:49:03.601Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-49ixX\"","timestamp":"2018-08-07T13:49:03.601Z"}
+{"level":"debug","message":"Dialog: [main] (invalidInput)                ..  NOWT \t ","timestamp":"2018-08-07T13:49:03.605Z"}
+{"level":"debug","message":"Dialog: [main] (invalidInput)                ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T13:49:03.605Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T13:49:03.605Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T13:49:03.613Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <>  NTHG \t ","timestamp":"2018-08-07T13:51:06.578Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-08-07T13:51:06.590Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"la del 4\"","timestamp":"2018-08-07T13:51:26.266Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-07T13:51:26.266Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-07T13:51:26.266Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-07T13:51:26.270Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-07T13:51:26.278Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-cpUzL\"","timestamp":"2018-08-07T13:51:26.282Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-07T13:51:26.282Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T13:51:26.282Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-07T13:51:26.286Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-07T13:51:26.286Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-07T13:51:26.286Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-07T13:51:26.290Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T13:51:26.290Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T13:51:26.302Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"la del 5\"","timestamp":"2018-08-07T13:51:32.070Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-07T13:51:32.074Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-07T13:51:32.074Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-07T13:51:32.074Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-07T13:51:32.078Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-07T13:51:32.078Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T13:51:32.086Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T13:51:32.090Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-07T13:51:32.090Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T13:51:32.090Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-07T13:51:32.090Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T13:51:32.098Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T13:51:32.098Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T13:51:32.106Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T13:51:32.106Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T13:51:32.106Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T13:51:32.110Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T13:51:32.110Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T13:51:32.110Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T13:51:32.118Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T13:51:32.118Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T13:51:32.218Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T13:51:32.218Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"la del 75\"","timestamp":"2018-08-07T13:51:38.841Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T13:51:38.841Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T13:51:38.841Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T13:51:38.845Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T13:51:38.845Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T13:51:38.845Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T13:51:38.849Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T13:51:38.849Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"state.toChange\"","timestamp":"2018-08-07T13:51:38.857Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T13:51:38.861Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T13:51:38.869Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T13:51:38.869Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T13:51:38.869Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T13:51:38.873Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T13:51:38.873Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T13:51:38.873Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-07T13:51:38.877Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-07T13:51:38.881Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-07T13:51:38.889Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-07T13:51:38.893Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-07T13:51:38.893Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-07T13:51:38.893Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T13:51:38.897Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T13:51:38.897Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T13:51:38.909Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"la del 3\"","timestamp":"2018-08-07T13:51:46.003Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-07T13:51:46.007Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-07T13:51:46.007Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-07T13:51:46.011Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-07T13:51:46.011Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-07T13:51:46.011Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T13:51:46.019Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T13:51:46.023Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-07T13:51:46.023Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T13:51:46.023Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-07T13:51:46.023Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T13:51:46.031Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T13:51:46.031Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T13:51:46.043Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T13:51:46.043Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T13:51:46.043Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T13:51:46.043Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T13:51:46.047Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T13:51:46.047Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T13:51:46.059Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T13:51:46.059Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T13:51:46.071Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T13:51:46.071Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"l=adios\"","timestamp":"2018-08-07T13:51:52.644Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T13:51:52.644Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T13:51:52.644Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T13:51:52.648Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T13:51:52.648Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T13:51:52.648Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T13:51:52.652Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T13:51:52.652Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"!state.toChange && !state.isCorrect\"","timestamp":"2018-08-07T13:51:52.656Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"badAnswer\"","timestamp":"2018-08-07T13:51:52.656Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   !!  ENTR \t ","timestamp":"2018-08-07T13:51:52.672Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-lQlXD\"","timestamp":"2018-08-07T13:51:52.672Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ..  NOWT \t ","timestamp":"2018-08-07T13:51:52.672Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T13:51:52.672Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T13:51:52.672Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T13:51:52.680Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T13:51:52.680Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"adios\"","timestamp":"2018-08-07T13:51:56.027Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T13:51:56.027Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T13:51:56.031Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T13:51:56.031Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T13:51:56.031Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T13:51:56.031Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T13:51:56.035Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T13:51:56.035Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"!state.toChange && !state.isCorrect\"","timestamp":"2018-08-07T13:51:56.039Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"badAnswer\"","timestamp":"2018-08-07T13:51:56.039Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   !!  ENTR \t ","timestamp":"2018-08-07T13:51:56.047Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-lQlXD\"","timestamp":"2018-08-07T13:51:56.047Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ..  NOWT \t ","timestamp":"2018-08-07T13:51:56.051Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T13:51:56.051Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T13:51:56.051Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T13:51:56.055Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T13:51:56.059Z"}
+{"level":"info","message":"Starting botpress version 10.17.3","timestamp":"2018-08-07T13:52:40.428Z"}
+{"level":"info","message":"[Ghost Content Manager] (transparent) Initialized","timestamp":"2018-08-07T13:52:40.865Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\media, doing nothing.","timestamp":"2018-08-07T13:52:40.881Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\flows, doing nothing.","timestamp":"2018-08-07T13:52:40.885Z"}
+{"level":"info","message":"[Skills] Initiated","timestamp":"2018-08-07T13:52:40.885Z"}
+{"level":"info","message":"Loaded @botpress/audience, version 10.17.3","timestamp":"2018-08-07T13:52:40.917Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\intents, doing nothing.","timestamp":"2018-08-07T13:52:41.875Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\entities, doing nothing.","timestamp":"2018-08-07T13:52:41.875Z"}
+{"level":"info","message":"Loaded @botpress/nlu, version 10.17.3","timestamp":"2018-08-07T13:52:41.879Z"}
+{"level":"info","message":"Loaded @botpress/skill-choice, version 10.17.3","timestamp":"2018-08-07T13:52:41.888Z"}
+{"level":"info","message":"Loaded @botpress/hitl, version 10.17.3","timestamp":"2018-08-07T13:52:41.896Z"}
+{"level":"verbose","message":"[Renderers] Enabled for webchat.","timestamp":"2018-08-07T13:52:42.439Z"}
+{"level":"info","message":"Loaded @botpress/channel-web, version 10.17.3","timestamp":"2018-08-07T13:52:42.440Z"}
+{"level":"info","message":"Loaded 5 modules","timestamp":"2018-08-07T13:52:42.440Z"}
+{"level":"info","message":"[Skills] Loaded 1 skills","timestamp":"2018-08-07T13:52:42.440Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\content, doing nothing.","timestamp":"2018-08-07T13:52:42.444Z"}
+{"level":"debug","message":"Loading middleware: rendering.instrumentation","timestamp":"2018-08-07T13:52:42.521Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureInMessages","timestamp":"2018-08-07T13:52:42.521Z"}
+{"level":"debug","message":"Loading middleware: nlu.incoming","timestamp":"2018-08-07T13:52:42.521Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-08-07T13:52:42.521Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureOutMessages","timestamp":"2018-08-07T13:52:42.521Z"}
+{"level":"debug","message":"Loading middleware: webchat.sendMessages","timestamp":"2018-08-07T13:52:42.521Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-08-07T13:52:42.525Z"}
+{"level":"debug","message":"Loading data for builtin_text from builtin_text.json","timestamp":"2018-08-07T13:52:42.606Z"}
+{"level":"info","message":"Read 19 item(s) from builtin_text.json","timestamp":"2018-08-07T13:52:42.626Z"}
+{"level":"info","message":"\u001b[32m\u001b[1mBot launched. Visit: http://localhost:3000\u001b[22m\u001b[39m","timestamp":"2018-08-07T13:52:42.646Z"}
+{"level":"debug","message":"Loading data for builtin_image from builtin_image.json","timestamp":"2018-08-07T13:52:42.674Z"}
+{"level":"debug","message":"Loading data for builtin_single-choice from builtin_single-choice.json","timestamp":"2018-08-07T13:52:42.678Z"}
+{"level":"debug","message":"Loading data for builtin_card from builtin_card.json","timestamp":"2018-08-07T13:52:42.678Z"}
+{"level":"debug","message":"Loading data for builtin_action-button from builtin_action-button.json","timestamp":"2018-08-07T13:52:42.682Z"}
+{"level":"debug","message":"Loading data for builtin_carousel from builtin_carousel.json","timestamp":"2018-08-07T13:52:42.682Z"}
+{"level":"debug","message":"Loading data for builtin_raw from builtin_raw.json","timestamp":"2018-08-07T13:52:42.682Z"}
+{"level":"debug","message":"[NLU::Native] Model is up to date","timestamp":"2018-08-07T13:52:43.460Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-07T13:52:43.460Z"}
+{"level":"info","message":"Webchat available at http://localhost:3000/s/chat","timestamp":"2018-08-07T13:52:43.460Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-07T13:52:43.464Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-08-07T13:54:07.218Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <>  NTHG \t ","timestamp":"2018-08-07T13:54:07.242Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-08-07T13:54:07.286Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hola\"","timestamp":"2018-08-07T13:55:45.085Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-07T13:55:45.085Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-07T13:55:45.089Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-07T13:55:45.093Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-07T13:55:45.101Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-cpUzL\"","timestamp":"2018-08-07T13:55:45.105Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-07T13:55:45.105Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T13:55:45.109Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-07T13:55:45.121Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-07T13:55:45.121Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-07T13:55:45.123Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-07T13:55:45.123Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T13:55:45.127Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T13:55:45.147Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"la del 4\"","timestamp":"2018-08-07T13:55:50.588Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-07T13:55:50.588Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-07T13:55:50.588Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-07T13:55:50.592Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-07T13:55:50.592Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-07T13:55:50.592Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T13:55:50.613Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T13:55:50.613Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-07T13:55:50.613Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T13:55:50.617Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-07T13:55:50.617Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T13:55:50.621Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T13:55:50.621Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T13:55:50.633Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T13:55:50.633Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T13:55:50.637Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T13:55:50.637Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T13:55:50.637Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T13:55:50.637Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T13:55:50.645Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T13:55:50.649Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T13:55:50.662Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T13:55:50.662Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"adios\"","timestamp":"2018-08-07T13:55:57.906Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T13:55:57.906Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T13:55:57.906Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T13:55:57.910Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T13:55:57.910Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T13:55:57.910Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T13:55:57.910Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T13:55:57.910Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"state.finish\"","timestamp":"2018-08-07T13:55:57.914Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"node-56e0\"","timestamp":"2018-08-07T13:55:57.914Z"}
+{"level":"debug","message":"Dialog: [main] (node-56e0)                   !!  ENTR \t ","timestamp":"2018-08-07T13:55:57.922Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-5eNpI\"","timestamp":"2018-08-07T13:55:57.922Z"}
+{"level":"debug","message":"Dialog: [main] (node-56e0)                   ..  NOWT \t ","timestamp":"2018-08-07T13:55:57.926Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-08-07T13:55:57.954Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hola\"","timestamp":"2018-08-07T13:56:02.254Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-07T13:56:02.254Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-07T13:56:02.254Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-07T13:56:02.258Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-07T13:56:02.266Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-cpUzL\"","timestamp":"2018-08-07T13:56:02.266Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-07T13:56:02.266Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T13:56:02.270Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-07T13:56:02.274Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-07T13:56:02.274Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-07T13:56:02.274Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-07T13:56:02.278Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T13:56:02.278Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T13:56:02.290Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <>  NTHG \t ","timestamp":"2018-08-07T13:58:13.676Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-08-07T13:58:13.692Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-08-07T14:07:57.503Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hola\"","timestamp":"2018-08-07T14:07:57.551Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-07T14:07:57.551Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-07T14:07:57.555Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-07T14:07:57.555Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-07T14:07:57.563Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-cpUzL\"","timestamp":"2018-08-07T14:07:57.563Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-07T14:07:57.563Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T14:07:57.567Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-07T14:07:57.571Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-07T14:07:57.571Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-07T14:07:57.571Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-07T14:07:57.575Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T14:07:57.575Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T14:07:57.582Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"la del 43\"","timestamp":"2018-08-07T14:08:06.754Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-07T14:08:06.754Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-07T14:08:06.758Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-07T14:08:06.758Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-07T14:08:06.758Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-07T14:08:06.762Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T14:08:06.770Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T14:08:06.774Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-07T14:08:06.774Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T14:08:06.774Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-07T14:08:06.774Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-07T14:08:06.782Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-07T14:08:06.782Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-07T14:08:06.798Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-07T14:08:06.798Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-07T14:08:06.802Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-07T14:08:06.802Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T14:08:06.806Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T14:08:06.806Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T14:08:06.814Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"la del 5\"","timestamp":"2018-08-07T14:08:11.008Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-07T14:08:11.012Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-07T14:08:11.012Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-07T14:08:11.012Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-07T14:08:11.016Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-07T14:08:11.016Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T14:08:11.024Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T14:08:11.104Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-07T14:08:11.104Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T14:08:11.104Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-07T14:08:11.104Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T14:08:11.112Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T14:08:11.112Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T14:08:11.124Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T14:08:11.128Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T14:08:11.128Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T14:08:11.128Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T14:08:11.128Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T14:08:11.128Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T14:08:11.136Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T14:08:11.136Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T14:08:11.156Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T14:08:11.156Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"la del 43\"","timestamp":"2018-08-07T14:08:16.310Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T14:08:16.310Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T14:08:16.310Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T14:08:16.314Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T14:08:16.314Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T14:08:16.314Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T14:08:16.314Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T14:08:16.318Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"state.toChange\"","timestamp":"2018-08-07T14:08:16.322Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T14:08:16.322Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T14:08:16.334Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T14:08:16.334Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T14:08:16.338Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T14:08:16.338Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T14:08:16.338Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T14:08:16.338Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-07T14:08:16.346Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-07T14:08:16.350Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-07T14:08:16.370Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-07T14:08:16.370Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-07T14:08:16.370Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-07T14:08:16.374Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T14:08:16.374Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T14:08:16.374Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T14:08:16.386Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <>  NTHG \t ","timestamp":"2018-08-07T14:10:20.805Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-08-07T14:10:20.817Z"}
+{"level":"info","message":"Starting botpress version 10.17.3","timestamp":"2018-08-07T14:34:02.448Z"}
+{"level":"info","message":"[Ghost Content Manager] (transparent) Initialized","timestamp":"2018-08-07T14:34:02.688Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\media, doing nothing.","timestamp":"2018-08-07T14:34:02.700Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\flows, doing nothing.","timestamp":"2018-08-07T14:34:02.700Z"}
+{"level":"info","message":"[Skills] Initiated","timestamp":"2018-08-07T14:34:02.704Z"}
+{"level":"info","message":"Loaded @botpress/audience, version 10.17.3","timestamp":"2018-08-07T14:34:02.716Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\intents, doing nothing.","timestamp":"2018-08-07T14:34:03.408Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\entities, doing nothing.","timestamp":"2018-08-07T14:34:03.408Z"}
+{"level":"info","message":"Loaded @botpress/nlu, version 10.17.3","timestamp":"2018-08-07T14:34:03.412Z"}
+{"level":"info","message":"Loaded @botpress/skill-choice, version 10.17.3","timestamp":"2018-08-07T14:34:03.420Z"}
+{"level":"info","message":"Loaded @botpress/hitl, version 10.17.3","timestamp":"2018-08-07T14:34:03.428Z"}
+{"level":"verbose","message":"[Renderers] Enabled for webchat.","timestamp":"2018-08-07T14:34:03.828Z"}
+{"level":"info","message":"Loaded @botpress/channel-web, version 10.17.3","timestamp":"2018-08-07T14:34:03.832Z"}
+{"level":"info","message":"Loaded 5 modules","timestamp":"2018-08-07T14:34:03.832Z"}
+{"level":"info","message":"[Skills] Loaded 1 skills","timestamp":"2018-08-07T14:34:03.832Z"}
+{"level":"debug","message":"[Ghost Content Manager] (transparent) Added root folder generated\\content, doing nothing.","timestamp":"2018-08-07T14:34:03.836Z"}
+{"level":"debug","message":"Loading middleware: rendering.instrumentation","timestamp":"2018-08-07T14:34:03.904Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureInMessages","timestamp":"2018-08-07T14:34:03.904Z"}
+{"level":"debug","message":"Loading middleware: nlu.incoming","timestamp":"2018-08-07T14:34:03.908Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-08-07T14:34:03.908Z"}
+{"level":"debug","message":"Loading middleware: hitl.captureOutMessages","timestamp":"2018-08-07T14:34:03.908Z"}
+{"level":"debug","message":"Loading middleware: webchat.sendMessages","timestamp":"2018-08-07T14:34:03.908Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-08-07T14:34:03.908Z"}
+{"level":"debug","message":"Loading data for builtin_text from builtin_text.json","timestamp":"2018-08-07T14:34:03.968Z"}
+{"level":"info","message":"Read 21 item(s) from builtin_text.json","timestamp":"2018-08-07T14:34:03.984Z"}
+{"level":"info","message":"\u001b[32m\u001b[1mBot launched. Visit: http://localhost:3000\u001b[22m\u001b[39m","timestamp":"2018-08-07T14:34:03.996Z"}
+{"level":"debug","message":"Loading data for builtin_image from builtin_image.json","timestamp":"2018-08-07T14:34:04.016Z"}
+{"level":"debug","message":"Loading data for builtin_single-choice from builtin_single-choice.json","timestamp":"2018-08-07T14:34:04.020Z"}
+{"level":"debug","message":"Loading data for builtin_card from builtin_card.json","timestamp":"2018-08-07T14:34:04.020Z"}
+{"level":"debug","message":"Loading data for builtin_action-button from builtin_action-button.json","timestamp":"2018-08-07T14:34:04.024Z"}
+{"level":"debug","message":"Loading data for builtin_carousel from builtin_carousel.json","timestamp":"2018-08-07T14:34:04.024Z"}
+{"level":"debug","message":"Loading data for builtin_raw from builtin_raw.json","timestamp":"2018-08-07T14:34:04.024Z"}
+{"level":"debug","message":"[NLU::Native] Model is up to date","timestamp":"2018-08-07T14:34:04.632Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-07T14:34:04.632Z"}
+{"level":"info","message":"Webchat available at http://localhost:3000/s/chat","timestamp":"2018-08-07T14:34:04.632Z"}
+{"level":"info","message":"------------","timestamp":"2018-08-07T14:34:04.632Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      **  LOAD \t ","timestamp":"2018-08-07T14:34:12.450Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       <~  RECV \t \"hol\"","timestamp":"2018-08-07T14:34:19.578Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       !!  KALL \t ","timestamp":"2018-08-07T14:34:19.582Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ..  KALL \t ","timestamp":"2018-08-07T14:34:19.582Z"}
+{"level":"debug","message":"Dialog: [main] ( N/A )                       ?X  KALL \t ","timestamp":"2018-08-07T14:34:19.590Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  ENTR \t ","timestamp":"2018-08-07T14:34:19.598Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-cpUzL\"","timestamp":"2018-08-07T14:34:19.602Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-XZxS8\"","timestamp":"2018-08-07T14:34:19.602Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T14:34:19.606Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   !!  SSET \t ","timestamp":"2018-08-07T14:34:19.614Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-Acmtt\"","timestamp":"2018-08-07T14:34:19.614Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ..  NOWT \t ","timestamp":"2018-08-07T14:34:19.618Z"}
+{"level":"debug","message":"Dialog: [main] (start_bot)                   ??  MTCH \t cond = \"state.$r !== null\"","timestamp":"2018-08-07T14:34:19.626Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T14:34:19.626Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T14:34:19.643Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"la del 4\"","timestamp":"2018-08-07T14:34:25.110Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-07T14:34:25.110Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-07T14:34:25.110Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-07T14:34:25.114Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-07T14:34:25.114Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-07T14:34:25.114Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T14:34:25.126Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T14:34:25.126Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-07T14:34:25.130Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T14:34:25.130Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-07T14:34:25.130Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T14:34:25.134Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T14:34:25.134Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T14:34:25.150Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T14:34:25.150Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T14:34:25.150Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T14:34:25.155Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T14:34:25.159Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T14:34:25.159Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T14:34:25.167Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T14:34:25.167Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T14:34:25.176Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T14:34:25.176Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"la del 53\"","timestamp":"2018-08-07T14:34:31.903Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T14:34:31.903Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T14:34:31.903Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T14:34:31.907Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T14:34:31.907Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T14:34:31.907Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T14:34:31.911Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T14:34:31.911Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"state.toChange\"","timestamp":"2018-08-07T14:34:31.919Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"changeTable\"","timestamp":"2018-08-07T14:34:31.919Z"}
+{"level":"debug","message":"Dialog: [main] (changeTable)                 !!  ENTR \t ","timestamp":"2018-08-07T14:34:31.931Z"}
+{"level":"debug","message":"Dialog: [main] (changeTable)                 ..  NOWT \t ","timestamp":"2018-08-07T14:34:31.931Z"}
+{"level":"debug","message":"Dialog: [main] (changeTable)                 ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-07T14:34:31.943Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-07T14:34:31.943Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-07T14:34:31.951Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-07T14:34:31.951Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-07T14:34:31.955Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-07T14:34:31.959Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T14:34:31.959Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T14:34:31.959Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T14:34:31.967Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"la del 4\"","timestamp":"2018-08-07T14:34:37.336Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-07T14:34:37.336Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-07T14:34:37.336Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-07T14:34:37.340Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-07T14:34:37.340Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-07T14:34:37.340Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T14:34:37.352Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T14:34:37.352Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-07T14:34:37.356Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T14:34:37.356Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-07T14:34:37.356Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T14:34:37.364Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T14:34:37.364Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T14:34:37.374Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T14:34:37.376Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T14:34:37.376Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T14:34:37.376Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T14:34:37.376Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T14:34:37.380Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T14:34:37.388Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T14:34:37.388Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T14:34:37.396Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T14:34:37.396Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"la del 6\"","timestamp":"2018-08-07T14:34:43.117Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T14:34:43.117Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T14:34:43.117Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T14:34:43.121Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T14:34:43.121Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T14:34:43.125Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T14:34:43.125Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T14:34:43.125Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"state.toChange\"","timestamp":"2018-08-07T14:34:43.133Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"changeTable\"","timestamp":"2018-08-07T14:34:43.133Z"}
+{"level":"debug","message":"Dialog: [main] (changeTable)                 !!  ENTR \t ","timestamp":"2018-08-07T14:34:43.144Z"}
+{"level":"debug","message":"Dialog: [main] (changeTable)                 ..  NOWT \t ","timestamp":"2018-08-07T14:34:43.144Z"}
+{"level":"debug","message":"Dialog: [main] (changeTable)                 ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T14:34:43.152Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T14:34:43.156Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T14:34:43.164Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T14:34:43.164Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T14:34:43.164Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T14:34:43.168Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T14:34:43.168Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T14:34:43.172Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T14:34:43.176Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T14:34:43.176Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T14:34:43.188Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T14:34:43.188Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"la del 65\"","timestamp":"2018-08-07T14:34:48.784Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T14:34:48.788Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T14:34:48.788Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T14:34:48.792Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T14:34:48.792Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T14:34:48.792Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T14:34:48.796Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T14:34:48.796Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"state.toChange\"","timestamp":"2018-08-07T14:34:48.804Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"changeTable\"","timestamp":"2018-08-07T14:34:48.804Z"}
+{"level":"debug","message":"Dialog: [main] (changeTable)                 !!  ENTR \t ","timestamp":"2018-08-07T14:34:48.812Z"}
+{"level":"debug","message":"Dialog: [main] (changeTable)                 ..  NOWT \t ","timestamp":"2018-08-07T14:34:48.812Z"}
+{"level":"debug","message":"Dialog: [main] (changeTable)                 ??  MTCH \t cond = \"state.$op1 <= 0 || state.$op1 > 12\"","timestamp":"2018-08-07T14:34:48.820Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"invalidNumber\"","timestamp":"2018-08-07T14:34:48.820Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               !!  ENTR \t ","timestamp":"2018-08-07T14:34:48.836Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ERROR function \"\" not found  [object Object] \t [object Object]","timestamp":"2018-08-07T14:34:48.836Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-AMBWx\"","timestamp":"2018-08-07T14:34:48.836Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ..  NOWT \t ","timestamp":"2018-08-07T14:34:48.836Z"}
+{"level":"debug","message":"Dialog: [main] (invalidNumber)               ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T14:34:48.840Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"welcome\"","timestamp":"2018-08-07T14:34:48.840Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  ENTR \t ","timestamp":"2018-08-07T14:34:48.852Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     <~  RECV \t \"la del 2\"","timestamp":"2018-08-07T14:34:53.766Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  KALL \t ","timestamp":"2018-08-07T14:34:53.770Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  KALL \t ","timestamp":"2018-08-07T14:34:53.770Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ?X  KALL \t ","timestamp":"2018-08-07T14:34:53.774Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  RECV \t ","timestamp":"2018-08-07T14:34:53.774Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"setUserVariable\"","timestamp":"2018-08-07T14:34:53.774Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"getUserVariable\"","timestamp":"2018-08-07T14:34:53.782Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T14:34:53.782Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  EXEC \t func \"tableQuestion\"","timestamp":"2018-08-07T14:34:53.782Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     !!  SSET \t ","timestamp":"2018-08-07T14:34:53.786Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ..  RECV \t ","timestamp":"2018-08-07T14:34:53.786Z"}
+{"level":"debug","message":"Dialog: [main] (welcome)                     ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T14:34:53.790Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"initTableQuestions\"","timestamp":"2018-08-07T14:34:53.790Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  ENTR \t ","timestamp":"2018-08-07T14:34:53.882Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  EXEC \t func \"notChange\"","timestamp":"2018-08-07T14:34:53.882Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              !!  SSET \t ","timestamp":"2018-08-07T14:34:53.882Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-4ICRH\"","timestamp":"2018-08-07T14:34:53.882Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-pAytK\"","timestamp":"2018-08-07T14:34:53.886Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ..  NOWT \t ","timestamp":"2018-08-07T14:34:53.886Z"}
+{"level":"debug","message":"Dialog: [main] (initTableQues&)              ??  MTCH \t cond = \"state.$op1 > 0 && state.$op1 <=12\"","timestamp":"2018-08-07T14:34:53.890Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T14:34:53.890Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T14:34:53.898Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T14:34:53.898Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"16\"","timestamp":"2018-08-07T14:35:00.244Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T14:35:00.244Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T14:35:00.244Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T14:35:00.248Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T14:35:00.248Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T14:35:00.248Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T14:35:00.252Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T14:35:00.252Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"!state.toChange && state.isCorrect\"","timestamp":"2018-08-07T14:35:00.256Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"goodAnswer\"","timestamp":"2018-08-07T14:35:00.260Z"}
+{"level":"debug","message":"Dialog: [main] (goodAnswer)                  !!  ENTR \t ","timestamp":"2018-08-07T14:35:00.268Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-cbJsV\"","timestamp":"2018-08-07T14:35:00.268Z"}
+{"level":"debug","message":"Dialog: [main] (goodAnswer)                  !!  EXEC \t func \"nextQuestion\"","timestamp":"2018-08-07T14:35:00.268Z"}
+{"level":"debug","message":"Dialog: [main] (goodAnswer)                  !!  SSET \t ","timestamp":"2018-08-07T14:35:00.272Z"}
+{"level":"debug","message":"Dialog: [main] (goodAnswer)                  ..  NOWT \t ","timestamp":"2018-08-07T14:35:00.272Z"}
+{"level":"debug","message":"Dialog: [main] (goodAnswer)                  ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T14:35:00.272Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T14:35:00.272Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T14:35:00.280Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T14:35:00.280Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"5\"","timestamp":"2018-08-07T14:35:03.437Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T14:35:03.437Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T14:35:03.437Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T14:35:03.441Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T14:35:03.441Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T14:35:03.441Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T14:35:03.441Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T14:35:03.441Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"!state.toChange && !state.isCorrect\"","timestamp":"2018-08-07T14:35:03.449Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"badAnswer\"","timestamp":"2018-08-07T14:35:03.449Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   !!  ENTR \t ","timestamp":"2018-08-07T14:35:03.457Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-lQlXD\"","timestamp":"2018-08-07T14:35:03.457Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ..  NOWT \t ","timestamp":"2018-08-07T14:35:03.457Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T14:35:03.457Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T14:35:03.457Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T14:35:03.465Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T14:35:03.465Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"12\"","timestamp":"2018-08-07T14:35:09.061Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T14:35:09.061Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T14:35:09.061Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T14:35:09.065Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T14:35:09.065Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T14:35:09.065Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T14:35:09.069Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T14:35:09.069Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"!state.toChange && !state.isCorrect\"","timestamp":"2018-08-07T14:35:09.073Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"badAnswer\"","timestamp":"2018-08-07T14:35:09.073Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   !!  ENTR \t ","timestamp":"2018-08-07T14:35:09.085Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-lQlXD\"","timestamp":"2018-08-07T14:35:09.085Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ..  NOWT \t ","timestamp":"2018-08-07T14:35:09.085Z"}
+{"level":"debug","message":"Dialog: [main] (badAnswer)                   ??  MTCH \t cond = \"always\"","timestamp":"2018-08-07T14:35:09.085Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"tableQuestion\"","timestamp":"2018-08-07T14:35:09.085Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  ENTR \t ","timestamp":"2018-08-07T14:35:09.093Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-yOrr5\"","timestamp":"2018-08-07T14:35:09.093Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               <~  RECV \t \"adios\"","timestamp":"2018-08-07T14:35:12.601Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  KALL \t ","timestamp":"2018-08-07T14:35:12.605Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  KALL \t ","timestamp":"2018-08-07T14:35:12.605Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ?X  KALL \t ","timestamp":"2018-08-07T14:35:12.609Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  RECV \t ","timestamp":"2018-08-07T14:35:12.609Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  EXEC \t func \"checkAnswer\"","timestamp":"2018-08-07T14:35:12.609Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               !!  SSET \t ","timestamp":"2018-08-07T14:35:12.609Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ..  RECV \t ","timestamp":"2018-08-07T14:35:12.609Z"}
+{"level":"debug","message":"Dialog: [main] (tableQuestion)               ??  MTCH \t cond = \"state.finish\"","timestamp":"2018-08-07T14:35:12.613Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      >>  FLOW \t \"Finish\"","timestamp":"2018-08-07T14:35:12.613Z"}
+{"level":"debug","message":"Dialog: [main] (Finish)                      !!  ENTR \t ","timestamp":"2018-08-07T14:35:12.621Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-5eNpI\"","timestamp":"2018-08-07T14:35:12.621Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      ~>  SEND \t \"#!builtin_text-bEC23\"","timestamp":"2018-08-07T14:35:12.621Z"}
+{"level":"debug","message":"Dialog: [main] (Finish)                      ..  NOWT \t ","timestamp":"2018-08-07T14:35:12.621Z"}
+{"level":"debug","message":"Dialog: [ N/A ] ( N/A )                      --  ENDF \t ","timestamp":"2018-08-07T14:35:12.653Z"}

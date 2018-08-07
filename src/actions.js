@@ -2,9 +2,12 @@ async function tableQuestion(state, event, params) {
 
   const operando = state.$op2 || Math.floor(Math.random() * 10 + 1)
 
+  const op1 = state.$op1 && state.$op1 > 0 && state.$op1 <= 12
+            ? state.$op1 : null
+
   return {
     ...state,
-    $op1: state.$op1 || getNumberFromText(state.$tableNumber),
+    $op1: op1  || getNumberFromText(state.$tableNumber),
     $op2: operando,
     toChange: false,
     finish: false,

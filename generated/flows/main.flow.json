@@ -55,6 +55,10 @@
       "name": "tableQuestion",
       "next": [
         {
+          "condition": "state.finish",
+          "node": "Finish"
+        },
+        {
           "condition": "!state.toChange && state.isCorrect",
           "node": "goodAnswer"
         },
@@ -64,7 +68,7 @@
         },
         {
           "condition": "state.toChange",
-          "node": "initTableQuestions"
+          "node": "changeTable"
         }
       ],
       "onEnter": [
@@ -189,6 +193,36 @@
         "say #!builtin_text-4ICRHC",
         "say #!builtin_text-pAytKD"
       ],
+      "onReceive": null
+    },
+    {
+      "id": "df599084fd",
+      "name": "Finish",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-5eNpIE",
+        "say #!builtin_text-bEC23E"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "fc28b23aa1",
+      "name": "changeTable",
+      "next": [
+        {
+          "condition": "state.$op1 == null",
+          "node": "invalidInput"
+        },
+        {
+          "condition": "state.$op1 > 0 && state.$op1 <=12",
+          "node": "initTableQuestions"
+        },
+        {
+          "condition": "state.$op1 <= 0 || state.$op1 > 12",
+          "node": "invalidNumber"
+        }
+      ],
+      "onEnter": [],
       "onReceive": null
     }
   ]

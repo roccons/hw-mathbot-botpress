@@ -185,5 +185,35 @@
     },
     "createdBy": "admin",
     "createdOn": "2018-08-06T19:37:07.550Z"
+  },
+  {
+    "id": "builtin_text-5eNpIE",
+    "formData": {
+      "text": "¡Nos vemos!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-06T23:44:03.736Z"
+  },
+  {
+    "id": "builtin_text-bEC23E",
+    "formData": {
+      "text": "Espero que regreses a practicar pronto.",
+      "variations": [
+        "Yo aquí estaré listo para tu siguiente práctica."
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-07T14:04:46.336Z"
+  },
+  {
+    "id": "builtin_text-Z4GQzh",
+    "formData": {
+      "text": "hi",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-07T14:22:54.094Z"
   }
 ]
