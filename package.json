@@ -4,7 +4,7 @@
   "description": "I am a bot that can teach you the multiplication tables",
   "main": "index.js",
   "dependencies": {
-    "botpress": "1.x",
+    "botpress": "^1.1.13",
     "botpress-mod-webchat": "^0.5.0",
     "botpress-web": "^1.2.3",
     "sqlite3": "^4.0.0"

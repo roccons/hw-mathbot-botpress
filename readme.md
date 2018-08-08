@@ -1,50 +1,54 @@
 # Mathbot
 
-Mathbot es un chatbot con el que puedes practicar las tablas de multiplicar
+Mathbot is a chatbot with which you can practice multiplication tables. Created for children, or adults too, to practice and master the tables
+in a funny way.
 
-Creado para que niños, o adultos también, puedan practicar y dominar las tablas
-de una manera divertida
+Master branch runs with Botpress v1.1. Branch botpressX is a port to that newer Botpress version (but with unsolved issues to show answer variations).
 
+There is also a version being developed using Botkit. https://github.com/roccons/hw-mathbot-botkit/
 
-## Instalación
+## Installation (Botpress v1.x)
 
-Primero instala botpress CLI como dependencia global.
+__Note:__ *You can only install as a global dependency a single version of botpress (either v1.x or v10.x). If you want to run a project with another version you have to indicate the path of the local installation of botpress.*
+
+Install botpress as a global dependency.
 
 ```
-// usando npm
+// using npm
 npm install -g botpress@1.x
+
+// using yarn
+yarn global add botpresss@1.x
 ```
 
-```
-// usando yarn
-yarn global add botpress@1.x
-```
+Clone this repository
 
-Clona el repositorio
+`git clone git@github.com: roccons / hw-mathbot.git`
 
-`git clone git@github.com:roccons/hw-mathbot.git`
-
-Ingresa a la carpeta creada
+Enter the folder that was created after cloning
 
 `cd hw-mathbot`
 
-Instala las dependencias
+Install the dependencies
 
 ```
-// usando npm
+// using npm
 npm install
 
-// usando yarn
+// using yarn
 yarn install
 ```
 
-Ejecuta el chatbot con el siguiente comando
+Run the chatbot with the following command
 
 `botpress start`
 
-Ingresa a la siguiente dirección desde cualquier navegador web
+If you don't have this version of botpress installed as a global dependency, run the command like this
 
-`http://localhost:3002`
+`node_modules/.bin/botpress start`
 
-Di `Hola` en el chat y solo sigue las instrucciones
+Enter the following address from any web browser
 
+`http: // localhost:3002`
+
+Say `Hi` in the chat and just follow the instructions
