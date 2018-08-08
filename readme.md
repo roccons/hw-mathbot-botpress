@@ -1,13 +1,50 @@
-## Run bot
+# Mathbot
 
-Run `npm start` to start your bot.
+Mathbot es un chatbot con el que puedes practicar las tablas de multiplicar
 
-By default bot runs locally with web interface available at http://localhost:3000
+Creado para que niños, o adultos también, puedan practicar y dominar las tablas
+de una manera divertida
 
-## Deploy
 
-Check [Heroku](https://botpress.io/docs/deploy/heroku/) and [AWS](https://botpress.io/docs/deploy/aws/) deploy tutorials to get started
+## Instalación
 
-## Development
+Primero instala botpress CLI como dependencia global.
 
-To learn more on how to work with [Botpress](https://botpress.io/) you can read [here](https://botpress.io/docs/getting_started/).
+```
+// usando npm
+npm install -g botpress@10.28.*
+```
+
+```
+// usando yarn
+yarn global add botpress
+```
+
+Clona el repositorio
+
+`git clone git@github.com:roccons/hw-mathbot.git`
+
+Ingresa a la carpeta creada
+
+`cd hw-mathbot`
+
+Instala las dependencias
+
+```
+// usando npm
+npm install
+
+// usando yarn
+yarn install
+```
+
+Ejecuta el chatbot con el siguiente comando
+
+`botpress start`
+
+Ingresa a la siguiente dirección desde cualquier navegador web
+
+`http://localhost:3000/s/chat`
+
+Di `Hola` en el chat y solo sigue las instrucciones
+
