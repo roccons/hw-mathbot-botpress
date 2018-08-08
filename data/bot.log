@@ -1,0 +1,20 @@
+{"level":"info","message":"Creating data directory: C:\\Users\\marco\\Documents\\Projects\\bots\\botpress\\data","timestamp":"2018-08-08T18:30:48.978Z"}
+{"level":"info","message":"Creating data directory: C:\\Users\\marco\\Documents\\Projects\\bots\\botpress\\modules_config","timestamp":"2018-08-08T18:30:48.981Z"}
+{"level":"info","message":"Starting botpress version 1.1.13","timestamp":"2018-08-08T18:30:48.982Z"}
+{"level":"info","message":"Loaded botpress-mod-webchat, version 0.5.0","timestamp":"2018-08-08T18:30:50.117Z"}
+{"level":"verbose","message":"[UMM] Enabled for web","timestamp":"2018-08-08T18:30:50.121Z"}
+{"level":"info","message":"Loaded botpress-web, version 1.2.3","timestamp":"2018-08-08T18:30:50.121Z"}
+{"level":"info","message":"Loaded 2 modules","timestamp":"2018-08-08T18:30:50.122Z"}
+{"level":"debug","message":"Loading middleware: UMM.instrumentation","timestamp":"2018-08-08T18:30:50.179Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-08-08T18:30:50.180Z"}
+{"level":"debug","message":"Loading middleware: conversations","timestamp":"2018-08-08T18:30:50.181Z"}
+{"level":"debug","message":"Loading middleware: web.sendMessages","timestamp":"2018-08-08T18:30:50.181Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-08-08T18:30:50.182Z"}
+{"level":"info","message":"\u001b[32m\u001b[1mBot launched. Visit: http://localhost:3002\u001b[22m\u001b[39m","timestamp":"2018-08-08T18:30:50.224Z"}
+{"level":"debug","message":"Loading middleware: UMM.instrumentation","timestamp":"2018-08-08T18:30:50.269Z"}
+{"level":"debug","message":"Loading middleware: hear","timestamp":"2018-08-08T18:30:50.270Z"}
+{"level":"debug","message":"Loading middleware: conversations","timestamp":"2018-08-08T18:30:50.270Z"}
+{"level":"debug","message":"Loading middleware: web.sendMessages","timestamp":"2018-08-08T18:30:50.271Z"}
+{"level":"debug","message":"Loading middleware: webchat.sendMessages","timestamp":"2018-08-08T18:30:50.271Z"}
+{"level":"debug","message":"Loading middleware: fallback","timestamp":"2018-08-08T18:30:50.272Z"}
+{"level":"verbose","message":"[UMM] Enabled for webchat","timestamp":"2018-08-08T18:30:50.275Z"}
