@@ -5,6 +5,7 @@ in a funny way.
 
 Master branch runs with Botpress v1.1. Branch botpressX is a port to that newer Botpress version (but with unsolved issues to show answer variations).
 
+There is also a version being developed using Botkit. https://github.com/roccons/hw-mathbot-botkit/
 
 ## Installation
 
