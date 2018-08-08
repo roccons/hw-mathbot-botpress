@@ -7,13 +7,13 @@
     "node": ">= 6.1 < 9"
   },
   "dependencies": {
-    "botpress": "10.17.3",
     "@botpress/audience": "10.17.3",
     "@botpress/builtins": "10.17.3",
+    "@botpress/channel-web": "10.17.3",
+    "@botpress/hitl": "10.17.3",
     "@botpress/nlu": "10.17.3",
     "@botpress/skill-choice": "10.17.3",
-    "@botpress/hitl": "10.17.3",
-    "@botpress/channel-web": "10.17.3",
+    "botpress": "^10.28.0",
     "jsdoc-api": "^4.0.3",
     "lodash": "^4.17.10",
     "yn": "^2.0.0"

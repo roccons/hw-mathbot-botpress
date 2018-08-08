@@ -54,10 +54,9 @@ module.exports = {
   /*
     By default logs are enabled and available in `dataDir`
    */
-  disableFileLogs: false,
-  log: {
-    file: 'bot.log',
-    maxSize: 1e6 // 1mb
+  logs: {
+    enabled: true,
+    keepDays: 30
   },
 
   /*
