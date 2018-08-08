@@ -1,36 +1,35 @@
 # Mathbot
 
-Mathbot es un chatbot con el que puedes practicar las tablas de multiplicar
+Mathbot is a chatbot with which you can practice multiplication tables. Created for children, or adults too, to practice and master the tables
+in a funny way.
 
-Creado para que niños, o adultos también, puedan practicar y dominar las tablas
-de una manera divertida
+Master branch runs with Botpress v1.1. Branch botpressX is a port to that newer Botpress version (but with unsolved issues to show answer variations).
 
 
-## Instalación
+## Installation
 
-Instala botpress como dependencia global
+Install botpress as a global dependency
 
 `npm install -g botpress`
 
-Clona este repositorio
+Clone this repository
 
-`git clone git@github.com:roccons/hw-mathbot.git`
+`git clone git@github.com: roccons / hw-mathbot.git`
 
-Ingresa a la carpeta que se creó después de clonar
+Enter the folder that was created after cloning
 
 `cd hw-mathbot`
 
-Instala los paquetes usando npm
+Install the packages using npm
 
 `npm install`
 
-Ejecuta el chatbot con el siguiente comando
+Run the chatbot with the following command
 
 `botpress start`
 
-Ingresa a la siguiente dirección desde cualquier navegador web
+Enter the following address from any web browser
 
-`http://localhost:3002`
+`http: // localhost: 3002`
 
-Di `Hola` en el chat y solo sigue las instrucciones
-
+Say `Hi` in the chat and just follow the instructions
