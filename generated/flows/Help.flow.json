@@ -1,0 +1,16 @@
+{
+  "version": "0.1",
+  "catchAll": {},
+  "startNode": "Help",
+  "nodes": [
+    {
+      "id": "4e259137e2",
+      "name": "Help",
+      "onEnter": [
+        "say #!builtin_text-pAytKD"
+      ],
+      "onReceive": null,
+      "next": []
+    }
+  ]
+}

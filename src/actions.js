@@ -1,3 +1,6 @@
+/**
+ * Create a question to ask with its answer
+ */
 async function tableQuestion(state, event, params) {
 
   const operando = state.$op2 || Math.floor(Math.random() * 10 + 1)
@@ -15,6 +18,9 @@ async function tableQuestion(state, event, params) {
   }
 }
 
+/**
+ * Check if the answer given is correct.
+ */
 async function checkAnswer(state, event, params) {
 
   if (event.text.includes('la del')) {
@@ -42,6 +48,9 @@ async function checkAnswer(state, event, params) {
   }
 }
 
+/**
+ * Get a random number for the next question.
+ */
 function getRndNumber(number) {
   let operando = Math.floor(Math.random() * 10 + 1)
   while (number === operando) {
@@ -50,6 +59,10 @@ function getRndNumber(number) {
   return operando;
 }
 
+/**
+ * Get a number given inside a string
+ * @param {string} text 
+ */
 function getNumberFromText(text) {
   if (text.match(/(\d+)/)) {
     return text.match(/(\d+)/)[0]
@@ -57,6 +70,9 @@ function getNumberFromText(text) {
   return null
 }
 
+/**
+ * Get next table number to practice
+ */
 async function nextQuestion(state, event, params) {
 
   return {
@@ -67,6 +83,9 @@ async function nextQuestion(state, event, params) {
   }
 }
 
+/**
+ * Avoid change to another table number
+ */
 function notChange(state, event, params) {
   return {
     ... state,
