@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MathBot</title>
+    <script src="http://localhost:3000/api/botpress-platform-webchat/inject.js"></script>
+
+</head>
+<body>
+    <script>
+        // https://github.com/botpress/modules/blob/master/channels/botpress-channel-web/src/views/web/side/style.scss
+        window.botpressWebChat.init({
+            host: 'http://localhost:3000',
+            botName: 'MathBot', // Name of your bot
+            botAvatarUrl: 'https://cdn.pixabay.com/photo/2016/03/31/19/57/albert-1295413_960_720.png', // You can provide a URL here
+            
+            botConvoTitle: 'MathBot', // Title of the first conversation with the bot
+            botConvoDescription: 'Hello, I am MathBot',
+            backgroundColor: '#BBD1EA', // Color of the background
+            textColorOnBackground: '#04080F', // Color of the text on the background
+            foregroundColor: '#507DBC', // Element background color (header, composer, button..)
+            textColorOnForeground: '#ffffff', // Element text color (header, composer, button..)
+            showUserName: false, // Whether or not to show the user's name
+            showUserAvatar: false, // Whether or not to show the user's avatar
+            enableTranscriptDownload: false // Whether or not to show the transcript download button
+        })
+    </script>
+</body>
+</html>
