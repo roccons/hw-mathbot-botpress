@@ -10,7 +10,12 @@
         "say #!builtin_text-pAytKD"
       ],
       "onReceive": null,
-      "next": []
+      "next": [
+        {
+          "condition": "always",
+          "node": "#"
+        }
+      ]
     }
   ]
 }

@@ -21,14 +21,14 @@ module.exports = async bp => {
   }
 
   const webchat = {
-    botName: 'Basic',
-    botAvatarUrl: null, // You can provide a URL here
-    botConvoTitle: 'Botpress Basic Webchat Bot',
-    botConvoDescription: "Hello, I'm a Botpress bot!",
-    backgroundColor: '#ffffff',
-    textColorOnBackground: '#666666',
-    foregroundColor: '#000000',
-    textColorOnForeground: '#ffffff'
+    botName: 'MathBot',
+    botAvatarUrl: 'https://cdn.pixabay.com/photo/2016/03/31/19/57/albert-1295413_960_720.png', // You can provide a URL here
+    botConvoTitle: 'MathBot',
+    botConvoDescription: "Hello, I'm MathBot",
+    backgroundColor: '#BBD1EA',
+    textColorOnBackground: '#04080F', // input text
+    foregroundColor: '#507DBC', // background user message
+    textColorOnForeground: '#FFFFFF' // text color user message
   }
 
   bp.createShortlink('chat', '/lite', {
@@ -47,8 +47,27 @@ module.exports = async bp => {
 
   // All events that should be processed by the Flow Manager
   bp.hear({ type: /bp_dialog_timeout|text|message|quick_reply/i }, (event, next) => {
-    bp.dialogEngine.processMessage(event.sessionId || event.user.id, event).then()
+
+    const stateId = event.sessionId || event.user.id
+
+    // const messageSent = event.reply('#builtin_text-TtzrCV')
+
+    if (/help|ayuda|instrucciones/i.test(event.text)) {
+      bp.dialogEngine.jumpTo(stateId, 'Help.flow.json', 'Help') 
+      bp.dialogEngine.processMessage(event.sessionId || event.user.id, event)
+    } else
+    if (/reiniciar|inicio|comenzar/i.test(event.text)) {
+
+    } else
+    if (/adios|terminar|bye|fin/i.test(event.text)) {
+    } else if (/no se|otra|me rindo|ya no|nose|yano/i.test(event.text)) {
+    
+    } else {
+      bp.dialogEngine.processMessage(event.sessionId || event.user.id, event).then()
+    }
+
   })
+
 }
 
 async function registerBuiltin(bp) {

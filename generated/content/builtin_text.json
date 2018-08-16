@@ -96,7 +96,7 @@
   {
     "id": "builtin_text-B8I3ds",
     "formData": {
-      "text": "Esa es no la respuesta que esperaba 🤨",
+      "text": "Esa no es la respuesta que esperaba 🤨",
       "variations": [
         "Creo que has tecleado mal 😅"
       ],
@@ -215,5 +215,14 @@
     },
     "createdBy": "admin",
     "createdOn": "2018-08-07T14:22:54.094Z"
+  },
+  {
+    "id": "builtin_text-uKjOfa",
+    "formData": {
+      "text": "Puedes cambiar de tabla en cualquier momento escribiendo \"la del...\" ",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-14T21:38:37.998Z"
   }
 ]

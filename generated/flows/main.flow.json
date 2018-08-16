@@ -101,30 +101,9 @@
       "onReceive": null,
       "next": [
         {
-          "condition": "state.$r !== null",
-          "node": "welcome"
-        },
-        {
-          "condition": "true",
-          "node": "ask-name"
-        }
-      ]
-    },
-    {
-      "id": "d29fc6b771",
-      "name": "ask-name",
-      "next": [
-        {
-          "condition": "true",
+          "condition": "always",
           "node": "welcome"
         }
-      ],
-      "onEnter": [
-        "say #!builtin_text-z0J9qh"
-      ],
-      "onReceive": [
-        "setUserVariable {\"name\":\"nickname\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}",
-        "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}"
       ]
     },
     {
@@ -161,6 +140,10 @@
       "id": "72424e210a",
       "name": "badAnswer",
       "next": [
+        {
+          "condition": "state.sayHelp > 0 &&  state.sayHelp % 2 == 0",
+          "node": "help"
+        },
         {
           "condition": "always",
           "node": "tableQuestion"
@@ -223,6 +206,20 @@
         }
       ],
       "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "ddbc52703c",
+      "name": "help",
+      "next": [
+        {
+          "condition": "always",
+          "node": "tableQuestion"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-uKjOfa"
+      ],
       "onReceive": null
     }
   ]

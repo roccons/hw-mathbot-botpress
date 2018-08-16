@@ -24,7 +24,7 @@ yarn global add botpresss@10.28.x
 
 Clone this repository
 
-`git clone git@github.com: roccons / hw-mathbot.git`
+`git clone git@github.com:roccons/hw-mathbot.git`
 
 Enter the folder that was created after cloning
 
@@ -61,4 +61,4 @@ For chat only:
 `http://localhost:3000/s/chat`
 
 
-Say `Hi` in the chat and just follow the instructions
+Say `anything` in the chat and just follow the instructions

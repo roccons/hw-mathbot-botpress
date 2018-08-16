@@ -38,13 +38,13 @@ async function checkAnswer(state, event, params) {
       finish: true
     }
   }
-
+  console.log('helppp', state.sayHelp)
   const resp = parseInt(getNumberFromText(event.text))
-  console.log(resp, state)
   return {
     ...state,
     isCorrect: resp === state.$op1 * state.$op2,
     finish: false,
+    sayHelp: state.isCorrect ? 0 : (state.sayHelp ? state.sayHelp + 1 : 1)
   }
 }
 
@@ -75,10 +75,16 @@ function getNumberFromText(text) {
  */
 async function nextQuestion(state, event, params) {
 
+  let nextNumber = getRndNumber(state.$op2) 
+
+  if (nextNumber == 1 || nextNumber == 10) {
+    nextNumber = getRndNumber(state.$op2)
+  }
+
   return {
     ...state,
     $op1: getNumberFromText(state.$tableNumber),
-    $op2: getRndNumber(state.$op2),
+    $op2: nextNumber,
     finish: false,
   }
 }

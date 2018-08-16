@@ -70,7 +70,7 @@ module.exports = {
     Dialog Manager (DM)
   */
   dialogs: {
-    timeoutInterval: '2m',
+    timeoutInterval: '30m',
     janitorInterval: '10s'
   },
 
