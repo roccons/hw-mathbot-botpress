@@ -7,7 +7,7 @@ async function tableQuestion(state, event, params) {
 
   const op1 = state.$op1 && state.$op1 > 0 && state.$op1 <= 12
             ? state.$op1 : null
-
+  console.log('SGAAT', state)
   return {
     ...state,
     $op1: op1  || getNumberFromText(state.$tableNumber),
@@ -27,8 +27,14 @@ async function checkAnswer(state, event, params) {
     return {
       ...state,
       toChange: true,
-      finish: false,
-      $op1: parseInt(getNumberFromText(event.text))
+      $op1: parseInt(getNumberFromText(event.text)),
+      changeTable: false
+    }
+  }
+  if (/ya no|me rindo|otra/i.test(event.text)) {
+    return {
+      ...state,
+      changeTable: true
     }
   }
 
@@ -36,8 +42,8 @@ async function checkAnswer(state, event, params) {
   return {
     ...state,
     isCorrect: resp === state.$op1 * state.$op2,
-    finish: false,
-    sayHelp: state.isCorrect ? 0 : (state.sayHelp ? state.sayHelp + 1 : 1)
+    sayHelp: state.isCorrect ? 0 : (state.sayHelp ? state.sayHelp + 1 : 1),
+    changeTable: false
   }
 }
 
@@ -78,7 +84,7 @@ async function nextQuestion(state, event, params) {
     ...state,
     $op1: getNumberFromText(state.$tableNumber),
     $op2: nextNumber,
-    finish: false,
+    
   }
 }
 
@@ -89,7 +95,14 @@ function notChange(state, event, params) {
   return {
     ... state,
     toChange : false,
-    finish: false,
+    
+  }
+}
+
+function changeTableNumber(state, event, params) {
+  return {
+    ...state,
+    $op1: getRndNumber(state.$op1 || 1).toString()
   }
 }
 
@@ -110,5 +123,6 @@ module.exports = {
   checkAnswer,
   nextQuestion,
   notChange,
-  sayInitialHelp
+  sayInitialHelp,
+  changeTableNumber,
 }

@@ -55,8 +55,8 @@
       "name": "tableQuestion",
       "next": [
         {
-          "condition": "state.finish",
-          "node": "Finish"
+          "condition": "state.changeTable",
+          "node": "changeRandomTable"
         },
         {
           "condition": "!state.toChange && state.isCorrect",
@@ -179,16 +179,6 @@
       "onReceive": null
     },
     {
-      "id": "df599084fd",
-      "name": "Finish",
-      "next": [],
-      "onEnter": [
-        "say #!builtin_text-5eNpIE",
-        "say #!builtin_text-bEC23E"
-      ],
-      "onReceive": null
-    },
-    {
       "id": "fc28b23aa1",
       "name": "changeTable",
       "next": [
@@ -219,6 +209,23 @@
       ],
       "onEnter": [
         "say #!builtin_text-uKjOfa"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "d5eb7042d2",
+      "name": "changeRandomTable",
+      "next": [
+        {
+          "condition": "always",
+          "node": "tableQuestion"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-ZuREP_",
+        "changeTableNumber {}",
+        "tableQuestion {}",
+        "say #!builtin_text-7sSNaB"
       ],
       "onReceive": null
     }

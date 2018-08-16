@@ -65,8 +65,6 @@ module.exports = async bp => {
       const msgEnd = event.reply('#!builtin_text-5eNpIE')
       bp.dialogEngine.endFlow(stateId)
 
-    } else if (/no se|otra|me rindo|ya no|nose|yano/i.test(event.text)) {
-    
     } else {
       
       bp.dialogEngine.processMessage(stateId, event).then()
