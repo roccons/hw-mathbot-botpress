@@ -57,8 +57,11 @@ module.exports = async bp => {
 
     } else if (/reiniciar|inicio|comenzar/i.test(event.text)) {
       
-      bp.dialogEngine.endFlow(stateId)
-      bp.dialogEngine.processMessage(stateId, event).then()
+      // event.text = "Hola"
+      bp.dialogEngine.endFlow(stateId).then(() => {
+
+        bp.dialogEngine.processMessage(stateId, event)
+      })
       
     } else if (/adios|terminar|bye|fin/i.test(event.text)) {
 
