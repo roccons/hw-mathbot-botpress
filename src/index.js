@@ -50,20 +50,27 @@ module.exports = async bp => {
 
     const stateId = event.sessionId || event.user.id
 
-    // const messageSent = event.reply('#builtin_text-TtzrCV')
-
+    
     if (/help|ayuda|instrucciones/i.test(event.text)) {
-      bp.dialogEngine.jumpTo(stateId, 'Help.flow.json', 'Help') 
-      bp.dialogEngine.processMessage(event.sessionId || event.user.id, event)
-    } else
-    if (/reiniciar|inicio|comenzar/i.test(event.text)) {
 
-    } else
-    if (/adios|terminar|bye|fin/i.test(event.text)) {
+      const messageSent = event.reply('#!builtin_text-uKjOfa')
+
+    } else if (/reiniciar|inicio|comenzar/i.test(event.text)) {
+      
+      bp.dialogEngine.endFlow(stateId)
+      bp.dialogEngine.processMessage(stateId, event).then()
+      
+    } else if (/adios|terminar|bye|fin/i.test(event.text)) {
+
+      const msgEnd = event.reply('#!builtin_text-5eNpIE')
+      bp.dialogEngine.endFlow(stateId)
+
     } else if (/no se|otra|me rindo|ya no|nose|yano/i.test(event.text)) {
     
     } else {
-      bp.dialogEngine.processMessage(event.sessionId || event.user.id, event).then()
+      
+      bp.dialogEngine.processMessage(stateId, event).then()
+
     }
 
   })

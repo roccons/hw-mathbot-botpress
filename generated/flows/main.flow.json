@@ -174,7 +174,7 @@
       "onEnter": [
         "notChange {}",
         "say #!builtin_text-4ICRHC",
-        "say #!builtin_text-pAytKD"
+        "sayInitialHelp {}"
       ],
       "onReceive": null
     },

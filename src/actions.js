@@ -23,7 +23,7 @@ async function tableQuestion(state, event, params) {
  */
 async function checkAnswer(state, event, params) {
 
-  if (event.text.includes('la del')) {
+  if (/la del|tabla del/i.test(event.text)) {
     return {
       ...state,
       toChange: true,
@@ -32,13 +32,6 @@ async function checkAnswer(state, event, params) {
     }
   }
 
-  if (event.text.includes('adios')) {
-    return {
-      ...state,
-      finish: true
-    }
-  }
-  console.log('helppp', state.sayHelp)
   const resp = parseInt(getNumberFromText(event.text))
   return {
     ...state,
@@ -100,9 +93,22 @@ function notChange(state, event, params) {
   }
 }
 
+async function sayInitialHelp(state, event, params) {
+
+  if (!state.started) {
+    const msg2 = event.reply('#!builtin_text-pAytKD')
+  }
+
+  return {
+    ...state,
+    started: true
+  }
+}
+
 module.exports = {
   tableQuestion, 
   checkAnswer,
   nextQuestion,
-  notChange
+  notChange,
+  sayInitialHelp
 }
