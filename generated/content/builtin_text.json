@@ -69,7 +69,7 @@
   {
     "id": "builtin_text-XZxS8o",
     "formData": {
-      "text": "Soy el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar",
+      "text": "Soy Beto, el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar. Si en cualquier momento necesitas ayuda solo escribe \"ayuda\"",
       "typing": true
     },
     "createdBy": "admin",
@@ -157,10 +157,10 @@
   {
     "id": "builtin_text-lQlXD~",
     "formData": {
-      "text": "Esa no es la respuesta que esperaba. Intentemos de nuevo.",
+      "text": "Ups, no entendí lo que escribiste! Recuerda que si necesitas ayuda, solo tienes que escribir \"ayuda\".",
       "variations": [
-        "mmm no 😥. Va otra vez.",
-        "Concéntrate... ¡yo se que puedes!"
+        "Mmmm ¿qué dijiste? No entendí 😥",
+        "Sospecho que estás tratando de decirme algo que no entiendo..."
       ],
       "typing": true
     },
@@ -219,7 +219,7 @@
   {
     "id": "builtin_text-uKjOfa",
     "formData": {
-      "text": "Puedes cambiar de tabla en cualquier momento escribiendo \"la del...\" ",
+      "text": "Soy un asistente digital para practicar las tablas de multiplicar. \nEn cualquier momento puedes escribir \"la del...\" para cambiar de tabla, \n\"ayuda\" o  \"instrucciones\"para ver este mensaje,\n \"otra\" o \"no se\" cuando no te sabes una multiplicación y \n\"hola\" o \"comenzar\" para iniciar de nuevo.",
       "typing": true
     },
     "createdBy": "admin",
@@ -237,7 +237,7 @@
   {
     "id": "builtin_text-ZuREP_",
     "formData": {
-      "text": "Ok, cambiemos de tabla",
+      "text": "Ok, intentemos con otra",
       "typing": true
     },
     "createdBy": "admin",
@@ -251,5 +251,41 @@
     },
     "createdBy": "admin",
     "createdOn": "2018-08-16T11:53:09.330Z"
+  },
+  {
+    "id": "builtin_text-irUUVq",
+    "formData": {
+      "text": "La respuesta era {{ state.answer }}",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-20T19:15:06.566Z"
+  },
+  {
+    "id": "builtin_text-oI3CL5",
+    "formData": {
+      "text": "Te mostraré la misma multiplicación hasta que aciertes😈. \nSi de plano no te la sabes simplemente escribe \"no se\". ",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-20T19:48:40.284Z"
+  },
+  {
+    "id": "builtin_text-lMBNX6",
+    "formData": {
+      "text": "Y recuerda también que puedes cambiar de tabla en cualquier momento escribiendo _la del..._",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-20T19:50:08.105Z"
+  },
+  {
+    "id": "builtin_text-rLtNTf",
+    "formData": {
+      "text": "¿te dormiste?  No son ecuaciones bicuadráticas... son simples multiplicaciones 😝",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-20T20:22:34.656Z"
   }
 ]

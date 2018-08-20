@@ -7,14 +7,20 @@ async function tableQuestion(state, event, params) {
 
   const op1 = state.$op1 && state.$op1 > 0 && state.$op1 <= 12
             ? state.$op1 : null
-  console.log('SGAAT', state)
+
+  setTimeout(() => {
+    const msgTime = event.reply('#!builtin_text-rLtNTf') 
+  }, 30000)
+
+            
   return {
     ...state,
     $op1: op1  || getNumberFromText(state.$tableNumber),
     $op2: operando,
     toChange: false,
     finish: false,
-    answer: operando * getNumberFromText(state.$tableNumber)
+    answer: operando * getNumberFromText(state.$tableNumber),
+
   }
 }
 
@@ -102,7 +108,7 @@ function notChange(state, event, params) {
 function changeTableNumber(state, event, params) {
   return {
     ...state,
-    $op1: getRndNumber(state.$op1 || 1).toString()
+    $op2: getRndNumber(state.$op2 || 1).toString()
   }
 }
 

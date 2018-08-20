@@ -94,6 +94,7 @@
       "name": "start_bot",
       "onEnter": [
         "say #!builtin_text-cpUzLF",
+        "say #!builtin_image-YHIke7",
         "say #!builtin_text-XZxS8o",
         "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}",
         "say #!builtin_text-AcmttM"
@@ -208,7 +209,8 @@
         }
       ],
       "onEnter": [
-        "say #!builtin_text-uKjOfa"
+        "say #!builtin_text-oI3CL5",
+        "say #!builtin_text-lMBNX6"
       ],
       "onReceive": null
     },
@@ -223,9 +225,9 @@
       ],
       "onEnter": [
         "say #!builtin_text-ZuREP_",
+        "say #!builtin_text-irUUVq",
         "changeTableNumber {}",
-        "tableQuestion {}",
-        "say #!builtin_text-7sSNaB"
+        "tableQuestion {}"
       ],
       "onReceive": null
     }

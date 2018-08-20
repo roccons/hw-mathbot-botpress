@@ -21,10 +21,10 @@ module.exports = async bp => {
   }
 
   const webchat = {
-    botName: 'MathBot',
-    botAvatarUrl: 'https://cdn.pixabay.com/photo/2016/03/31/19/57/albert-1295413_960_720.png', // You can provide a URL here
-    botConvoTitle: 'MathBot',
-    botConvoDescription: "Hello, I'm MathBot",
+    botName: 'Beto',
+    botAvatarUrl: 'https://cdn.dribbble.com/users/1210339/screenshots/2773815/einstein.jpg', // You can provide a URL here
+    botConvoTitle: 'Beto | El bot matemático',
+    botConvoDescription: "Beto, tu asistente para practicar las tablas",
     backgroundColor: '#BBD1EA',
     textColorOnBackground: '#04080F', // input text
     foregroundColor: '#507DBC', // background user message
