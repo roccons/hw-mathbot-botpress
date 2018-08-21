@@ -1,72 +1,5 @@
 [
   {
-    "id": "builtin_text-pSsHWg",
-    "formData": {
-      "text": "👋, {{state.$r}}!",
-      "variations": [
-        "Hello, {{state.$r}}!",
-        "Welcome to Botpress, {{state.$r}}!"
-      ],
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T00:57:36.026Z"
-  },
-  {
-    "id": "builtin_text-AY5SSW",
-    "formData": {
-      "text": "This is the first time we speak 🤖",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T00:59:51.118Z"
-  },
-  {
-    "id": "builtin_text-bFsOmf",
-    "formData": {
-      "text": "We already spoke {{state.$r}} times!",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T01:00:37.593Z"
-  },
-  {
-    "id": "builtin_text-TtzrCV",
-    "formData": {
-      "text": "Alright, I have forgotten your name.",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T01:06:41.963Z"
-  },
-  {
-    "id": "builtin_text-z0J9qh",
-    "formData": {
-      "text": "May I know your name please?",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T01:08:41.241Z"
-  },
-  {
-    "id": "builtin_text-X069Le",
-    "formData": {
-      "text": "Try saying something like \"forget my name\"!",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T01:16:53.227Z"
-  },
-  {
-    "id": "builtin_text-kKQ8C3",
-    "formData": {
-      "text": "(To see how this works, double-click anywhere on the flow and go to the \"Transitions\" panel)",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T01:17:55.317Z"
-  },
-  {
     "id": "builtin_text-XZxS8o",
     "formData": {
       "text": "Soy Beto, el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar. Si en cualquier momento necesitas ayuda solo escribe \"ayuda\"",
@@ -208,31 +141,13 @@
     "createdOn": "2018-08-07T14:04:46.336Z"
   },
   {
-    "id": "builtin_text-Z4GQzh",
-    "formData": {
-      "text": "hi",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-08-07T14:22:54.094Z"
-  },
-  {
     "id": "builtin_text-uKjOfa",
     "formData": {
-      "text": "Soy un asistente digital para practicar las tablas de multiplicar. \nEn cualquier momento puedes escribir \"la del...\" para cambiar de tabla, \n\"ayuda\" o  \"instrucciones\"para ver este mensaje,\n \"otra\" o \"no se\" cuando no te sabes una multiplicación y \n\"hola\" o \"comenzar\" para iniciar de nuevo.",
+      "text": "◽️ \"la del...\" para cambiar de tabla, \n◽️ \"ayuda\" o  \"instrucciones\"para ver este mensaje,\n◽️ \"otra\" o \"no se\" cuando no te sabes una multiplicación y \n◽️ \"hola\" o \"comenzar\" para iniciar de nuevo.",
       "typing": true
     },
     "createdBy": "admin",
     "createdOn": "2018-08-14T21:38:37.998Z"
-  },
-  {
-    "id": "builtin_text-srIL2c",
-    "formData": {
-      "text": "olis",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-08-16T08:06:45.706Z"
   },
   {
     "id": "builtin_text-ZuREP_",
@@ -273,7 +188,7 @@
   {
     "id": "builtin_text-lMBNX6",
     "formData": {
-      "text": "Y recuerda también que puedes cambiar de tabla en cualquier momento escribiendo _la del..._",
+      "text": "Y recuerda también que puedes cambiar de tabla en cualquier momento escribiendo \"la del...\"",
       "typing": true
     },
     "createdBy": "admin",
@@ -287,5 +202,32 @@
     },
     "createdBy": "admin",
     "createdOn": "2018-08-20T20:22:34.656Z"
+  },
+  {
+    "id": "builtin_text-vXhFov",
+    "formData": {
+      "text": "Esa no es la respuesta que esperaba",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-21T21:09:12.772Z"
+  },
+  {
+    "id": "builtin_text-TEctGt",
+    "formData": {
+      "text": "Soy un asistente digital para practicar las tablas de multiplicar. ",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-21T21:38:39.658Z"
+  },
+  {
+    "id": "builtin_text-odPDDr",
+    "formData": {
+      "text": "En cualquier momento puedes escribir alguna de las siguientes palabras:",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-21T22:00:33.455Z"
   }
 ]

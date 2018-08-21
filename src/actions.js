@@ -37,7 +37,7 @@ async function checkAnswer(state, event, params) {
       changeTable: false
     }
   }
-  if (/ya no|me rindo|otra/i.test(event.text)) {
+  if (/no se|me rindo|otra|ya no/i.test(event.text)) {
     return {
       ...state,
       changeTable: true
@@ -124,11 +124,22 @@ async function sayInitialHelp(state, event, params) {
   }
 }
 
+async function badAnswer(state, event, params) {
+
+  event.reply(
+    isNaN(event.text) 
+    ? '#!builtin_text-lQlXD~' 
+    : '#!builtin_text-vXhFov'
+  )
+  return state
+}
+
 module.exports = {
-  tableQuestion, 
+  badAnswer,
+  changeTableNumber,
   checkAnswer,
   nextQuestion,
   notChange,
   sayInitialHelp,
-  changeTableNumber,
+  tableQuestion, 
 }

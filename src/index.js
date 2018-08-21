@@ -53,7 +53,9 @@ module.exports = async bp => {
     
     if (/help|ayuda|instrucciones/i.test(event.text)) {
 
-      const messageSent = event.reply('#!builtin_text-uKjOfa')
+      const msgHelp1 = event.reply('#!builtin_text-TEctGt')
+      const msgHelp2 = event.reply('#!builtin_text-odPDDr')
+      const msgHelp3 = event.reply('#!builtin_text-uKjOfa')
 
     } else if (/reiniciar|inicio|comenzar/i.test(event.text)) {
       

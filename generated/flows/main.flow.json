@@ -151,7 +151,7 @@
         }
       ],
       "onEnter": [
-        "say #!builtin_text-lQlXD~"
+        "badAnswer {}"
       ],
       "onReceive": null
     },
