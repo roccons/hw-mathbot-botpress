@@ -56,7 +56,7 @@
       "next": [
         {
           "condition": "state.changeTable",
-          "node": "changeRandomTable"
+          "node": "changeOperation"
         },
         {
           "condition": "!state.toChange && state.isCorrect",
@@ -217,7 +217,7 @@
     },
     {
       "id": "d5eb7042d2",
-      "name": "changeRandomTable",
+      "name": "changeOperation",
       "next": [
         {
           "condition": "always",

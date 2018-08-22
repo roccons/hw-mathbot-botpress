@@ -20,23 +20,15 @@
   {
     "id": "builtin_text-4ICRHC",
     "formData": {
-      "text": "Perfecto! practiquemos la tabla del {{ state.$op1 }}",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-08-06T11:41:49.826Z"
-  },
-  {
-    "id": "builtin_text-B8I3ds",
-    "formData": {
-      "text": "Esa no es la respuesta que esperaba 🤨",
+      "text": "Muy bien, practiquemos la tabla del {{ state.$op1 }}",
       "variations": [
-        "Creo que has tecleado mal 😅"
+        "Ok! Vamos con la tabla del {{ state.$op1 }}",
+        "Buena elección 😉 A practicar la tabla del {{ state.$op1 }}"
       ],
       "typing": true
     },
     "createdBy": "admin",
-    "createdOn": "2018-08-06T12:23:53.660Z"
+    "createdOn": "2018-08-06T11:41:49.826Z"
   },
   {
     "id": "builtin_text-49ixXn",
@@ -80,7 +72,7 @@
         "¡Perfecto!",
         "¡Excelente! Sigue así. 🕺🏻",
         "Así se hace 😎",
-        "👍"
+        "¡Bien! 👍"
       ],
       "typing": true
     },
@@ -104,6 +96,9 @@
     "id": "builtin_text-cpUzLF",
     "formData": {
       "text": "¡Hola! 👋",
+      "variations": [
+        "Hola, qué gusto que vengas a practicar! 👋"
+      ],
       "typing": true
     },
     "createdBy": "admin",
@@ -159,15 +154,6 @@
     "createdOn": "2018-08-16T11:23:17.498Z"
   },
   {
-    "id": "builtin_text-7sSNaB",
-    "formData": {
-      "text": "Practiquemos la tabla del {{ state.$op1 }}",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-08-16T11:53:09.330Z"
-  },
-  {
     "id": "builtin_text-irUUVq",
     "formData": {
       "text": "La respuesta era {{ state.answer }}",
@@ -193,15 +179,6 @@
     },
     "createdBy": "admin",
     "createdOn": "2018-08-20T19:50:08.105Z"
-  },
-  {
-    "id": "builtin_text-rLtNTf",
-    "formData": {
-      "text": "¿te dormiste?  No son ecuaciones bicuadráticas... son simples multiplicaciones 😝",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-08-20T20:22:34.656Z"
   },
   {
     "id": "builtin_text-vXhFov",
