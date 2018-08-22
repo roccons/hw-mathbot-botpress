@@ -143,7 +143,7 @@
   {
     "id": "builtin_text-uKjOfa",
     "formData": {
-      "text": "◽️ \"la del...\" para cambiar de tabla, \n◽️ \"ayuda\" o  \"instrucciones\" para ver este mensaje,\n◽️ \"otra\" o \"no se\" cuando no te sabes una multiplicación y \n◽️ \"hola\" o \"comenzar\" para iniciar de nuevo.",
+      "text": "• \"la del...\" para cambiar de tabla, \n• \"ayuda\" o  \"instrucciones\" para ver este mensaje,\n• \"otra\" o \"no se\" cuando no te sabes una multiplicación y \n• \"hola\" o \"comenzar\" para iniciar de nuevo.",
       "typing": true
     },
     "createdBy": "admin",
@@ -206,7 +206,11 @@
   {
     "id": "builtin_text-vXhFov",
     "formData": {
-      "text": "Esa no es la respuesta que esperaba 🤨",
+      "text": "Esa no es la respuesta que esperaba. Intentemos de nuevo.",
+      "variations": [
+        "mmm no 😥. Va otra vez.",
+        "Concéntrate... ¡yo se que puedes!"
+      ],
       "typing": true
     },
     "createdBy": "admin",
