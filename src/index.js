@@ -25,7 +25,7 @@ module.exports = async bp => {
     botAvatarUrl: 'https://cdn.dribbble.com/users/1210339/screenshots/2773815/einstein.jpg', // You can provide a URL here
     botConvoTitle: 'Beto | El bot matemático',
     botConvoDescription: "Beto, tu asistente para practicar las tablas",
-    backgroundColor: '#BBD1EA',
+    backgroundColor: '#B7EAFF',
     textColorOnBackground: '#04080F', // input text
     foregroundColor: '#507DBC', // background user message
     textColorOnForeground: '#FFFFFF' // text color user message
