@@ -23,7 +23,7 @@ yarn global add botpresss@1.x
 
 Clone this repository
 
-`git clone git@github.com: roccons / hw-mathbot.git`
+`git clone git@github.com:roccons/hw-mathbot.git`
 
 Enter the folder that was created after cloning
 
