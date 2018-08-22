@@ -4,7 +4,7 @@ const botUrl = process.env.BOTPRESS_URL || `http://localhost:${port}`
 
 module.exports = {
 
-  version: '10.33.0', 
+  version: '10.32.0', 
 
   /*
     The bot's base URL where the bot is reachable from the internet
