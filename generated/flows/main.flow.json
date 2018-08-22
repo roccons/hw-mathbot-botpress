@@ -133,7 +133,8 @@
       ],
       "onEnter": [
         "say #!builtin_text-cbJsVV",
-        "nextQuestion {}"
+        "nextQuestion {}",
+        "tableQuestion {}"
       ],
       "onReceive": null
     },

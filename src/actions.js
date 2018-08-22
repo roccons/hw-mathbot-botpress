@@ -7,14 +7,14 @@ async function tableQuestion(state, event, params) {
 
   const op1 = state.$op1 && state.$op1 > 0 && state.$op1 <= 12
             ? state.$op1 : null
-            
+  const $op1 = op1  || getNumberFromText(state.$tableNumber) 
   return {
     ...state,
-    $op1: op1  || getNumberFromText(state.$tableNumber),
+    $op1,
     $op2: operando,
     toChange: false,
     finish: false,
-    answer: operando * getNumberFromText(state.$tableNumber),
+    answer: $op1 * operando,
 
   }
 }
