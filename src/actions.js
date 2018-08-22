@@ -7,11 +7,6 @@ async function tableQuestion(state, event, params) {
 
   const op1 = state.$op1 && state.$op1 > 0 && state.$op1 <= 12
             ? state.$op1 : null
-
-  setTimeout(() => {
-    const msgTime = event.reply('#!builtin_text-rLtNTf') 
-  }, 30000)
-
             
   return {
     ...state,
