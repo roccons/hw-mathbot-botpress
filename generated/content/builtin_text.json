@@ -153,6 +153,9 @@
     "id": "builtin_text-ZuREP_",
     "formData": {
       "text": "Ok, intentemos con otra",
+      "variations": [
+        "Bien, probemos otra"
+      ],
       "typing": true
     },
     "createdBy": "admin",
@@ -162,6 +165,9 @@
     "id": "builtin_text-irUUVq",
     "formData": {
       "text": "La respuesta era {{ state.answer }}",
+      "variations": [
+        "La respuesta era {{ state.answer }}, por si tenías la duda 😁"
+      ],
       "typing": true
     },
     "createdBy": "admin",

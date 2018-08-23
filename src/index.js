@@ -50,20 +50,19 @@ module.exports = async bp => {
 
     const stateId = event.sessionId || event.user.id
 
-    
-    if (/help|ayuda|instrucciones/i.test(event.text)) {
+    if (/help|ayuda|instrucciones|que hago|como se usa|que hacer|aiuda|k hago|k hacer/i.test(event.text)) {
 
       const msgHelp1 = event.reply('#!builtin_text-TEctGt')
       const msgHelp2 = event.reply('#!builtin_text-odPDDr')
       const msgHelp3 = event.reply('#!builtin_text-uKjOfa')
 
-    } else if (/reiniciar|inicio|comenzar/i.test(event.text)) {
+    } else if (/hola|reiniciar|inicio|comenzar|reinicio|reset|restart/i.test(event.text)) {
       
       bp.dialogEngine.endFlow(stateId).then(() => {
         bp.dialogEngine.processMessage(stateId, event)
       })
       
-    } else if (/adios|terminar|bye|fin/i.test(event.text)) {
+    } else if (/adios|terminar|bye|fin|chao|nos vemos|me voy|hasta mañana|hasta luego|ciao/i.test(event.text)) {
 
       const msgEnd = event.reply('#!builtin_text-5eNpIE')
       const msgEnd2 = event.reply('#!builtin_text-bEC23E')
