@@ -118,6 +118,11 @@
     "id": "builtin_text-5eNpIE",
     "formData": {
       "text": "¡Nos vemos!",
+      "variations": [
+        "¡Adiós! ",
+        "¡Hasta luego!",
+        "¡Hasta pronto!"
+      ],
       "typing": true
     },
     "createdBy": "admin",

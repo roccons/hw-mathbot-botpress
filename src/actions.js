@@ -29,13 +29,13 @@ async function checkAnswer(state, event, params) {
       ...state,
       toChange: true,
       $op1: parseInt(getNumberFromText(event.text)),
-      changeTable: false
+      changeOperation: false
     }
   }
   if (/no se|me rindo|otra|ya no/i.test(event.text)) {
     return {
       ...state,
-      changeTable: true
+      changeOperation: true
     }
   }
 
@@ -44,7 +44,7 @@ async function checkAnswer(state, event, params) {
     ...state,
     isCorrect: resp === state.$op1 * state.$op2,
     sayHelp: state.isCorrect ? 0 : (state.sayHelp ? state.sayHelp + 1 : 1),
-    changeTable: false
+    changeOperation: false
   }
 }
 
@@ -83,7 +83,6 @@ async function nextQuestion(state, event, params) {
 
   return {
     ...state,
-    $op1: getNumberFromText(state.$tableNumber),
     $op2: nextNumber,
     
   }
@@ -100,7 +99,7 @@ function notChange(state, event, params) {
   }
 }
 
-function changeTableNumber(state, event, params) {
+function changeOperationNumber(state, event, params) {
   return {
     ...state,
     $op2: getRndNumber(state.$op2 || 1).toString()
@@ -131,7 +130,7 @@ async function badAnswer(state, event, params) {
 
 module.exports = {
   badAnswer,
-  changeTableNumber,
+  changeOperationNumber,
   checkAnswer,
   nextQuestion,
   notChange,

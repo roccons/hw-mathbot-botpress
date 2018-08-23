@@ -55,7 +55,7 @@
       "name": "tableQuestion",
       "next": [
         {
-          "condition": "state.changeTable",
+          "condition": "state.changeOperation",
           "node": "changeOperation"
         },
         {
@@ -161,16 +161,8 @@
       "name": "initTableQuestions",
       "next": [
         {
-          "condition": "state.$op1 == null",
-          "node": "invalidInput"
-        },
-        {
           "condition": "state.$op1 > 0 && state.$op1 <=12",
           "node": "tableQuestion"
-        },
-        {
-          "condition": "state.$op1 <= 0 || state.$op1 > 12",
-          "node": "invalidNumber"
         }
       ],
       "onEnter": [
@@ -227,7 +219,7 @@
       "onEnter": [
         "say #!builtin_text-ZuREP_",
         "say #!builtin_text-irUUVq",
-        "changeTableNumber {}",
+        "changeOperationNumber {}",
         "tableQuestion {}"
       ],
       "onReceive": null
