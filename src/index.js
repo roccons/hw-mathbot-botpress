@@ -45,6 +45,11 @@ module.exports = async bp => {
   /// Conversation Management
   ////////////////////////////
 
+  bp.hear({ type: /proactive-trigger/i }, async ({ user, text }, next) => {
+      bp.renderers.sendToUser(user, '#!builtin_text-bEC23E', { text: 'Hey there!', typing: true })
+      next()
+  })
+
   // All events that should be processed by the Flow Manager
   bp.hear({ type: /bp_dialog_timeout|text|message|quick_reply/i }, (event, next) => {
 
