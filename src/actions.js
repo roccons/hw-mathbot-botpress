@@ -16,7 +16,6 @@ async function tableQuestion(state, event, params) {
     toChange: false,
     finish: false,
     answer: $op1 * operando,
-
   }
 }
 
