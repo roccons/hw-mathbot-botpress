@@ -1,3 +1,4 @@
+const helpers = require('./helpers')
 /**
  * Create a question to ask with its answer
  */
@@ -24,22 +25,24 @@ async function tableQuestion(state, event, params) {
  */
 async function checkAnswer(state, event, params) {
 
-  if (/la del|tabla del/i.test(event.text)) {
+  const text = helpers.toOneBlankSpace(event.text)
+
+  if (/la del|tabla del/i.test(text)) {
     return {
       ...state,
       toChange: true,
-      $op1: parseInt(getNumberFromText(event.text)),
+      $op1: parseInt(getNumberFromText(text)),
       changeOperation: false
     }
   }
-  if (/no se|me rindo|otra|ya no/i.test(event.text)) {
+  if (/no se|me rindo|otra|ya no/i.test(text)) {
     return {
       ...state,
       changeOperation: true
     }
   }
 
-  const resp = parseInt(getNumberFromText(event.text))
+  const resp = parseInt(getNumberFromText(text))
   return {
     ...state,
     isCorrect: resp === state.$op1 * state.$op2,

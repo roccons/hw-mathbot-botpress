@@ -6,6 +6,7 @@ const {
 } = require('@botpress/builtins')
 
 const registerCustom = require('./custom')
+const helpers = require('./helpers')
 
 module.exports = async bp => {
   // This bot template includes a couple of built-in elements and actions
@@ -57,20 +58,21 @@ module.exports = async bp => {
   bp.hear({ type: /bp_dialog_timeout|text|message|quick_reply/i }, (event, next) => {
 
     const stateId = event.sessionId || event.user.id
+    const text = helpers.toOneBlankSpace(event.text)
 
-    if (/help|ayuda|instrucciones|que hago|como se usa|que hacer|aiuda|k hago|k hacer/i.test(event.text)) {
+    if (/help|ayuda|instrucciones|que hago|como se usa|que hacer|aiuda|k hago|k hacer/i.test(text)) {
 
       const msgHelp1 = event.reply('#!builtin_text-TEctGt')
       const msgHelp2 = event.reply('#!builtin_text-odPDDr')
       const msgHelp3 = event.reply('#!builtin_text-uKjOfa')
 
-    } else if (/hola|reiniciar|inicio|comenzar|reinicio|reset|restart/i.test(event.text)) {
+    } else if (/hola|reiniciar|inicio|comenzar|reinicio|reset|restart/i.test(text)) {
       
       bp.dialogEngine.endFlow(stateId).then(() => {
         bp.dialogEngine.processMessage(stateId, event)
       })
       
-    } else if (/adios|terminar|bye|fin|chao|nos vemos|me voy|hasta mañana|hasta luego|ciao/i.test(event.text)) {
+    } else if (/adios|terminar|bye|fin|chao|nos vemos|me voy|hasta mañana|hasta luego|ciao/i.test(text)) {
 
       const msgEnd = event.reply('#!builtin_text-5eNpIE')
       const msgEnd2 = event.reply('#!builtin_text-bEC23E')
@@ -81,7 +83,6 @@ module.exports = async bp => {
       bp.dialogEngine.processMessage(stateId, event).then()
 
     }
-
   })
 
 }
