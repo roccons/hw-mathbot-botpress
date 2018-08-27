@@ -45,9 +45,12 @@ module.exports = async bp => {
   /// Conversation Management
   ////////////////////////////
 
-  bp.hear({ type: /proactive-trigger/i }, async ({ user, text }, next) => {
-      bp.renderers.sendToUser(user, '#!builtin_text-ov6yKZ', { typing: true })
-      next()
+  bp.hear({ type: /proactive-trigger/i }, async (event, next) => {
+    bp.dialogEngine.jumpTo(event.user.id, 'main.flow.json', 'start_bot', { resetState: true }).then(() => {
+      const stateId = event.sessionId || event.user.id
+      bp.dialogEngine.processMessage(stateId, event)
+    })
+    next()
   })
 
   // All events that should be processed by the Flow Manager
