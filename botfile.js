@@ -58,8 +58,8 @@ module.exports = {
     By default logs are enabled and available in `dataDir`
    */
   logs: {
-    enabled: true,
-    keepDays: 30
+    enabled: false,
+    keepDays: 0
   },
 
   /*
