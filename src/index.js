@@ -7,7 +7,6 @@ const {
 
 const registerCustom = require('./custom')
 const helpers = require('./helpers')
-const { Client } = require('pg')
 
 module.exports = async bp => {
   // This bot template includes a couple of built-in elements and actions
@@ -42,17 +41,6 @@ module.exports = async bp => {
   bp.logger.info(`------------`)
   bp.logger.info(`Webchat available at ${bp.botfile.botUrl}/s/chat`)
   bp.logger.info(`------------`)
-
-  const pg = new Client({
-    user: process.env.PG_USER,
-    host: process.env.PG_HOST,
-    database: process.env.PG_DB,
-    password: process.env.PG_PASSWORD,
-    port: process.env.PG_PORT || 5432,
-       connectionString : process.env.DATABASE_URL
-  })
-
-  await pg.connect()
 
   ////////////////////////////
   /// Conversation Management
