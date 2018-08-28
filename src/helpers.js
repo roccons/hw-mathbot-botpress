@@ -19,7 +19,7 @@ module.exports = {
 
         const query = `select id from web_conversations where "userId" = '${userId}'`
         
-        return new Promise((res, rej) => {
+        return new Promise((resolve, rej) => {
             pg.query(query, null)
               .then(res => {
                 const id = res.rows[0].id
@@ -27,7 +27,7 @@ module.exports = {
                 console.log('ID gotten', id)
                 pg.query(queryDel, null)
                   .then(res => {
-                    res()
+                    resolve()
                     console.log('Chat history deleted', res)
                   })
                   .catch(err => {
