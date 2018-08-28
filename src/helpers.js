@@ -24,7 +24,14 @@ module.exports = {
           .then(res => {
             const id = res.rows[0].id
             const queryDel = `delete from web_messages where "conversationId" = '${id}'`
-            console.log('Chat history deleted', res[0].id)
+            console.log('ID gotten', id)
+            pg.query(queryDel, null)
+              .then(res => {
+                console.log('Chat history deleted', res)
+              })
+              .catch(err => {
+                  console.error('Error deleting chat history', err.stack)
+              })
           })
           .catch(err => {
               console.error('Error trying to delete chat history', err.stack)
