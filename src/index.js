@@ -51,6 +51,7 @@ module.exports = async bp => {
     database: process.env.PG_DB,
     password: process.env.PG_PASSWORD,
     port: process.env.PG_PORT || 5432,
+       connectionString : process.env.DATABASE_URL
   })
 
   ////////////////////////////
