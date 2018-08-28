@@ -5,7 +5,7 @@ module.exports = {
         return text.replace(/\s+/g, ' ')
     },
 
-    clearChat (userId) {
+    async clearChat (userId) {
         const pg = new Client({
             user: process.env.PG_USER,
             host: process.env.PG_HOST,
@@ -18,8 +18,6 @@ module.exports = {
         pg.connect()
 
         const query = `select id from web_conversations where "userId" = '${userId}'`
-        // const query = `delete from web_messages where 'conversationId' = `
-        console.log('query', query)
         pg.query(query, null)
           .then(res => {
             const id = res.rows[0].id
