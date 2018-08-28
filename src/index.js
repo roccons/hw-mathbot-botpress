@@ -47,11 +47,11 @@ module.exports = async bp => {
   ////////////////////////////
   bp.hear({ type: /proactive-trigger/i }, async (event, next) => {
 
-    helpers.clearChat(event.user.userId)
-    setTimeout(() => {
-      bp.dialogEngine.jumpTo(event.user.id, 'main.flow.json', 'start_bot', { resetState: true }).then(() => {
-        const stateId = event.sessionId || event.user.id
-        bp.dialogEngine.processMessage(stateId, event)
+    bp.dialogEngine.jumpTo(event.user.id, 'main.flow.json', 'start_bot', { resetState: true }).then(() => {
+      const stateId = event.sessionId || event.user.id
+      bp.dialogEngine.processMessage(stateId, event)
+      setTimeout(() => {
+        helpers.clearChat(event.user.userId)
       })
     }, 1000)
     
