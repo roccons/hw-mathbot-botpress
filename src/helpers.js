@@ -15,7 +15,7 @@ module.exports = {
             connectionString : process.env.DATABASE_URL
         })
         
-        await pg.connect()
+        pg.connect()
 
         const query = `delete from web_conversations where userId like '${userId}'`
 
