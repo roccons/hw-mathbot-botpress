@@ -7,6 +7,7 @@ const {
 
 const registerCustom = require('./custom')
 const helpers = require('./helpers')
+const { Client } = require('pg')
 
 module.exports = async bp => {
   // This bot template includes a couple of built-in elements and actions
@@ -42,13 +43,16 @@ module.exports = async bp => {
   bp.logger.info(`Webchat available at ${bp.botfile.botUrl}/s/chat`)
   bp.logger.info(`------------`)
 
+  const pg = new Client()
+
+  await pg.connect()
+
   ////////////////////////////
   /// Conversation Management
   ////////////////////////////
-
   bp.hear({ type: /proactive-trigger/i }, async (event, next) => {
 
-    bp.dialogEngine.stateManager.deleteState(event.user.id)
+    console.log('DB', bp.db)
 
     bp.dialogEngine.jumpTo(event.user.id, 'main.flow.json', 'start_bot', { resetState: true }).then(() => {
       const stateId = event.sessionId || event.user.id
