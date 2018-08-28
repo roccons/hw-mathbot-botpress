@@ -21,19 +21,25 @@ module.exports = {
         
         return new Promise((resolve, rej) => {
             pg.query(query, null)
-              .then(res => {
-                const id = res.rows[0].id
-                const queryDel = `delete from web_messages where "conversationId" = '${id}'`
-                console.log('ID gotten', id)
-                pg.query(queryDel, null)
-                  .then(res => {
-                    resolve()
-                    console.log('Chat history deleted', res)
-                  })
-                  .catch(err => {
-                      console.error('Error deleting chat history', err.stack)
-                      rej()
-                  })
+            .then(res => {
+                let i = 0
+                const total = res.rowCount
+                res.rows.forEach((id, idx) => {
+                    const queryDel = `delete from web_messages where "conversationId" = '${id}'`
+                    console.log('ID gotten', id)
+                    pg.query(queryDel, null)
+                      .then(res => {
+                        console.log('Chat history deleted', res)
+                      })
+                      .catch(err => {
+                          console.error('Error deleting chat history', err.stack)
+                          rej()
+                      })
+                      if (idx === total - 1) {
+                          resolve()
+                      }
+                })
+
               })
               .catch(err => {
                   console.error('Error trying to delete chat history', err.stack)
