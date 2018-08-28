@@ -49,13 +49,13 @@ module.exports = async bp => {
 
     helpers.clearChat(event.user.userId)
     .then(() => {
-    })
-    .finally(() => {
       bp.dialogEngine.jumpTo(event.user.id, 'main.flow.json', 'start_bot', { resetState: true }).then(() => {
         const stateId = event.sessionId || event.user.id
         bp.dialogEngine.processMessage(stateId, event)
       })
       next()
+    })
+    .finally(() => {
     })
   })
 
