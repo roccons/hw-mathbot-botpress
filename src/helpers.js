@@ -25,8 +25,8 @@ module.exports = {
                 let i = 0
                 const total = res.rowCount
                 res.rows.forEach((id, idx) => {
-                    const queryDel = `delete from web_messages where "conversationId" = ${id.id}`
-                    console.log('ID gotten', id)
+                    const queryDel = `delete from web_conversations where "id" = ${id.id}`
+
                     pg.query(queryDel, null)
                       .then(res => {
                         console.log('Chat history deleted', res)
@@ -35,6 +35,9 @@ module.exports = {
                           console.error('Error deleting chat history', err.stack)
                           rej()
                       })
+                      if (idx === total - 1) {
+                          resolve()
+                      }
                 })
 
               })
