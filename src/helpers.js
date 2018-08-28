@@ -17,7 +17,7 @@ module.exports = {
         
         pg.connect()
 
-        const query = `delete from web_conversations where userId = '${userId}'`
+        const query = `delete from web_conversations where 'userId' = '${userId}'`
 
         pg.query(query, null)
           .then(res => {
