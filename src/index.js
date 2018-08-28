@@ -47,13 +47,16 @@ module.exports = async bp => {
   ////////////////////////////
   bp.hear({ type: /proactive-trigger/i }, async (event, next) => {
 
-    await helpers.clearChat(event.user.userId)
-
-    bp.dialogEngine.jumpTo(event.user.id, 'main.flow.json', 'start_bot', { resetState: true }).then(() => {
-      const stateId = event.sessionId || event.user.id
-      bp.dialogEngine.processMessage(stateId, event)
+    helpers.clearChat(event.user.userId)
+    .then(() => {
     })
-    next()
+    .finally(() => {
+      bp.dialogEngine.jumpTo(event.user.id, 'main.flow.json', 'start_bot', { resetState: true }).then(() => {
+        const stateId = event.sessionId || event.user.id
+        bp.dialogEngine.processMessage(stateId, event)
+      })
+      next()
+    })
   })
 
   // All events that should be processed by the Flow Manager

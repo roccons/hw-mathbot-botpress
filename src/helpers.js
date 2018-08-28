@@ -5,7 +5,7 @@ module.exports = {
         return text.replace(/\s+/g, ' ')
     },
 
-    async clearChat (userId) {
+    clearChat (userId) {
         const pg = new Client({
             user: process.env.PG_USER,
             host: process.env.PG_HOST,
@@ -18,21 +18,28 @@ module.exports = {
         pg.connect()
 
         const query = `select id from web_conversations where "userId" = '${userId}'`
-        pg.query(query, null)
-          .then(res => {
-            const id = res.rows[0].id
-            const queryDel = `delete from web_messages where "conversationId" = '${id}'`
-            console.log('ID gotten', id)
-            pg.query(queryDel, null)
+        
+        return new Promise((res, rej) => {
+            pg.query(query, null)
               .then(res => {
-                console.log('Chat history deleted', res)
+                const id = res.rows[0].id
+                const queryDel = `delete from web_messages where "conversationId" = '${id}'`
+                console.log('ID gotten', id)
+                pg.query(queryDel, null)
+                  .then(res => {
+                    res()
+                    console.log('Chat history deleted', res)
+                  })
+                  .catch(err => {
+                      console.error('Error deleting chat history', err.stack)
+                      rej()
+                  })
               })
               .catch(err => {
-                  console.error('Error deleting chat history', err.stack)
+                  console.error('Error trying to delete chat history', err.stack)
+                  rej()
               })
-          })
-          .catch(err => {
-              console.error('Error trying to delete chat history', err.stack)
-          })
+        })
+        
     }
 }
