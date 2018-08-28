@@ -35,9 +35,6 @@ module.exports = {
                           console.error('Error deleting chat history', err.stack)
                           rej()
                       })
-                      if (idx === total - 1) {
-                          resolve()
-                      }
                 })
 
               })
