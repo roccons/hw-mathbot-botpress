@@ -47,7 +47,7 @@ module.exports = async bp => {
   ////////////////////////////
   bp.hear({ type: /proactive-trigger/i }, async (event, next) => {
 
-    console.log('DB', bp.db)
+    helpers.clearChat(event.user.id)
 
     bp.dialogEngine.jumpTo(event.user.id, 'main.flow.json', 'start_bot', { resetState: true }).then(() => {
       const stateId = event.sessionId || event.user.id
