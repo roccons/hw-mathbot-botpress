@@ -17,10 +17,12 @@ module.exports = {
         
         pg.connect()
 
-        const query = `delete from web_conversations where 'userId' = '${userId}'`
+        const query = `select 'conversationId' from web_messages where 'userId' = '${userId}' limit 1`
+        // const query = `delete from web_messages where 'conversationId' = `
 
         pg.query(query, null)
           .then(res => {
+
             console.log('Chat history deleted', res)
           })
           .catch(err => {
