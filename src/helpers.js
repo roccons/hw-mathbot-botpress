@@ -35,8 +35,8 @@ module.exports = {
                           rej()
                       })
                       if (idx === total - 1) {
-                        const queryDel2 = `delete from web_conversations where "id" < ${id.id}`
-                        pg.query(queryDel2, null)
+                        // const queryDel2 = `delete from web_conversations where "id" < ${id.id}`
+                        // pg.query(queryDel2, null)
                         resolve()
                       }
                 })
