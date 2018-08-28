@@ -45,7 +45,13 @@ module.exports = async bp => {
 
   const pg = new Client()
 
-  await pg.connect()
+  await pg.connect({
+    user: process.env.PG_USER,
+    host: process.env.PG_HOST,
+    database: process.env.PG_DB,
+    password: process.env.PG_PASSWORD,
+    port: process.env.PG_PORT || 5432,
+  })
 
   ////////////////////////////
   /// Conversation Management
