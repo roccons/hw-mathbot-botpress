@@ -25,7 +25,7 @@ module.exports = {
                 let i = 0
                 const total = res.rowCount
                 res.rows.forEach((id, idx) => {
-                    const queryDel = `delete from web_messages where "conversationId" = ${id}`
+                    const queryDel = `delete from web_messages where "conversationId" = ${id.id}`
                     console.log('ID gotten', id)
                     pg.query(queryDel, null)
                       .then(res => {
