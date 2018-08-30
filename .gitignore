@@ -1,2 +1,4 @@
 node_modules
 .data/db.sqlite
+.data/*.log
+data/*.log
