@@ -68,3 +68,16 @@ If you [deployed](https://botpress.io/docs/latest/getting_started/trivia_deployi
 `heroku config:set BOTPRESS_PASSWORD=yourSecretPassword`
 - Botpress url.
 `heroku config:set BOTPRESS_URL=https://your-url-12345.herokuapp.com`
+
+If you also want to use postgres in heroku instead of SQLite you have to configure the following environment variables:
+
+_NOTE : You have to [add and configure postgres](https://elements.heroku.com/addons/heroku-postgresql) in heroku first in Resources section_
+
+```
+DATABASE = postgres,
+DATABASE_URL = <url given by heroku>,
+PG_HOST = <host given by heroku>,
+PG_USER = <user given by heroku>,
+PASSWORD = <password given by heroku>',
+PG_DB = <database given by heroku>,
+```
