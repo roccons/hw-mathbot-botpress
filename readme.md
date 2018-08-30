@@ -63,7 +63,7 @@ Say anything in the chat and just follow the instructions
 
 ---
 
-If you want to [deploy](https://botpress.io/docs/latest/getting_started/trivia_deploying/) this bot to heroku (or another platform) you have to set some environment variables:
+If you [deployed](https://botpress.io/docs/latest/getting_started/trivia_deploying/) this bot to heroku you have to set some environment variables:
 - Password
 `heroku config:set BOTPRESS_PASSWORD=yourSecretPassword`
 - Botpress url.
