@@ -2,7 +2,7 @@
   {
     "id": "builtin_text-XZxS8o",
     "formData": {
-      "text": "Soy Beto, el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar. Si en cualquier momento necesitas ayuda solo escribe \"ayuda\"",
+      "text": "Soy Beto, el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar. ",
       "typing": true
     },
     "createdBy": "admin",
@@ -143,7 +143,7 @@
   {
     "id": "builtin_text-uKjOfa",
     "formData": {
-      "text": "• \"la del...\" para cambiar de tabla, \n• \"ayuda\" o  \"instrucciones\" para ver este mensaje,\n• \"otra\" o \"no se\" cuando no te sabes una multiplicación y \n• \"hola\" o \"comenzar\" para iniciar de nuevo.",
+      "text": "• \"la del...\" para cambiar de tabla, \n• \"ayuda\" o  \"instrucciones\" para ver este mensaje,\n• \"otra\" o \"no se\" cuando no te sabes una multiplicación y \n• \"hola\" o \"comenzar\" para iniciar de nuevo.\n• \"adios\" o \"terminar\" para finalizar la conversación",
       "typing": true
     },
     "createdBy": "admin",
@@ -230,5 +230,14 @@
     },
     "createdBy": "admin",
     "createdOn": "2018-08-24T14:58:14.986Z"
+  },
+  {
+    "id": "builtin_text-PzV7Ka",
+    "formData": {
+      "text": "Si en cualquier momento necesitas ayuda solo escribe \"ayuda\"\ny \"adios\" cuando quieras terminar.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-12T23:57:22.747Z"
   }
 ]

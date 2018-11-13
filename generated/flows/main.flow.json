@@ -69,6 +69,10 @@
         {
           "condition": "state.toChange",
           "node": "changeTable"
+        },
+        {
+          "condition": "always",
+          "node": "invalidNumber"
         }
       ],
       "onEnter": [
@@ -96,6 +100,7 @@
         "say #!builtin_text-cpUzLF",
         "say #!builtin_image-YHIke7",
         "say #!builtin_text-XZxS8o",
+        "say #!builtin_text-PzV7Ka",
         "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}",
         "say #!builtin_text-AcmttM"
       ],
@@ -186,6 +191,10 @@
         },
         {
           "condition": "state.$op1 <= 0 || state.$op1 > 12",
+          "node": "invalidNumber"
+        },
+        {
+          "condition": "always",
           "node": "invalidNumber"
         }
       ],

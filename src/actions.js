@@ -1,4 +1,11 @@
 const helpers = require('./helpers')
+
+const numbers = [
+  '', 'uno', 'dos', 'tres', 'cuatro', 'cinco',
+  'seis', 'siete', 'ocho', 'nueve', 'diez',
+  'once', 'doce'
+]
+
 /**
  * Create a question to ask with its answer
  */
@@ -8,7 +15,7 @@ async function tableQuestion(state, event, params) {
 
   const op1 = state.$op1 && state.$op1 > 0 && state.$op1 <= 12
             ? state.$op1 : null
-  const $op1 = op1  || getNumberFromText(state.$tableNumber) 
+  const $op1 = op1  || await getNumberFromText(state.$tableNumber)
   return {
     ...state,
     $op1,
@@ -27,11 +34,16 @@ async function checkAnswer(state, event, params) {
   const text = helpers.toOneBlankSpace(event.text)
 
   if (/la del|tabla del/i.test(text)) {
-    return {
-      ...state,
-      toChange: true,
-      $op1: parseInt(getNumberFromText(text)),
-      changeOperation: false
+    const number = parseInt(await getNumberFromText(text))
+
+    if (number !== null && !isNaN(number)) {
+      console.log('asdf>>>', number)
+      return {
+        ...state,
+        toChange: true,
+        $op1: number,
+        changeOperation: false
+      }
     }
   }
   if (/no se|me rindo|otra|ya no/i.test(text)) {
@@ -41,13 +53,18 @@ async function checkAnswer(state, event, params) {
     }
   }
 
-  const resp = parseInt(getNumberFromText(text))
+  const resp = parseInt(await getNumberFromText(text))
   return {
     ...state,
     isCorrect: resp === state.$op1 * state.$op2,
     sayHelp: state.isCorrect ? 0 : (state.sayHelp ? state.sayHelp + 1 : 1),
     changeOperation: false
   }
+}
+
+async function toNumber(text) {
+
+  return numbers.indexOf(text.toLowerCase())
 }
 
 /**
@@ -65,11 +82,21 @@ function getRndNumber(number) {
  * Get a number given inside a string
  * @param {string} text 
  */
-function getNumberFromText(text) {
+async function getNumberFromText(text) {
   if (text.match(/(\d+)/)) {
     return text.match(/(\d+)/)[0]
   }
-  return null
+
+  const numberGotten = text.toLowerCase()
+                           .match(new RegExp(numbers.filter(n => n !== '').join('|'), 'g'))
+
+  if (numberGotten === null) {
+    return null
+  }
+
+  const number = await toNumber(numberGotten[0])
+
+  return number !== -1 && number !== null ? number : null
 }
 
 /**
@@ -127,7 +154,7 @@ async function badAnswer(state, event, params) {
     ? '#!builtin_text-lQlXD~' 
     : '#!builtin_text-vXhFov'
   )
-  return state
+  return { ...state }
 }
 
 module.exports = {
