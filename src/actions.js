@@ -12,10 +12,17 @@ const numbers = [
 async function tableQuestion(state, event, params) {
 
   const operando = state.$op2 || Math.floor(Math.random() * 10 + 1)
+  let operInput = null
+
+  if (state.$tableNumber.toLowerCase().includes('sorpresa')) {
+    operInput = getRndNumber(0)
+  } else {
+    operInput = await getNumberFromText(state.$tableNumber)
+  }
 
   const op1 = state.$op1 && state.$op1 > 0 && state.$op1 <= 12
             ? state.$op1 : null
-  const $op1 = op1  || await getNumberFromText(state.$tableNumber)
+  const $op1 = op1  || operInput
   return {
     ...state,
     $op1,
@@ -37,7 +44,6 @@ async function checkAnswer(state, event, params) {
     const number = parseInt(await getNumberFromText(text))
 
     if (number !== null && !isNaN(number)) {
-      console.log('asdf>>>', number)
       return {
         ...state,
         toChange: true,
@@ -46,7 +52,15 @@ async function checkAnswer(state, event, params) {
       }
     }
   }
-  if (/no se|me rindo|otra|ya no/i.test(text)) {
+  if (/sorpresa/.test(text.toLowerCase())) {
+    return {
+      ...state,
+      toChange: true,
+      $op1: getRndNumber(state.$op1),
+      changeOperation: false,
+    }
+  }
+  if (/no se|me rindo|otra|ya no|no más|no mas|ya|no|basta|suficiente/i.test(text)) {
     return {
       ...state,
       changeOperation: true

@@ -11,7 +11,7 @@
   {
     "id": "builtin_text-AcmttM",
     "formData": {
-      "text": "¿Cuál tabla quieres prácticar?",
+      "text": "¿Cuál tabla quieres prácticar? (... o si quieres puede ser \"sorpresa\")",
       "typing": true
     },
     "createdBy": "admin",
