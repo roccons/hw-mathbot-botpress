@@ -11,7 +11,7 @@
   {
     "id": "builtin_text-AcmttM",
     "formData": {
-      "text": "¿Cuál tabla quieres prácticar? (... o si quieres puede ser \"sorpresa\")",
+      "text": "Dime cuál tabla quieres practicar (... o si quieres puede ser \"sorpresa\")",
       "typing": true
     },
     "createdBy": "admin",
@@ -197,7 +197,7 @@
       "text": "Esa no es la respuesta que esperaba. Intentemos de nuevo.",
       "variations": [
         "mmm no 😥. Va otra vez.",
-        "Concéntrate... ¡yo se que puedes!"
+        "Concéntrate... ¡yo sé que puedes!"
       ],
       "typing": true
     },
@@ -234,7 +234,7 @@
   {
     "id": "builtin_text-PzV7Ka",
     "formData": {
-      "text": "Si en cualquier momento necesitas ayuda solo escribe \"ayuda\" y \"adios\" cuando quieras terminar.",
+      "text": "Si en cualquier momento necesitas ayuda solo escribe \"ayuda\", o \"adiós\" cuando quieras terminar.",
       "typing": true
     },
     "createdBy": "admin",
