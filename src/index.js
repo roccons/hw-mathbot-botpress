@@ -58,33 +58,40 @@ module.exports = async bp => {
   bp.hear({ type: /bp_dialog_timeout|text|message|quick_reply/i }, (event, next) => {
 
     const stateId = event.sessionId || event.user.id
+    const state = getState(bp, stateId)
     const text = helpers.toOneBlankSpace(event.text)
 
-    if (/help|ayuda|instrucciones|que hago|como se usa|que hacer|aiuda|k hago|k hacer/i.test(text)) {
+    if (new RegExp([
+      'ayuda', 'instrucciones', 'que hago', 'como se usa', 'que hacer', 'aiuda', 'k hago', 'k hacer',
+      'help', 'instructions', 'what do i do', 'how do it works', 'what to do',
+    ].join('|'), 'g').test(text)) {
 
-      const msgHelp1 = event.reply('#!builtin_text-TEctGt')
-      const msgHelp2 = event.reply('#!builtin_text-odPDDr')
-      const msgHelp3 = event.reply('#!builtin_text-uKjOfa')
+      const msgHelp1 = event.reply('#!translated_text-~qze42', { state })
+      const msgHelp2 = event.reply('#!translated_text-kyTj5F', { state })
+      const msgHelp3 = event.reply('#!translated_text-hlE6gJ', { state })
 
-    } else if (/hola|reiniciar|inicio|comenzar|reinicio|reset|restart/i.test(text)) {
+    } else if (new RegExp([
+      'reiniciar', 'inicio', 'comenzar', 'reinicio',
+      'reset', 'restart', 'start'
+    ].join('|'), 'g').test(text)) {
       
       bp.dialogEngine.endFlow(stateId).then(() => {
         bp.dialogEngine.processMessage(stateId, event)
       })
-      
-    } else if (/adios|terminar|bye|fin|chao|nos vemos|me voy|hasta mañana|hasta luego|ciao/i.test(text)) {
 
-      const msgEnd = event.reply('#!builtin_text-5eNpIE')
-      const msgEnd2 = event.reply('#!builtin_text-bEC23E')
+    } else if (new RegExp([
+      'adios', 'terminar', 'fin', 'chao', 'nos vemos', 'me voy', 'hasta mañana', 'ciao',
+      'bye', 'see you', 'finish', 'end',
+    ].join('|'), 'g').test(text)) {
+
+      const msgEnd = event.reply('#!translated_text-p2BjBr', { state })
+      const msgEnd2 = event.reply('#!translated_text-0JtOJ2', { state })
       bp.dialogEngine.endFlow(stateId)
 
     } else {
-      
       bp.dialogEngine.processMessage(stateId, event).then()
-
     }
   })
-
 }
 
 async function registerBuiltin(bp) {
@@ -105,4 +112,8 @@ async function registerBuiltin(bp) {
 
   // Register all the built-in actions
   bp.dialogEngine.registerActions(builtinActions)
+}
+
+function getState (bp, stateId) {
+  return bp.dialogEngine.stateManager.getState(stateId)
 }

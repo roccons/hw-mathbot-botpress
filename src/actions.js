@@ -1,16 +1,39 @@
 const helpers = require('./helpers')
 
-const numbers = [
-  '', 'uno', 'dos', 'tres', 'cuatro', 'cinco',
-  'seis', 'siete', 'ocho', 'nueve', 'diez',
-  'once', 'doce'
+const tableNumbers = [
+  '',
+  ['one', 'uno'],
+  ['two', 'dos'],
+  ['three', 'tres'],
+  ['four', 'cuatro'],
+  ['five', 'cinco'],
+  ['six', 'seis'],
+  ['seven', 'siete'],
+  ['eight', 'ocho'],
+  ['nine', 'nueve'],
+  ['ten', 'diez'],
+  ['eleven', 'once'],
+  ['twelve', 'doce']
 ]
+
+async function selectLanguage(state, event, params) {
+  let language = 'Es'
+  if (event.text.includes('hi')) {
+    language = 'En'
+  }
+  if (event.text.includes('hola')) {
+    language = 'Es'
+  }
+  return {
+    ...state,
+    language
+  }
+}
 
 /**
  * Create a question to ask with its answer
  */
 async function tableQuestion(state, event, params) {
-
   const operando = state.$op2 || Math.floor(Math.random() * 10 + 1)
   let operInput = null
 
@@ -23,6 +46,7 @@ async function tableQuestion(state, event, params) {
   const op1 = state.$op1 && state.$op1 > 0 && state.$op1 <= 12
             ? state.$op1 : null
   const $op1 = op1  || operInput
+
   return {
     ...state,
     $op1,
@@ -30,6 +54,7 @@ async function tableQuestion(state, event, params) {
     toChange: false,
     finish: false,
     answer: $op1 * operando,
+    history: addToHistory(state, { op1: $op1, op2: operando })
   }
 }
 
@@ -39,8 +64,8 @@ async function tableQuestion(state, event, params) {
 async function checkAnswer(state, event, params) {
 
   const text = helpers.toOneBlankSpace(event.text)
-
-  if (/la del|tabla del/i.test(text)) {
+  // change number times table
+  if (/times table|la del|tabla del/i.test(text)) {
     const number = parseInt(await getNumberFromText(text))
 
     if (number !== null && !isNaN(number)) {
@@ -48,19 +73,30 @@ async function checkAnswer(state, event, params) {
         ...state,
         toChange: true,
         $op1: number,
-        changeOperation: false
+        changeOperation: false,
+        history: addToHistory(state, { op1: number })
       }
     }
   }
-  if (/sorpresa/.test(text.toLowerCase())) {
+
+  // change to random times table
+  if (/sorpresa|surprise/.test(text.toLowerCase())) {
+
+    const number = getRndNumber(state.$op1)
+
     return {
       ...state,
       toChange: true,
-      $op1: getRndNumber(state.$op1),
+      $op1: number,
       changeOperation: false,
+      history: addToHistory(state, { op1: number })
     }
   }
-  if (/no se|me rindo|otra|ya no|no más|no mas|ya|no|basta|suficiente/i.test(text)) {
+
+  if (new RegExp([
+    'dont know', 'don"t know', "don't know", 'idk', 'give up', 'pax', 'other', 'no more', 'no', 'enough',
+    'no se', 'me rindo', 'otra', 'ya no', 'no más', 'no mas', 'ya', 'no', 'basta', 'suficiente'
+  ].join('|'), 'g').test(text)) {
     return {
       ...state,
       changeOperation: true
@@ -68,17 +104,17 @@ async function checkAnswer(state, event, params) {
   }
 
   const resp = parseInt(await getNumberFromText(text))
+  const isCorrect = resp === state.$op1 * state.$op2
   return {
     ...state,
-    isCorrect: resp === state.$op1 * state.$op2,
-    sayHelp: state.isCorrect ? 0 : (state.sayHelp ? state.sayHelp + 1 : 1),
+    isCorrect,
+    sayHelp: isCorrect ? 0 : (state.sayHelp ? state.sayHelp + 1 : 1),
     changeOperation: false
   }
 }
 
 async function toNumber(text) {
-
-  return numbers.indexOf(text.toLowerCase())
+  return tableNumbers.findIndex(tn => tn.includes(text.toLowerCase()))
 }
 
 /**
@@ -101,8 +137,9 @@ async function getNumberFromText(text) {
     return text.match(/(\d+)/)[0]
   }
 
-  const numberGotten = text.toLowerCase()
-                           .match(new RegExp(numbers.filter(n => n !== '').join('|'), 'g'))
+  const numberGotten = text.toLocaleLowerCase().match(
+    new RegExp(tableNumbers.filter(n => n != '').map(n => n.join('|')).join('|'), 'g')
+  )
 
   if (numberGotten === null) {
     return null
@@ -127,7 +164,7 @@ async function nextQuestion(state, event, params) {
   return {
     ...state,
     $op2: nextNumber,
-    
+    history: addToHistory(state, { op2: nextNumber })
   }
 }
 
@@ -143,16 +180,20 @@ function notChange(state, event, params) {
 }
 
 function changeOperationNumber(state, event, params) {
+
+  const nextNumber = getRndNumber(state.$op2 || 1).toString()
+
   return {
     ...state,
-    $op2: getRndNumber(state.$op2 || 1).toString()
+    $op2: nextNumber,
+    history: addToHistory(state, { op2: nextNumber })
   }
 }
 
 async function sayInitialHelp(state, event, params) {
 
   if (!state.started) {
-    const msg2 = event.reply('#!builtin_text-pAytKD')
+    const msg2 = event.reply('#!translated_text-i4OOrP', { state })
   }
 
   return {
@@ -164,11 +205,23 @@ async function sayInitialHelp(state, event, params) {
 async function badAnswer(state, event, params) {
 
   event.reply(
-    isNaN(event.text) 
-    ? '#!builtin_text-lQlXD~' 
-    : '#!builtin_text-vXhFov'
+    isNaN(event.text) ? '#!translated_text-6kmik1' : '#!translated_text-6cJ5JH',
+    { state }
   )
   return { ...state }
+}
+
+function addToHistory(state, val) {
+  console.log('HISTORY', state.history)
+  const hist = state.history || { op1: [], op2: [] }
+
+  if (val.op1) {
+    hist.op1.push(val.op1)
+  }
+  if (val.op2) {
+    hist.op2.push(val.op2)
+  }
+  return hist
 }
 
 module.exports = {
@@ -178,5 +231,6 @@ module.exports = {
   nextQuestion,
   notChange,
   sayInitialHelp,
+  selectLanguage,
   tableQuestion, 
 }

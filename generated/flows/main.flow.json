@@ -12,30 +12,6 @@
   "startNode": "start_bot",
   "nodes": [
     {
-      "id": "bda0320009",
-      "name": "welcome",
-      "onEnter": [],
-      "onReceive": [
-        "setUserVariable {\"name\":\"tableNumber\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}",
-        "getUserVariable {\"name\":\"tableNumber\",\"output\":\"$tableNumber\"}",
-        "tableQuestion {}"
-      ],
-      "next": [
-        {
-          "condition": "state.$op1 == null",
-          "node": "invalidInput"
-        },
-        {
-          "condition": "state.$op1 > 0 && state.$op1 <=12",
-          "node": "initTableQuestions"
-        },
-        {
-          "condition": "state.$op1 <= 0 || state.$op1 > 12",
-          "node": "invalidNumber"
-        }
-      ]
-    },
-    {
       "id": "7099199f90",
       "name": "invalidInput",
       "next": [
@@ -45,8 +21,8 @@
         }
       ],
       "onEnter": [
-        "say #!builtin_text-lQlXD~",
-        "say #!builtin_text-49ixXn"
+        "say #!translated_text-6kmik1",
+        "say #!translated_text-9vTx0c"
       ],
       "onReceive": null
     },
@@ -76,7 +52,7 @@
         }
       ],
       "onEnter": [
-        "say #!builtin_text-yOrr5X"
+        "say #!translated_text-Kq3VbR"
       ],
       "onReceive": [
         "checkAnswer {\"resp\":\"{{event.text}}\"}"
@@ -97,18 +73,15 @@
       "id": "a54a82eb7c",
       "name": "start_bot",
       "onEnter": [
-        "say #!builtin_text-cpUzLF",
-        "say #!builtin_image-YHIke7",
-        "say #!builtin_text-XZxS8o",
-        "say #!builtin_text-PzV7Ka",
-        "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}",
-        "say #!builtin_text-AcmttM"
+        "say #!builtin_text-s215aM"
       ],
-      "onReceive": null,
+      "onReceive": [
+        "selectLanguage {}"
+      ],
       "next": [
         {
           "condition": "always",
-          "node": "welcome"
+          "node": "presentation"
         }
       ]
     },
@@ -123,7 +96,7 @@
       ],
       "onEnter": [
         "",
-        "say #!builtin_text-AMBWx5"
+        "say #!translated_text-_DoerO"
       ],
       "onReceive": null
     },
@@ -137,7 +110,7 @@
         }
       ],
       "onEnter": [
-        "say #!builtin_text-cbJsVV",
+        "say #!translated_text-bNtBOx",
         "nextQuestion {}",
         "tableQuestion {}"
       ],
@@ -172,7 +145,7 @@
       ],
       "onEnter": [
         "notChange {}",
-        "say #!builtin_text-4ICRHC",
+        "say #!translated_text-tCfrG1",
         "sayInitialHelp {}"
       ],
       "onReceive": null
@@ -211,8 +184,8 @@
         }
       ],
       "onEnter": [
-        "say #!builtin_text-oI3CL5",
-        "say #!builtin_text-lMBNX6"
+        "say #!translated_text-g5Lvxn",
+        "say #!translated_text-s~GgCU"
       ],
       "onReceive": null
     },
@@ -226,12 +199,55 @@
         }
       ],
       "onEnter": [
-        "say #!builtin_text-ZuREP_",
-        "say #!builtin_text-irUUVq",
+        "say #!translated_text-oFi29v",
+        "say #!translated_text-9NFsqs",
         "changeOperationNumber {}",
         "tableQuestion {}"
       ],
       "onReceive": null
+    },
+    {
+      "id": "eb3f27675a",
+      "name": "presentation",
+      "next": [
+        {
+          "condition": "always",
+          "node": "welcome"
+        }
+      ],
+      "onEnter": [
+        "say #!translated_text-7LO98j",
+        "say #!builtin_image-YHIke7",
+        "say #!translated_text-wzhzfO",
+        "say #!translated_text-0KeI0F",
+        "say #!translated_text-vLNHG8",
+        "getUserVariable {\"output\":\"$r\",\"name\":\"tableNumber\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "bda0320009",
+      "name": "welcome",
+      "onEnter": [],
+      "onReceive": [
+        "setUserVariable {\"name\":\"tableNumber\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}",
+        "getUserVariable {\"output\":\"$tableNumber\",\"name\":\"tableNumber\"}",
+        "tableQuestion {}"
+      ],
+      "next": [
+        {
+          "condition": "state.$op1 == null",
+          "node": "invalidInput"
+        },
+        {
+          "condition": "state.$op1 > 0 && state.$op1 <=12",
+          "node": "initTableQuestions"
+        },
+        {
+          "condition": "state.$op1 <= 0 || state.$op1 > 12",
+          "node": "invalidNumber"
+        }
+      ]
     }
   ]
 }

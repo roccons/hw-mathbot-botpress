@@ -9,4 +9,16 @@ module.exports = {
   
         return { text: text, typing: !!data.typing }
       },
+
+      '#translated_text': data => {
+        const language = data.state.language || 'Es'
+        const text = _.sample([data[`text${language}`], ...(data[`variations${language}`] || [])])
+        return [
+          {
+            typing: !!data.typing,
+            markdown: true,
+            text: text
+          }
+        ]
+      }
   }

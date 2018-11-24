@@ -1,0 +1,284 @@
+[
+  {
+    "id": "translated_text-wzhzfO",
+    "formData": {
+      "textEn": "I'm Beto, the math bot and i am here to help you to practice the multiplication tables",
+      "textEs": "Soy Beto, el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar. "
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-23T18:50:35.391Z"
+  },
+  {
+    "id": "translated_text-vLNHG8",
+    "formData": {
+      "textEn": "Wich times table do you want to practice? (... It can be a \"surprice\")",
+      "textEs": "¿Cuál tabla quieres prácticar? (... o si quieres puede ser \"sorpresa\")"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-23T19:08:26.970Z"
+  },
+  {
+    "id": "translated_text-tCfrG1",
+    "formData": {
+      "textEn": "Good, let's practice the {{ state.$op1 }} times table",
+      "textEs": "Muy bien, practiquemos la tabla del {{ state.$op1 }}",
+      "variationsEn": [
+        "Ok! let's go with the {{ state.$op1 }} times table",
+        "Good choice 😉 Let's practice the {{ state.$op1 }} times table"
+      ],
+      "variationsEs": [
+        "Ok! Vamos con la tabla del {{ state.$op1 }}",
+        "Buena elección 😉 A practicar la tabla del {{ state.$op1 }}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-23T19:10:23.227Z"
+  },
+  {
+    "id": "translated_text-9vTx0c",
+    "formData": {
+      "textEn": "Let's try again. Which one do you want to practice?",
+      "textEs": "Intentemos de nuevo ¿Cuál quieres practicar?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-23T22:59:14.345Z"
+  },
+  {
+    "id": "translated_text-_DoerO",
+    "formData": {
+      "textEn": "I don't know that 😅  Do we try another?",
+      "textEs": "Esa no me la sé 😅 ¿Intentamos con otra?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-23T23:00:35.290Z"
+  },
+  {
+    "id": "translated_text-Kq3VbR",
+    "formData": {
+      "textEn": "What's {{state.$op1}} x {{state.$op2}}?",
+      "textEs": "¿Cuánto es {{state.$op1}} x {{state.$op2}}?",
+      "variationsEn": [
+        "What's {{state.$op2}} x {{state.$op1}}?",
+        "¿{{state.$op1}} x {{state.$op2}}?",
+        "¿{{state.$op2}} x {{state.$op1}}?"
+      ],
+      "variationsEs": [
+        "¿Cuánto es {{state.$op2}} x {{state.$op1}}?",
+        "¿{{state.$op1}} x {{state.$op2}}?",
+        "¿{{state.$op2}} x {{state.$op1}}?"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-23T23:37:53.843Z"
+  },
+  {
+    "id": "translated_text-bNtBOx",
+    "formData": {
+      "textEn": "Very good!",
+      "textEs": "Muy bien!",
+      "variationsEn": [
+        "Excellent!",
+        "Good, you have been studying! 😉",
+        "Perfect!",
+        "Excellent! keep it up 🕺🏻",
+        "Well done! 😎",
+        "Good! 👍"
+      ],
+      "variationsEs": [
+        "¡Excelente!",
+        "Bien, ¡Has estado estudiando! 😉",
+        "¡Perfecto!",
+        "¡Excelente! Sigue así. 🕺🏻",
+        "Así se hace 😎",
+        "¡Bien! 👍"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-23T23:43:37.497Z"
+  },
+  {
+    "id": "translated_text-6kmik1",
+    "formData": {
+      "textEn": "Oops, I didn't  understand what you wrote. Remember, if you need some help, just write \"help\"",
+      "textEs": "Ups, no entendí lo que escribiste! Recuerda que si necesitas ayuda, solo tienes que escribir \"ayuda\".",
+      "variationsEn": [
+        "Mmm, What did you say? I didn't undestand",
+        "I suspect you are trying to tell me something I don't understand"
+      ],
+      "variationsEs": [
+        "Mmmm ¿qué dijiste? No entendí 😥",
+        "Sospecho que estás tratando de decirme algo que no entiendo..."
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-23T23:50:05.673Z"
+  },
+  {
+    "id": "translated_text-7LO98j",
+    "formData": {
+      "textEn": "Hi! 👋",
+      "textEs": "¡Hola! 👋",
+      "variationsEn": [
+        "Hi, what a pleasure that you come to practice"
+      ],
+      "variationsEs": [
+        "Hola, qué gusto que vengas a practicar! 👋"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-23T23:51:22.349Z"
+  },
+  {
+    "id": "translated_text-i4OOrP",
+    "formData": {
+      "textEn": "Pssst! You can change the times table at any time writing for example \"times table (number)\"",
+      "textEs": "¡Pssst! Puedes cambiar de tabla en cualquier momento escribiendo por ejemplo \"tabla del...\""
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-23T23:55:09.555Z"
+  },
+  {
+    "id": "translated_text-p2BjBr",
+    "formData": {
+      "textEn": "See you!",
+      "textEs": "¡Nos vemos!",
+      "variationsEn": [
+        "Good bye!",
+        "See you later!",
+        "See you soon!"
+      ],
+      "variationsEs": [
+        "¡Adiós!",
+        "¡Hasta luego!",
+        "¡Hasta pronto!"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-23T23:56:22.882Z"
+  },
+  {
+    "id": "translated_text-0JtOJ2",
+    "formData": {
+      "textEn": "I hope you come back to practice soon",
+      "textEs": "Espero que regreses a practicar pronto.",
+      "variationsEn": [
+        "I will be here ready for you next practice"
+      ],
+      "variationsEs": [
+        "Yo aquí estaré listo para tu siguiente práctica."
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-24T00:02:42.087Z"
+  },
+  {
+    "id": "translated_text-hlE6gJ",
+    "formData": {
+      "textEn": "• \"times table (number)\" to change the times table,  • \"help\" o  \"instructions\" to see this message, • \"another\" o \"i don't know\" when you don't know the answer,  • \"hi\" o \"start\" to start again, • \"bye\" o \"finish\" to end the conversation",
+      "textEs": "• \"la del...\" para cambiar de tabla,  • \"ayuda\" o  \"instrucciones\" para ver este mensaje, • \"otra\" o \"no se\" cuando no te sabes una multiplicación y  • \"hola\" o \"comenzar\" para iniciar de nuevo. • \"adios\" o \"terminar\" para finalizar la conversación"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-24T00:06:40.759Z"
+  },
+  {
+    "id": "translated_text-oFi29v",
+    "formData": {
+      "textEn": "Ok, Let's try another one",
+      "textEs": "Ok, intentemos con otra",
+      "variationsEn": [
+        "Ok, Let's try another one"
+      ],
+      "variationsEs": [
+        "Ok, probemos otra"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-24T00:08:14.657Z"
+  },
+  {
+    "id": "translated_text-9NFsqs",
+    "formData": {
+      "textEn": "The answer was {{ state.answer }}",
+      "textEs": "La respuesta era {{ state.answer }}",
+      "variationsEn": [
+        "The answer was {{ state.answer }}, in case you had the doubt"
+      ],
+      "variationsEs": [
+        "La respuesta era {{ state.answer }}, por si tenías la duda 😁"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-24T00:10:11.837Z"
+  },
+  {
+    "id": "translated_text-g5Lvxn",
+    "formData": {
+      "textEn": "I will show you the same multiplication table until you give the correct answer.  If you really don't know it, just write \"i don't  know\"",
+      "textEs": "Te mostraré la misma multiplicación hasta que aciertes😈.  Si de plano no te la sabes simplemente escribe \"no se\". "
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-24T00:13:42.133Z"
+  },
+  {
+    "id": "translated_text-s~GgCU",
+    "formData": {
+      "textEn": "And remember that you can also change the multiplication table at any time writing  \"times table (number)\"",
+      "textEs": "Y recuerda también que puedes cambiar de tabla en cualquier momento escribiendo \"la del...\""
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-24T00:19:03.535Z"
+  },
+  {
+    "id": "translated_text-6cJ5JH",
+    "formData": {
+      "textEn": "That's not the answer I expected. Let's try again",
+      "textEs": "Esa no es la respuesta que esperaba. Intentemos de nuevo.",
+      "variationsEn": [
+        "mmm no 😥. Here goes again",
+        "Concentrate... I know you can!"
+      ],
+      "variationsEs": [
+        "mmm no 😥. Va otra vez.",
+        "Concéntrate... ¡yo se que puedes!"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-24T00:22:12.076Z"
+  },
+  {
+    "id": "translated_text-~qze42",
+    "formData": {
+      "textEn": "I am a digital assistant to practice the multiplication tables.",
+      "textEs": "Soy un asistente digital para practicar las tablas de multiplicar. "
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-24T00:23:09.169Z"
+  },
+  {
+    "id": "translated_text-kyTj5F",
+    "formData": {
+      "textEn": "At any time you can write any of the following words:",
+      "textEs": "En cualquier momento puedes escribir alguna de las siguientes palabras:"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-24T00:24:20.060Z"
+  },
+  {
+    "id": "translated_text-J5JgKr",
+    "formData": {
+      "textEn": "Say \"hi\"",
+      "textEs": "Di \"hola\""
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-24T00:24:43.159Z"
+  },
+  {
+    "id": "translated_text-0KeI0F",
+    "formData": {
+      "textEn": "If at any time you need help just write \"help\" and \"bye\" when you want to finish the conversation",
+      "textEs": "Si en cualquier momento necesitas ayuda solo escribe \"ayuda\" y \"adios\" cuando quieras terminar."
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-24T00:26:30.079Z"
+  }
+]
