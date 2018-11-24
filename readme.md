@@ -3,16 +3,15 @@
 Mathbot is a chatbot with which you can practice multiplication tables. Created for children, or adults too, to practice and master the tables
 in a funny way.
 
-You can try it here: [http://chatbotmakers.com/tablas/](http://chatbotmakers.com/tablas/)
+[LIVE DEMO (Spanish)](http://chatbotmakers.com/tablas/)
 
-Master branch runs with Botpress X. Branch botpress-v1-1 is an old and deprecated version.
-
-There is also a version being developed using Botkit. https://github.com/roccons/hw-mathbot-botkit/
-
+Master branch runs with Botpress X. (Branch botpress-v1-1 is an old and deprecated version).
 
 ## Installation (Botpress X)
 
 __Note:__ *You can only install as a global dependency a single version of botpress (either v1.x or v10.x). If you want to run a project with another version you have to indicate the path of the local installation of botpress.*
+
+__Note:__ *Apparently, Botpress X only works properly with node versions 8.x or 9.x*
 
 Install botpress as a global dependency
 
