@@ -2,7 +2,7 @@
   {
     "id": "translated_text-wzhzfO",
     "formData": {
-      "textEn": "I'm Beto, the math bot and i am here to help you to practice the multiplication tables",
+      "textEn": "I'm Beto, the math bot and I'm here to help you practice the multiplication tables.",
       "textEs": "Soy Beto, el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar. "
     },
     "createdBy": "admin",
@@ -11,7 +11,7 @@
   {
     "id": "translated_text-vLNHG8",
     "formData": {
-      "textEn": "Wich times table do you want to practice? (... It can be a \"surprice\")",
+      "textEn": "Which times table do you want to practice? (... It can be a \"surprise\")",
       "textEs": "¿Cuál tabla quieres prácticar? (... o si quieres puede ser \"sorpresa\")"
     },
     "createdBy": "admin",
@@ -55,17 +55,21 @@
   {
     "id": "translated_text-Kq3VbR",
     "formData": {
-      "textEn": "What's {{state.$op1}} x {{state.$op2}}?",
+      "textEn": "How much is {{state.$op1}} x {{state.$op2}}?",
       "textEs": "¿Cuánto es {{state.$op1}} x {{state.$op2}}?",
       "variationsEn": [
-        "What's {{state.$op2}} x {{state.$op1}}?",
-        "¿{{state.$op1}} x {{state.$op2}}?",
-        "¿{{state.$op2}} x {{state.$op1}}?"
+        "How much is {{state.$op2}} x {{state.$op1}}?",
+        "{{state.$op1}} x {{state.$op2}}?",
+        "{{state.$op2}} x {{state.$op1}}?",
+        "{{state.$op1}} times {{state.$op2}}?",
+        "{{state.$op2}} times {{state.$op1}}?"
       ],
       "variationsEs": [
         "¿Cuánto es {{state.$op2}} x {{state.$op1}}?",
         "¿{{state.$op1}} x {{state.$op2}}?",
-        "¿{{state.$op2}} x {{state.$op1}}?"
+        "¿{{state.$op2}} x {{state.$op1}}?",
+        "¿{{state.$op1}} por {{state.$op2}}?",
+        "¿{{state.$op2}} por {{state.$op1}}?"
       ]
     },
     "createdBy": "admin",
@@ -119,7 +123,7 @@
       "textEn": "Hi! 👋",
       "textEs": "¡Hola! 👋",
       "variationsEn": [
-        "Hi, what a pleasure that you come to practice"
+        "Hi, I'm glad you came to practice!"
       ],
       "variationsEs": [
         "Hola, qué gusto que vengas a practicar! 👋"
@@ -275,8 +279,8 @@
   {
     "id": "translated_text-0KeI0F",
     "formData": {
-      "textEn": "If at any time you need help just write \"help\" and \"bye\" when you want to finish the conversation",
-      "textEs": "Si en cualquier momento necesitas ayuda solo escribe \"ayuda\" y \"adios\" cuando quieras terminar."
+      "textEn": "If at any time you need help just write \"help\". To finish write \"bye\".",
+      "textEs": "Si en cualquier momento necesitas ayuda solo escribe \"ayuda\". Para terminar escribe \"adios\"."
     },
     "createdBy": "admin",
     "createdOn": "2018-11-24T00:26:30.079Z"

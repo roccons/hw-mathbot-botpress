@@ -37,7 +37,8 @@ async function tableQuestion(state, event, params) {
   const operando = state.$op2 || Math.floor(Math.random() * 10 + 1)
   let operInput = null
 
-  if (state.$tableNumber.toLowerCase().includes('sorpresa')) {
+  if (state.$tableNumber.toLowerCase().includes('sorpresa')||
+      state.$tableNumber.toLowerCase().includes('surprise')) {
     operInput = getRndNumber(0)
   } else {
     operInput = await getNumberFromText(state.$tableNumber)
@@ -65,7 +66,7 @@ async function checkAnswer(state, event, params) {
 
   const text = helpers.toOneBlankSpace(event.text)
   // change number times table
-  if (/times table|la del|tabla del/i.test(text)) {
+  if (/times table|table of|la del|tabla del/i.test(text)) {
     const number = parseInt(await getNumberFromText(text))
 
     if (number !== null && !isNaN(number)) {
