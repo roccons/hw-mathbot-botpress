@@ -16,6 +16,9 @@ const tableNumbers = [
   ['twelve', 'doce']
 ]
 
+/**
+ * Set the language selected when the bot is initialized
+ */
 async function selectLanguage(state, event, params) {
   let language = languageChanged(event.text.toLowerCase()) || 'Es'
   return {
@@ -109,6 +112,10 @@ async function checkAnswer(state, event, params) {
   }
 }
 
+/**
+ * Convert letter to number
+ * @param {string} text 
+ */
 async function toNumber(text) {
   return tableNumbers.findIndex(tn => tn.includes(text.toLowerCase()))
 }
@@ -130,10 +137,12 @@ function getRndNumber(numbers) {
  * @param {string} text 
  */
 async function getNumberFromText(text) {
+  // if the string has a number as a gigit
   if (text.match(/(\d+)/)) {
     return text.match(/(\d+)/)[0]
   }
 
+  // If no detect a digit, search if there is a number written with letters
   const numberGotten = text.toLocaleLowerCase().match(
     new RegExp(tableNumbers.filter(n => n != '').map(n => n.join('|')).join('|'), 'g')
   )
@@ -142,6 +151,7 @@ async function getNumberFromText(text) {
     return null
   }
 
+  // Convert letter to number
   const number = await toNumber(numberGotten[0])
 
   return number !== -1 && number !== null ? number : null
@@ -175,6 +185,9 @@ function notChange(state, event, params) {
   }
 }
 
+/**
+ * Change the operation (the second operand)
+ */
 function changeOperationNumber(state, event, params) {
 
   const nextNumber = getRndNumber(getLatest(state, 'op2')).toString()
@@ -185,6 +198,9 @@ function changeOperationNumber(state, event, params) {
   }
 }
 
+/**
+ * Display a help messaje when the user gave three incorrect answers
+ */
 async function sayInitialHelp(state, event, params) {
 
   if (!state.started) {
@@ -197,6 +213,9 @@ async function sayInitialHelp(state, event, params) {
   }
 }
 
+/**
+ * Reply a message if the user input was not correct
+ */
 async function badAnswer(state, event, params) {
 
   event.reply(
@@ -206,8 +225,14 @@ async function badAnswer(state, event, params) {
   return { ...state }
 }
 
+/**
+ * Add a history of operations done
+ * the val object has the op1 and op2 attributes. Both are optional.
+ * op1 is for times table number or first operand, op2 is for the second operand
+ * @param {object} state 
+ * @param {object} val { op1: number, op2: number }
+ */
 function addToHistory(state, val) {
-  console.log('HISTORY', state.history)
   const hist = state.history || { op1: [], op2: [] }
 
   if (val.op1) {
@@ -221,13 +246,22 @@ function addToHistory(state, val) {
   return hist
 }
 
-function getLatest(state, operando) {
+/**
+ * Return the two last elements of the history array.
+ * @param {object} state 
+ * @param {strng} oper op1|op2
+ */
+function getLatest(state, oper) {
   if (!state.history) {
     return [0]
   }
-  return state.history[operando].slice(-2)
+  return state.history[oper].slice(-2)
 }
 
+/**
+ * Detect if the user want to change the language
+ * @param {string} text User input
+ */
 function languageChanged(text) {
   if (/hi|hello|english|ingles|inglés/.test(text)) {
     return 'En'
