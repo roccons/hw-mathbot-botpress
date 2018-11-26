@@ -28,7 +28,14 @@ module.exports = {
             },
         }
     },
-    uiSchema: {},
+    uiSchema: {
+        textEn: {
+            'ui:widget': 'textarea' 
+        },
+        textEs: {
+            'ui:widget': 'textarea' 
+        }
+    },
     computeFormData: formData => formData,
     computeData: formData => formData,
     computePreviewText: formData => formData.textEn + '/' + formData.textEs,

@@ -58,39 +58,49 @@ module.exports = async bp => {
   bp.hear({ type: /bp_dialog_timeout|text|message|quick_reply/i }, (event, next) => {
 
     const stateId = event.sessionId || event.user.id
-    const state = getState(bp, stateId)
     const text = helpers.toOneBlankSpace(event.text)
+    const langChanged = languageChanged(text)
 
-    if (new RegExp([
-      'ayuda', 'instrucciones', 'que hago', 'como se usa', 'que hacer', 'aiuda', 'k hago', 'k hacer',
-      'help', 'instructions', 'what do i do', 'how do it works', 'what to do',
-    ].join('|'), 'g').test(text)) {
+    getState(bp, stateId).then(state => {
 
-      const msgHelp1 = event.reply('#!translated_text-~qze42', { state })
-      const msgHelp2 = event.reply('#!translated_text-kyTj5F', { state })
-      const msgHelp3 = event.reply('#!translated_text-hlE6gJ', { state })
-
-    } else if (new RegExp([
-      'reiniciar', 'inicio', 'comenzar', 'reinicio',
-      'reset', 'restart', 'start'
-    ].join('|'), 'g').test(text)) {
-      
-      bp.dialogEngine.endFlow(stateId).then(() => {
-        bp.dialogEngine.processMessage(stateId, event)
-      })
-
-    } else if (new RegExp([
-      'adios', 'terminar', 'fin', 'chao', 'nos vemos', 'me voy', 'hasta mañana', 'ciao',
-      'bye', 'see you', 'finish', 'end',
-    ].join('|'), 'g').test(text)) {
-
-      const msgEnd = event.reply('#!translated_text-p2BjBr', { state })
-      const msgEnd2 = event.reply('#!translated_text-0JtOJ2', { state })
-      bp.dialogEngine.endFlow(stateId)
-
-    } else {
-      bp.dialogEngine.processMessage(stateId, event).then()
-    }
+      if (new RegExp([
+        'ayuda', 'instrucciones', 'que hago', 'como se usa', 'que hacer', 'aiuda', 'k hago', 'k hacer',
+        'help', 'instructions', 'what do i do', 'how do it works', 'what to do',
+      ].join('|'), 'g').test(text)) {
+        
+        console.log('STATE', state)
+  
+        const msgHelp1 = event.reply('#!translated_text-~qze42', { state })
+        const msgHelp2 = event.reply('#!translated_text-kyTj5F', { state })
+        const msgHelp3 = event.reply('#!translated_text-hlE6gJ', { state })
+  
+      } else if (new RegExp([
+        'reiniciar', 'inicio', 'comenzar', 'reinicio',
+        'reset', 'restart', 'start'
+      ].join('|'), 'g').test(text)) {
+        
+        bp.dialogEngine.endFlow(stateId).then(() => {
+          bp.dialogEngine.processMessage(stateId, event)
+        })
+  
+      } else if (new RegExp([
+        'adios', 'terminar', 'fin', 'chao', 'nos vemos', 'me voy', 'hasta mañana', 'ciao',
+        'bye', 'see you', 'finish', 'end',
+      ].join('|'), 'g').test(text)) {
+  
+        const msgEnd = event.reply('#!translated_text-p2BjBr', { state })
+        const msgEnd2 = event.reply('#!translated_text-0JtOJ2', { state })
+        bp.dialogEngine.endFlow(stateId)
+  
+      // } else if (languageChanged) { 
+      //   state.language = langChanged
+      //   bp.dialogEngine.endFlow(stateId).then(() => {
+      //     bp.dialogEngine.processMessage(stateId, event)
+      //   })
+      } else {
+        bp.dialogEngine.processMessage(stateId, event).then()
+      }
+    })
   })
 }
 
@@ -114,6 +124,16 @@ async function registerBuiltin(bp) {
   bp.dialogEngine.registerActions(builtinActions)
 }
 
-function getState (bp, stateId) {
-  return bp.dialogEngine.stateManager.getState(stateId)
+async function getState (bp, stateId) {
+  return await bp.dialogEngine.stateManager.getState(stateId)
+}
+
+function languageChanged(text) {
+  if (/hi|hello|english|ingles|inglés/.test(text)) {
+    return 'En'
+  }
+  if (/hola|español|spanish|espanol/.test(text)) {
+    return 'Es'
+  }
+  return false
 }

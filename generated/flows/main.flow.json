@@ -59,17 +59,6 @@
       ]
     },
     {
-      "id": "4f50a2e9fd",
-      "name": "forget-my-name",
-      "next": [],
-      "onEnter": [
-        "say #!builtin_text-TtzrCV",
-        "resetUserVariable {\"name\":\"nickname\"}",
-        "say #!builtin_text-kKQ8C3"
-      ],
-      "onReceive": null
-    },
-    {
       "id": "a54a82eb7c",
       "name": "start_bot",
       "onEnter": [

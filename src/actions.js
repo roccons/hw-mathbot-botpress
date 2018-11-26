@@ -17,13 +17,7 @@ const tableNumbers = [
 ]
 
 async function selectLanguage(state, event, params) {
-  let language = 'Es'
-  if (event.text.includes('hi')) {
-    language = 'En'
-  }
-  if (event.text.includes('hola')) {
-    language = 'Es'
-  }
+  let language = languageChanged(event.text.toLowerCase()) || 'Es'
   return {
     ...state,
     language
@@ -37,8 +31,9 @@ async function tableQuestion(state, event, params) {
   const operando = state.$op2 || Math.floor(Math.random() * 10 + 1)
   let operInput = null
 
-  if (state.$tableNumber.toLowerCase().includes('sorpresa')) {
-    operInput = getRndNumber(0)
+  if (state.$tableNumber.toLowerCase().includes('sorpresa') ||
+      state.$tableNumber.toLowerCase().includes('surprise')) {
+    operInput = getRndNumber(getLatest(state, 'op1'))
   } else {
     operInput = await getNumberFromText(state.$tableNumber)
   }
@@ -65,7 +60,7 @@ async function checkAnswer(state, event, params) {
 
   const text = helpers.toOneBlankSpace(event.text)
   // change number times table
-  if (/table of|times table|la del|tabla del/i.test(text)) {
+  if (/times table|table of|la del|tabla del/i.test(text)) {
     const number = parseInt(await getNumberFromText(text))
 
     if (number !== null && !isNaN(number)) {
@@ -81,23 +76,34 @@ async function checkAnswer(state, event, params) {
   // change to random times table
   if (/sorpresa|surprise/.test(text.toLowerCase())) {
 
-    const number = getRndNumber(state.$op1)
+    const number = getRndNumber(getLatest(state, 'op1'))
 
     return {
       ...state,
       toChange: true,
       $op1: number,
-      changeOperation: false
+      changeOperation: false,
+      history: addToHistory(state, {op1: number})
     }
   }
 
   if (new RegExp([
-    'dont know', 'don"t know', "don't know", 'idk', 'give up', 'pax', 'other', 'no more', 'no', 'enough',
-    'no se', 'me rindo', 'otra', 'ya no', 'no más', 'no mas', 'ya', 'no', 'basta', 'suficiente'
+    'dont know', 'don"t know', 'don\'t know', 'idk', 'give up', 'pax', 'other',
+    'no more', 'no', 'enough', 'skip',
+    'no se', 'me rindo', 'otra', 'ya no', 'no más', 'no mas', 'ya', 'no', 'basta',
+    'suficiente', 'paso', 'saltar'
   ].join('|'), 'g').test(text)) {
     return {
       ...state,
       changeOperation: true
+    }
+  }
+
+  const langChanged = languageChanged(text.toLowerCase())
+  if (langChanged) {
+    return {
+      ...state,
+      language: langChanged
     }
   }
 
@@ -154,10 +160,10 @@ async function getNumberFromText(text) {
  */
 async function nextQuestion(state, event, params) {
 
-  let nextNumber = getRndNumber(state.$op2) 
+  let nextNumber = getRndNumber(getLatest(state, 'op2')) 
 
   if (nextNumber == 1 || nextNumber == 10) {
-    nextNumber = getRndNumber(state.$op2)
+    nextNumber = getRndNumber(getLatest(state, 'op2'))
   }
 
   return {
@@ -179,7 +185,7 @@ function notChange(state, event, params) {
 
 function changeOperationNumber(state, event, params) {
 
-  const nextNumber = getRndNumber(state.$op2 || 1).toString()
+  const nextNumber = getRndNumber(getLatest(state, 'op2')).toString()
 
   return {
     ...state,
@@ -213,12 +219,31 @@ function addToHistory(state, val) {
   const hist = state.history || { op1: [], op2: [] }
 
   if (val.op1) {
-    hist.op1.push(val.op1)
+    if (hist.op1.slice(-1)[0] != Number(val.op1)) {
+      hist.op1.push(Number(val.op1))
+    }
   }
   if (val.op2) {
     hist.op2.push(val.op2)
   }
   return hist
+}
+
+function getLatest(state, operando) {
+  if (!state.history) {
+    return [0]
+  }
+  return state.history[operando].slice(-2)
+}
+
+function languageChanged(text) {
+  if (/hi|hello|english|ingles|inglés/.test(text)) {
+    return 'En'
+  }
+  if (/hola|español|spanish|espanol/.test(text)) {
+    return 'Es'
+  }
+  return false
 }
 
 module.exports = {
