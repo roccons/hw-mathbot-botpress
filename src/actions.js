@@ -99,14 +99,6 @@ async function checkAnswer(state, event, params) {
     }
   }
 
-  const langChanged = languageChanged(text.toLowerCase())
-  if (langChanged) {
-    return {
-      ...state,
-      language: langChanged
-    }
-  }
-
   const resp = parseInt(await getNumberFromText(text))
   const isCorrect = resp === state.$op1 * state.$op2
   return {

@@ -178,7 +178,7 @@
   {
     "id": "translated_text-hlE6gJ",
     "formData": {
-      "textEn": "• \"times table (number)\" to change the times table,  \n• \"help\" or  \"instructions\" to see this message, \n• \"another\" or \"skip\" when you don't know the answer,  \n• \"hi\" or \"start\" to start again, \n• \"bye\" or \"finish\" to end the conversation",
+      "textEn": "• \"table of ...\" to change the times table,  \n• \"help\" or  \"instructions\" to see this message, \n• \"another\" or \"skip\" when you don't know the answer,  \n• \"hi\" or \"start\" to start again, \n• \"bye\" or \"finish\" to end the conversation",
       "textEs": "• \"la del...\" para cambiar de tabla,  \n• \"ayuda\" o  \"instrucciones\" para ver este mensaje, \n• \"otra\" o \"no se\" cuando no te sabes una multiplicación y  \n• \"hola\" o \"comenzar\" para iniciar de nuevo. \n• \"adios\" o \"terminar\" para finalizar la conversación"
     },
     "createdBy": "admin",

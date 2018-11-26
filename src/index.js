@@ -92,11 +92,12 @@ module.exports = async bp => {
         const msgEnd2 = event.reply('#!translated_text-0JtOJ2', { state })
         bp.dialogEngine.endFlow(stateId)
   
-      // } else if (languageChanged) { 
-      //   state.language = langChanged
-      //   bp.dialogEngine.endFlow(stateId).then(() => {
-      //     bp.dialogEngine.processMessage(stateId, event)
-      //   })
+      } else if (langChanged) { 
+        state.language = langChanged
+        bp.dialogEngine.jumpTo(stateId, 'main.flow.json', 'presentation', { resetState: false }).then(() => {
+          bp.dialogEngine.stateManager.setState(stateId, { ...state })
+          bp.dialogEngine.processMessage(stateId, event)
+        })
       } else {
         bp.dialogEngine.processMessage(stateId, event).then()
       }
