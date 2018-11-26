@@ -178,8 +178,8 @@
   {
     "id": "translated_text-hlE6gJ",
     "formData": {
-      "textEn": "• \"table of ...\" to change the times table,  \n• \"help\" or  \"instructions\" to see this message, \n• \"another\" or \"skip\" when you don't know the answer,  \n• \"hi\" or \"start\" to start again, \n• \"bye\" or \"finish\" to end the conversation",
-      "textEs": "• \"la del...\" para cambiar de tabla,  \n• \"ayuda\" o  \"instrucciones\" para ver este mensaje, \n• \"otra\" o \"no se\" cuando no te sabes una multiplicación y  \n• \"hola\" o \"comenzar\" para iniciar de nuevo. \n• \"adios\" o \"terminar\" para finalizar la conversación"
+      "textEn": "• \"table of ...\" to change the times table,  \n• \"help\" to see this message, \n• \"another\" or \"skip\" when you don't know the answer,  \n• \"hi\" to start again, \n• \"hola\" to restart in Spanish,\n• \"bye\" or \"finish\" to end the conversation.",
+      "textEs": "• \"la del...\" para cambiar de tabla,  \n• \"ayuda\" para ver este mensaje, \n• \"otra\" o \"no se\" cuando no te sabes una multiplicación,\n• \"hola\" para iniciar de nuevo,\n• \"hi\" para reiniciar en inglés,\n• \"adios\" o \"terminar\" para finalizar la conversación."
     },
     "createdBy": "admin",
     "createdOn": "2018-11-24T00:06:40.759Z"
@@ -226,7 +226,7 @@
   {
     "id": "translated_text-s~GgCU",
     "formData": {
-      "textEn": "And remember that you can also change the multiplication table at any time writing  \"times table (number)\"",
+      "textEn": "And remember that you can also change the multiplication table at any time writing  \"table of...\"",
       "textEs": "Y recuerda también que puedes cambiar de tabla en cualquier momento escribiendo \"la del...\""
     },
     "createdBy": "admin",
