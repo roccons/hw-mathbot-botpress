@@ -65,7 +65,7 @@ async function checkAnswer(state, event, params) {
 
   const text = helpers.toOneBlankSpace(event.text)
   // change number times table
-  if (/times table|la del|tabla del/i.test(text)) {
+  if (/table of|times table|la del|tabla del/i.test(text)) {
     const number = parseInt(await getNumberFromText(text))
 
     if (number !== null && !isNaN(number)) {
@@ -73,8 +73,7 @@ async function checkAnswer(state, event, params) {
         ...state,
         toChange: true,
         $op1: number,
-        changeOperation: false,
-        history: addToHistory(state, { op1: number })
+        changeOperation: false
       }
     }
   }
@@ -88,8 +87,7 @@ async function checkAnswer(state, event, params) {
       ...state,
       toChange: true,
       $op1: number,
-      changeOperation: false,
-      history: addToHistory(state, { op1: number })
+      changeOperation: false
     }
   }
 
@@ -119,10 +117,11 @@ async function toNumber(text) {
 
 /**
  * Get a random number for the next question.
+ * @param {array} numbers
  */
-function getRndNumber(number) {
+function getRndNumber(numbers) {
   let operando = Math.floor(Math.random() * 10 + 1)
-  while (number === operando) {
+  while (numbers.includes(operando)) {
     operando = Math.floor(Math.random() * 10 + 1)
   }
   return operando;
@@ -163,8 +162,7 @@ async function nextQuestion(state, event, params) {
 
   return {
     ...state,
-    $op2: nextNumber,
-    history: addToHistory(state, { op2: nextNumber })
+    $op2: nextNumber
   }
 }
 
@@ -185,8 +183,7 @@ function changeOperationNumber(state, event, params) {
 
   return {
     ...state,
-    $op2: nextNumber,
-    history: addToHistory(state, { op2: nextNumber })
+    $op2: nextNumber
   }
 }
 
