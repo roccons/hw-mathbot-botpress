@@ -5,6 +5,8 @@ in a funny way.
 
 [LIVE DEMO](http://chatbotmakers.com/tablas/)
 
+![Live demo](screenshots/screen2.jpg)
+
 Master branch runs with Botpress X. (Branch botpress-v1-1 is an old and deprecated version).
 
 ## Installation (Botpress X)
@@ -44,6 +46,8 @@ yarn install
 Run the chatbot with the following command
 
 `botpress start`
+
+![Dashboard](screenshots/screen1.jpg)
 
 If you don't have installed this version of botpress as a global dependency, run:
 
