@@ -3,9 +3,9 @@
 Mathbot is a chatbot with which you can practice multiplication tables. Created for children, or adults too, to practice and master the tables
 in a funny way.
 
-This branch runs with Botpress v1.1. Branch master is a port to that newer Botpress version.
+This branch runs with Botpress v1.1. Branch master is a port and further development using the newer BotpressX version.
 
-There is also a version being developed using Botkit. https://github.com/roccons/hw-mathbot-botkit/
+There is also an abandoned version using Botkit. https://github.com/roccons/hw-mathbot-botkit/
 
 ## Installation (Botpress v1.x)
 
