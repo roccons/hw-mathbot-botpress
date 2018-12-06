@@ -77,8 +77,6 @@ module.exports = async bp => {
         'reiniciar', 'inicio', 'comenzar', 'reinicio',
         'reset', 'restart', 'start'
       ].join('|'), 'g').test(text)) {
-
-        userStats.reset(state, event)
         
         bp.dialogEngine.endFlow(stateId).then(() => {
           bp.dialogEngine.processMessage(stateId, event)
@@ -117,18 +115,6 @@ module.exports = async bp => {
   
       } else if (langChanged) {
 
-        userStats.getPercent(state, event).then(percent => {
-          if (percent.percentSuccess && !isNaN(percent.percentSuccess)) {
-
-            const st = state
-            st.last_num_operations =  percent.totalCorrects,
-            st.last_success_percent =  percent.percentSuccess
-
-            const msgInit = event.reply('#!translated_text-MgfbTk', { state: st})
-          }
-        })
-
-        userStats.reset(state, event)
         state.language = langChanged
         bp.dialogEngine.jumpTo(stateId, 'main.flow.json', 'presentation', { resetState: false }).then(() => {
             bp.dialogEngine.stateManager.setState(stateId, { ...state })

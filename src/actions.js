@@ -134,6 +134,19 @@ async function sayAdvance (state, event, params) {
   return { ...state, isNotFirst10: true }
 }
 
+async function sayPreviousAchievement (state, event, params) {
+  const summary = await userStats.getPercent(state, event)
+
+  if (summary.percentSuccess && !isNaN(summary.percentSuccess)) {
+    const msgPrev = event.reply('#!translated_text-MgfbTk', { 
+      state: { ...state, last_success_percent: summary.percentSuccess } 
+    })
+  
+  }
+  userStats.reset(state, event)
+  return { ...state }
+}
+
 /**
  * Convert letter to number
  * @param {string} text 
@@ -302,6 +315,7 @@ module.exports = {
   notChange,
   sayAdvance,
   sayInitialHelp,
+  sayPreviousAchievement,
   selectLanguage,
   tableQuestion, 
 }
