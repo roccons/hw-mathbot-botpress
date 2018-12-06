@@ -29,7 +29,8 @@ module.exports = {
 
     async getPercent (state, event) {
         const sc = await event.bp.users.getTag(event.user.id, 'userStats')
-        const userStats = JSON.parse(sc)
+        let userStats = sc ? JSON.parse(sc) : {}
+        
         let total = 0
         let totalCorrects = 0
         for (t in userStats) {
