@@ -96,7 +96,7 @@ async function checkAnswer(state, event, params) {
     'no more', 'no', 'enough', 'skip',
     'no se', 'me rindo', 'otra', 'ya no', 'no más', 'no mas', 'ya', 'no', 'basta',
     'suficiente', 'paso', 'saltar'
-  ].join('|'), 'g').test(text)) {
+  ].join('|'), 'i').test(text)) {
     return {
       ...state,
       changeOperation: true
@@ -183,7 +183,7 @@ async function getNumberFromText(text) {
 
   // If no detect a digit, search if there is a number written with letters
   const numberGotten = text.toLocaleLowerCase().match(
-    new RegExp(tableNumbers.filter(n => n != '').map(n => n.join('|')).join('|'), 'g')
+    new RegExp(tableNumbers.filter(n => n != '').map(n => n.join('|')).join('|'), 'i')
   )
 
   if (numberGotten === null) {

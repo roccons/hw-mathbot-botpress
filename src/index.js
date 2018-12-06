@@ -67,7 +67,7 @@ module.exports = async bp => {
       if (new RegExp([
         'ayuda', 'instrucciones', 'que hago', 'como se usa', 'que hacer', 'aiuda', 'k hago', 'k hacer',
         'help', 'instructions', 'what do i do', 'how do it works', 'what to do',
-      ].join('|'), 'g').test(text)) {
+      ].join('|'), 'i').test(text)) {
   
         const msgHelp1 = event.reply('#!translated_text-~qze42', { state })
         const msgHelp2 = event.reply('#!translated_text-kyTj5F', { state })
@@ -76,7 +76,7 @@ module.exports = async bp => {
       } else if (new RegExp([
         'reiniciar', 'inicio', 'comenzar', 'reinicio',
         'reset', 'restart', 'start'
-      ].join('|'), 'g').test(text)) {
+      ].join('|'), 'i').test(text)) {
         
         bp.dialogEngine.endFlow(stateId).then(() => {
           bp.dialogEngine.processMessage(stateId, event)
@@ -85,7 +85,7 @@ module.exports = async bp => {
       } else if (new RegExp([
         'adios', 'adiós', 'terminar', 'fin', 'chao', 'nos vemos', 'me voy', 'hasta mañana', 'ciao',
         'bye', 'see you', 'finish', 'end',
-      ].join('|'), 'g').test(text)) {
+      ].join('|'), 'i').test(text)) {
         
         userStats.getPercent(state, event).then(percent => {
 
