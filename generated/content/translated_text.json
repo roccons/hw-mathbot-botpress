@@ -2,8 +2,8 @@
   {
     "id": "translated_text-wzhzfO",
     "formData": {
-      "textEn": "I'm Beto, the math bot and I'm here to help you practice the multiplication tables.",
-      "textEs": "Soy Beto, el bot matemático y estoy aquí para ayudarte a practicar las tablas de multiplicar. "
+      "textEn": "I'm Beto, the math bot of chatbotmakers.com and I'm here to help you practice the multiplication tables.",
+      "textEs": "Soy Beto, el bot matemático de chatbotmakers.com y estoy aquí para ayudarte a practicar las tablas de multiplicar. "
     },
     "createdBy": "admin",
     "createdOn": "2018-11-23T18:50:35.391Z"
@@ -179,7 +179,7 @@
     "id": "translated_text-hlE6gJ",
     "formData": {
       "textEn": "• \"table of ...\" to change the times table,  \n• \"help\" to see this message, \n• \"another\" or \"skip\" when you don't know the answer,  \n• \"hi\" to start again, \n• \"hola\" to restart in Spanish,\n• \"bye\" or \"finish\" to end the conversation.",
-      "textEs": "• \"la del...\" para cambiar de tabla,  \n• \"ayuda\" para ver este mensaje, \n• \"otra\" o \"no se\" cuando no te sabes una multiplicación,\n• \"hola\" para iniciar de nuevo,\n• \"hi\" para reiniciar en inglés,\n• \"adios\" o \"terminar\" para finalizar la conversación."
+      "textEs": "• \"la del...\" para cambiar de tabla,  \n• \"ayuda\" para ver este mensaje, \n• \"otra\" o \"no se\" cuando no te sabes una multiplicación,\n• \"hola\" para iniciar de nuevo,\n• \"hi\" para reiniciar en inglés,\n• \"adiós\" o \"terminar\" para finalizar la conversación."
     },
     "createdBy": "admin",
     "createdOn": "2018-11-24T00:06:40.759Z"
@@ -280,7 +280,7 @@
     "id": "translated_text-0KeI0F",
     "formData": {
       "textEn": "If at any time you need help just write \"help\". To finish write \"bye\".",
-      "textEs": "Si en cualquier momento necesitas ayuda solo escribe \"ayuda\". Para terminar escribe \"adios\"."
+      "textEs": "Si en cualquier momento necesitas ayuda solo escribe \"ayuda\". Para terminar escribe \"adiós\"."
     },
     "createdBy": "admin",
     "createdOn": "2018-11-24T00:26:30.079Z"
@@ -342,8 +342,8 @@
   {
     "id": "translated_text-TWRGez",
     "formData": {
-      "textEn": "You have answered {{state.num_operations}} multiplications! (write 'goodbye' when you want to finish)",
-      "textEs": "¡Llevas {{ state.num_operations }} multiplicaciones! (escribe 'adios' cuando quieras terminar)"
+      "textEn": "You have answered {{state.num_operations}} multiplications! (write \"goodbye\" when you want to finish)",
+      "textEs": "¡Llevas {{ state.num_operations }} multiplicaciones! (escribe \"adiós\" cuando quieras terminar)"
     },
     "createdBy": "admin",
     "createdOn": "2018-12-06T16:19:13.840Z"

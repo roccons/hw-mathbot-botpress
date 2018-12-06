@@ -85,7 +85,7 @@ module.exports = async bp => {
         })
   
       } else if (new RegExp([
-        'adios', 'terminar', 'fin', 'chao', 'nos vemos', 'me voy', 'hasta mañana', 'ciao',
+        'adios', 'adiós', 'terminar', 'fin', 'chao', 'nos vemos', 'me voy', 'hasta mañana', 'ciao',
         'bye', 'see you', 'finish', 'end',
       ].join('|'), 'g').test(text)) {
         
