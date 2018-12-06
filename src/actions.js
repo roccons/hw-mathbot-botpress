@@ -139,7 +139,11 @@ async function sayPreviousAchievement (state, event, params) {
 
   if (summary.percentSuccess && !isNaN(summary.percentSuccess)) {
     const msgPrev = event.reply('#!translated_text-MgfbTk', { 
-      state: { ...state, last_success_percent: summary.percentSuccess } 
+      state: {
+        ...state,
+        last_success_percent: summary.percentSuccess,
+        last_num_operations: summary.totalCorrects
+      }
     })
   
   }
