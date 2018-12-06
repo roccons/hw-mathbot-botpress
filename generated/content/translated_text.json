@@ -2,8 +2,8 @@
   {
     "id": "translated_text-wzhzfO",
     "formData": {
-      "textEn": "I'm Beto, the math bot of <a href=\"chatbotmakers.com\">chatbotmakers.com</a> and I'm here to help you practice the <strong>multiplication tables</strong>.",
-      "textEs": "Soy Beto, el bot matemático de <a href=\"chatbotmakers.com\">chatbotmakers.com</a> y estoy aquí para ayudarte a practicar las <strong>tablas de multiplicar.</strong> "
+      "textEn": "I'm Beto, the math bot of <a href=\"https://chatbotmakers.com\">chatbotmakers.com</a> and I'm here to help you practice the <strong>multiplication tables</strong>.",
+      "textEs": "Soy Beto, el bot matemático de <a href=\"https://chatbotmakers.com\">chatbotmakers.com</a> y estoy aquí para ayudarte a practicar las <strong>tablas de multiplicar.</strong> "
     },
     "createdBy": "admin",
     "createdOn": "2018-11-23T18:50:35.391Z"

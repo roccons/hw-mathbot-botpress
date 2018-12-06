@@ -2,7 +2,7 @@
   {
     "id": "builtin_text-s215aM",
     "formData": {
-      "text": "Say \"hi\" for English 🇬🇧 | Di \"hola\" para español 🇪🇸",
+      "text": "Say <b>hi</b> for English 🇬🇧 | Di <b>hola</b> para español 🇪🇸",
       "typing": true
     },
     "createdBy": "admin",
