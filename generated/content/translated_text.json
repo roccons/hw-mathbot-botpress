@@ -2,8 +2,8 @@
   {
     "id": "translated_text-wzhzfO",
     "formData": {
-      "textEn": "I'm Beto, the math bot of chatbotmakers.com and I'm here to help you practice the multiplication tables.",
-      "textEs": "Soy Beto, el bot matemático de chatbotmakers.com y estoy aquí para ayudarte a practicar las tablas de multiplicar. "
+      "textEn": "I'm Beto, the math bot of <a href=\"chatbotmakers.com\">chatbotmakers.com</a> and I'm here to help you practice the <strong>multiplication tables</strong>.",
+      "textEs": "Soy Beto, el bot matemático de <a href=\"chatbotmakers.com\">chatbotmakers.com</a> y estoy aquí para ayudarte a practicar las <strong>tablas de multiplicar.</strong> "
     },
     "createdBy": "admin",
     "createdOn": "2018-11-23T18:50:35.391Z"
@@ -11,8 +11,8 @@
   {
     "id": "translated_text-vLNHG8",
     "formData": {
-      "textEn": "Which times table do you want to practice? (... It can be a \"surprise\")",
-      "textEs": "¿Cuál tabla quieres prácticar? (... o si quieres puede ser \"sorpresa\")"
+      "textEn": "Which times table do you want to practice? (... It can be a <em>surprise</em>)",
+      "textEs": "¿Cuál tabla quieres prácticar? (... o si quieres puede ser <em>sorpresa</em>)"
     },
     "createdBy": "admin",
     "createdOn": "2018-11-23T19:08:26.970Z"
@@ -279,8 +279,8 @@
   {
     "id": "translated_text-0KeI0F",
     "formData": {
-      "textEn": "If at any time you need help just write \"help\". To finish write \"bye\".",
-      "textEs": "Si en cualquier momento necesitas ayuda solo escribe \"ayuda\". Para terminar escribe \"adiós\"."
+      "textEn": "If at any time you need help just write <em>help</em>. To finish write <em>bye</em>.",
+      "textEs": "Si en cualquier momento necesitas ayuda solo escribe <em>ayuda</em>. Para terminar escribe <em>adiós</em>."
     },
     "createdBy": "admin",
     "createdOn": "2018-11-24T00:26:30.079Z"
@@ -342,8 +342,8 @@
   {
     "id": "translated_text-TWRGez",
     "formData": {
-      "textEn": "You have answered {{state.num_operations}} multiplications! (write \"goodbye\" when you want to finish)",
-      "textEs": "¡Llevas {{ state.num_operations }} multiplicaciones! (escribe \"adiós\" cuando quieras terminar)"
+      "textEn": "You have answered {{state.num_operations}} multiplications! (write <strong>bye</strong> when you want to finish)",
+      "textEs": "¡Llevas {{ state.num_operations }} multiplicaciones! (escribe </strong>adiós</strong> cuando quieras terminar)"
     },
     "createdBy": "admin",
     "createdOn": "2018-12-06T16:19:13.840Z"
