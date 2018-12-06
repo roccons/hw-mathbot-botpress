@@ -338,5 +338,23 @@
     },
     "createdBy": "admin",
     "createdOn": "2018-12-06T01:16:41.667Z"
+  },
+  {
+    "id": "translated_text-TWRGez",
+    "formData": {
+      "textEn": "You have answered {{state.num_operations}} multiplications! (write 'goodbye' when you want to finish)",
+      "textEs": "¡Llevas {{ state.num_operations }} multiplicaciones! (escribe 'adios' cuando quieras terminar)"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-12-06T16:19:13.840Z"
+  },
+  {
+    "id": "translated_text-ESvvHz",
+    "formData": {
+      "textEn": "You have answered {{state.num_operations}} multiplications!",
+      "textEs": "¡Llevas {{ state.num_operations }} multiplicaciones!"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-12-06T16:31:58.354Z"
   }
 ]

@@ -100,6 +100,7 @@
       ],
       "onEnter": [
         "say #!translated_text-bNtBOx",
+        "sayAdvance {}",
         "nextQuestion {}",
         "tableQuestion {}"
       ],

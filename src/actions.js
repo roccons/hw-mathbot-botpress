@@ -109,7 +109,7 @@ async function checkAnswer(state, event, params) {
     isCorrect: isCorrect
   })
 
-  const summary = await userStats.getPercent(state, event) 
+  const summary = await userStats.getPercent(state, event)
 
   return {
     ...state,
@@ -119,6 +119,19 @@ async function checkAnswer(state, event, params) {
     sayHelp: isCorrect ? 0 : (state.sayHelp ? state.sayHelp + 1 : 1),
     changeOperation: false
   }
+}
+
+async function sayAdvance (state, event, params) {
+  const summary = await userStats.getPercent(state, event)
+  if (summary.totalCorrects % 10 === 0) {
+    state.num_operations = summary.totalCorrects + 1
+    if (summary.totalCorrects <= 10) {
+      const msg10 = event.reply('#!translated_text-TWRGez', { state })
+    } else {
+      const msg10 = event.reply('#!translated_text-ESvvHz', { state })
+    }
+  }
+  return { ...state, isNotFirst10: true }
 }
 
 /**
@@ -287,6 +300,7 @@ module.exports = {
   checkAnswer,
   nextQuestion,
   notChange,
+  sayAdvance,
   sayInitialHelp,
   selectLanguage,
   tableQuestion, 
