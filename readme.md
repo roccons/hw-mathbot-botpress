@@ -3,9 +3,9 @@
 Mathbot is a chatbot with which you can practice multiplication tables. Created for children, or adults too, to practice and master the tables
 in a funny way.
 
-[LIVE DEMO](http://chatbotmakers.com/tablas/)
+[TRY THE LIVE DEMO](http://chatbotmakers.com/tablas/)
 
-Master branch runs with Botpress X. (Branch botpress-v1-1 is an old and deprecated version).
+![Live demo](screenshots/screen2.jpg)
 
 ## Installation (Botpress X)
 
@@ -53,6 +53,8 @@ Enter the following address from any web browser
 
 For dashboard:
 `http://localhost:3000`
+
+![Dashboard](screenshots/screen1.jpg)
 
 For chat only:
 `http://localhost:3000/s/chat`
