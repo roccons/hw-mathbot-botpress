@@ -11,8 +11,8 @@
   {
     "id": "translated_text-vLNHG8",
     "formData": {
-      "textEn": "Which times table do you want to practice? (... It can be a <em>surprise</em>)",
-      "textEs": "¿Cuál tabla quieres prácticar? (... o si quieres puede ser <em>sorpresa</em>)"
+      "textEn": "<strong>Which times table do you want to practice?</strong> (... It can be a <em>surprise</em>)",
+      "textEs": "<strong>¿Cuál tabla quieres practicar?</strong> (... o si quieres puede ser <em>sorpresa</em>)"
     },
     "createdBy": "admin",
     "createdOn": "2018-11-23T19:08:26.970Z"
@@ -178,8 +178,8 @@
   {
     "id": "translated_text-hlE6gJ",
     "formData": {
-      "textEn": "• \"table of ...\" to change the times table,  \n• \"help\" to see this message, \n• \"another\" or \"skip\" when you don't know the answer,  \n• \"hi\" to start again, \n• \"hola\" to restart in Spanish,\n• \"bye\" or \"finish\" to end the conversation.",
-      "textEs": "• \"la del...\" para cambiar de tabla,  \n• \"ayuda\" para ver este mensaje, \n• \"otra\" o \"no se\" cuando no te sabes una multiplicación,\n• \"hola\" para iniciar de nuevo,\n• \"hi\" para reiniciar en inglés,\n• \"adiós\" o \"terminar\" para finalizar la conversación."
+      "textEn": "• <b>table of...</b> to change the times table,  \n• <b>help</b> to see this message, \n• <b>another</b> or <em>skip</em> when you don't know the answer,  \n• <b>hi</b> to start again, \n• <b>hola</b> to restart in Spanish,\n• <b>bye</b> or <em>finish</em> to end the conversation.",
+      "textEs": "• <b>la del...</b> para cambiar de tabla,  \n• <b>ayuda</b> para ver este mensaje, \n• <b>otra</b> o <em>no sé</em> cuando no te sabes una multiplicación,\n• <b>hola</b> para iniciar de nuevo,\n• <b>hi</b> para reiniciar en inglés,\n• <b>adiós</b> o <em>terminar</em> para finalizar la conversación."
     },
     "createdBy": "admin",
     "createdOn": "2018-11-24T00:06:40.759Z"
@@ -217,8 +217,8 @@
   {
     "id": "translated_text-g5Lvxn",
     "formData": {
-      "textEn": "I will show you the same multiplication table until you give the correct answer.  If you really don't know it, just write \"skip\"",
-      "textEs": "Te mostraré la misma multiplicación hasta que aciertes😈.  Si de plano no te la sabes simplemente escribe \"no se\". "
+      "textEn": "I will show you the same multiplication table until you give the correct answer.  If you really don't know it, just write <em>skip</em>.",
+      "textEs": "Te mostraré la misma multiplicación hasta que aciertes😈.  Si de plano no te la sabes simplemente escribe <em>no sé</em> ."
     },
     "createdBy": "admin",
     "createdOn": "2018-11-24T00:13:42.133Z"
