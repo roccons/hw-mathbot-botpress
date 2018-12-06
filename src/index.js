@@ -7,6 +7,7 @@ const {
 
 const registerCustom = require('./custom')
 const helpers = require('./helpers')
+const userStats = require('./userStats')
 
 module.exports = async bp => {
   // This bot template includes a couple of built-in elements and actions
@@ -67,8 +68,6 @@ module.exports = async bp => {
         'ayuda', 'instrucciones', 'que hago', 'como se usa', 'que hacer', 'aiuda', 'k hago', 'k hacer',
         'help', 'instructions', 'what do i do', 'how do it works', 'what to do',
       ].join('|'), 'g').test(text)) {
-        
-        console.log('STATE', state)
   
         const msgHelp1 = event.reply('#!translated_text-~qze42', { state })
         const msgHelp2 = event.reply('#!translated_text-kyTj5F', { state })
@@ -78,6 +77,8 @@ module.exports = async bp => {
         'reiniciar', 'inicio', 'comenzar', 'reinicio',
         'reset', 'restart', 'start'
       ].join('|'), 'g').test(text)) {
+
+        userStats.reset(state, event)
         
         bp.dialogEngine.endFlow(stateId).then(() => {
           bp.dialogEngine.processMessage(stateId, event)
@@ -87,17 +88,53 @@ module.exports = async bp => {
         'adios', 'terminar', 'fin', 'chao', 'nos vemos', 'me voy', 'hasta mañana', 'ciao',
         'bye', 'see you', 'finish', 'end',
       ].join('|'), 'g').test(text)) {
+        
+        userStats.getPercent(state, event).then(percent => {
+
+          if (percent.percentSuccess && !isNaN(percent.percentSuccess)) {
+
+            const msgScore = event.reply('#!translated_text-0rAYEr', { state })
+
+            if (percent.percentSuccess == 100) {
+              const msgPerf = event.reply('#!translated_text-7pEMaz', { state })
+            }
+            if (percent.percentSuccess >= 90 && percent.percentSuccess <= 99) {
+              const msgExc = event.reply('#!translated_text-OhzAcx', { state })
+            }
+            if (percent.percentSuccess >= 60 && percent.percentSuccess <= 89) {
+              const msgGood = event.reply('#!translated_text-uMbYlo', { state })
+            }
+            if (percent.percentSuccess < 59) {
+              const msgBad = event.reply('#!translated_text-dTen1D', { state })
+            }
+          }
+
+          const msgEnd = event.reply('#!translated_text-p2BjBr', { state })
+          const msgEnd2 = event.reply('#!translated_text-0JtOJ2', { state })
+          bp.dialogEngine.endFlow(stateId)
+        })
+
   
-        const msgEnd = event.reply('#!translated_text-p2BjBr', { state })
-        const msgEnd2 = event.reply('#!translated_text-0JtOJ2', { state })
-        bp.dialogEngine.endFlow(stateId)
-  
-      } else if (langChanged) { 
+      } else if (langChanged) {
+
+        userStats.getPercent(state, event).then(percent => {
+          if (percent.percentSuccess && !isNaN(percent.percentSuccess)) {
+
+            const st = state
+            st.last_num_operations =  percent.totalCorrects,
+            st.last_success_percent =  percent.percentSuccess
+
+            const msgInit = event.reply('#!translated_text-MgfbTk', { state: st})
+          }
+        })
+
+        userStats.reset(state, event)
         state.language = langChanged
         bp.dialogEngine.jumpTo(stateId, 'main.flow.json', 'presentation', { resetState: false }).then(() => {
-          bp.dialogEngine.stateManager.setState(stateId, { ...state })
-          bp.dialogEngine.processMessage(stateId, event)
-        })
+            bp.dialogEngine.stateManager.setState(stateId, { ...state })
+            bp.dialogEngine.processMessage(stateId, event)
+          })
+
       } else {
         bp.dialogEngine.processMessage(stateId, event).then()
       }

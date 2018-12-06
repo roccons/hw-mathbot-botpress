@@ -284,5 +284,59 @@
     },
     "createdBy": "admin",
     "createdOn": "2018-11-24T00:26:30.079Z"
+  },
+  {
+    "id": "translated_text-0rAYEr",
+    "formData": {
+      "textEn": "You solved {{ state.num_operations  }} multiplications with {{ state.success_percent }}% of correct answers .",
+      "textEs": "Resolviste {{ state.num_operations }} multiplicaciones con {{ state.success_percent }}% de respuestas correctas."
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-12-05T19:58:30.875Z"
+  },
+  {
+    "id": "translated_text-7pEMaz",
+    "formData": {
+      "textEn": "Great, not a single mistake! 👏👏👏",
+      "textEs": "Genial ¡Ni un solo error! 👏👏👏"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-12-06T00:33:43.875Z"
+  },
+  {
+    "id": "translated_text-OhzAcx",
+    "formData": {
+      "textEn": "Excellent Keep practicing! 👏",
+      "textEs": "Excelente ¡Sigue practicando! 👏"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-12-06T00:34:08.721Z"
+  },
+  {
+    "id": "translated_text-uMbYlo",
+    "formData": {
+      "textEn": "Well done. If you practice often you will have more and more correct answers 😀",
+      "textEs": "Bien hecho. Si practicas seguido tendrás cada vez más respuestas correctas 😀"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-12-06T00:34:42.688Z"
+  },
+  {
+    "id": "translated_text-dTen1D",
+    "formData": {
+      "textEn": "I recommend you to practice more the memorization of the tables and that you come to practice with me those that you already know a little bit more. To make you want!",
+      "textEs": "Te recomiendo practicar más la memorización de las tablas y que vengas a practicar conmigo las que ya te sepas un poquito más. ¡A echarle ganas!"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-12-06T00:35:25.585Z"
+  },
+  {
+    "id": "translated_text-MgfbTk",
+    "formData": {
+      "textEn": "Last time you solved {{state.last_num_operations}} multiplications with {{state.last_success_percent}}% of correct answers.",
+      "textEs": "La última vez  resolviste {{ state.last_num_operations }}  multiplicaciones con {{ state.last_success_percent }}% de respuestas correctas."
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-12-06T01:16:41.667Z"
   }
 ]

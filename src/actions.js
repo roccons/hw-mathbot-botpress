@@ -1,4 +1,5 @@
 const helpers = require('./helpers')
+const userStats = require('./userStats')
 
 const tableNumbers = [
   '',
@@ -101,12 +102,20 @@ async function checkAnswer(state, event, params) {
       changeOperation: true
     }
   }
-
   const resp = parseInt(await getNumberFromText(text))
   const isCorrect = resp === state.$op1 * state.$op2
+  await userStats.store(state, event, {
+    table: state.$op1,
+    isCorrect: isCorrect
+  })
+
+  const summary = await userStats.getPercent(state, event) 
+
   return {
     ...state,
     isCorrect,
+    num_operations: summary.totalCorrects,
+    success_percent: summary.percentSuccess,
     sayHelp: isCorrect ? 0 : (state.sayHelp ? state.sayHelp + 1 : 1),
     changeOperation: false
   }
