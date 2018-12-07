@@ -343,7 +343,7 @@
     "id": "translated_text-TWRGez",
     "formData": {
       "textEn": "You have answered {{state.num_operations}} multiplications! (write <strong>bye</strong> when you want to finish)",
-      "textEs": "¡Llevas {{ state.num_operations }} multiplicaciones! (escribe </strong>adiós</strong> cuando quieras terminar)"
+      "textEs": "¡Llevas {{ state.num_operations }} multiplicaciones! (escribe <strong>adiós</strong> cuando quieras terminar)"
     },
     "createdBy": "admin",
     "createdOn": "2018-12-06T16:19:13.840Z"
