@@ -120,7 +120,8 @@
         }
       ],
       "onEnter": [
-        "badAnswer {}"
+        "badAnswer {}",
+        "saveError {}"
       ],
       "onReceive": null
     },

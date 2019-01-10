@@ -69,9 +69,9 @@ module.exports = async bp => {
         'help', 'instructions', 'what do i do', 'how do it works', 'what to do',
       ].join('|'), 'i').test(text)) {
   
-        const msgHelp1 = event.reply('#!translated_text-~qze42', { state })
-        const msgHelp2 = event.reply('#!translated_text-kyTj5F', { state })
-        const msgHelp3 = event.reply('#!translated_text-hlE6gJ', { state })
+        event.reply('#!translated_text-~qze42', { state })
+        event.reply('#!translated_text-kyTj5F', { state })
+        event.reply('#!translated_text-hlE6gJ', { state })
   
       } else if (new RegExp([
         'reiniciar', 'inicio', 'comenzar', 'reinicio',
@@ -87,28 +87,37 @@ module.exports = async bp => {
         'bye', 'see you', 'finish', 'end',
       ].join('|'), 'i').test(text)) {
         
-        userStats.getPercent(state, event).then(percent => {
+        userStats.getPercent(event).then(percent => {
 
           if (percent.percentSuccess && !isNaN(percent.percentSuccess)) {
 
-            const msgScore = event.reply('#!translated_text-0rAYEr', { state })
+            event.reply('#!translated_text-0rAYEr', { state })
 
             if (percent.percentSuccess == 100) {
-              const msgPerf = event.reply('#!translated_text-7pEMaz', { state })
+              event.reply('#!translated_text-7pEMaz', { state })
             }
             if (percent.percentSuccess >= 90 && percent.percentSuccess <= 99) {
-              const msgExc = event.reply('#!translated_text-OhzAcx', { state })
+              event.reply('#!translated_text-OhzAcx', { state })
             }
             if (percent.percentSuccess >= 60 && percent.percentSuccess <= 89) {
-              const msgGood = event.reply('#!translated_text-uMbYlo', { state })
+              event.reply('#!translated_text-uMbYlo', { state })
             }
             if (percent.percentSuccess < 59) {
-              const msgBad = event.reply('#!translated_text-dTen1D', { state })
+              event.reply('#!translated_text-dTen1D', { state })
             }
           }
 
-          const msgEnd = event.reply('#!translated_text-p2BjBr', { state })
-          const msgEnd2 = event.reply('#!translated_text-0JtOJ2', { state })
+          userStats.getBadAnswers(event).then(badAnswers => {
+            if (badAnswers.operantions.length) {
+              event.reply(
+                '#!translated_text-t0ro09',
+                { ...state, badAnswersDesc: badAnswers.operantions.join(' | ') }
+              )
+            }
+          })
+
+          event.reply('#!translated_text-p2BjBr', { state })
+          event.reply('#!translated_text-0JtOJ2', { state })
           bp.dialogEngine.endFlow(stateId)
         })
 

@@ -109,7 +109,7 @@ async function checkAnswer(state, event, params) {
     isCorrect: isCorrect
   })
 
-  const summary = await userStats.getPercent(state, event)
+  const summary = await userStats.getPercent(event)
 
   return {
     ...state,
@@ -122,23 +122,23 @@ async function checkAnswer(state, event, params) {
 }
 
 async function sayAdvance (state, event, params) {
-  const summary = await userStats.getPercent(state, event)
+  const summary = await userStats.getPercent(event)
   if (summary.totalCorrects % 10 === 0) {
     state.num_operations = summary.totalCorrects + 1
     if (summary.totalCorrects <= 10) {
-      const msg10 = event.reply('#!translated_text-TWRGez', { state })
+      event.reply('#!translated_text-TWRGez', { state })
     } else {
-      const msg10 = event.reply('#!translated_text-ESvvHz', { state })
+      event.reply('#!translated_text-ESvvHz', { state })
     }
   }
   return { ...state, isNotFirst10: true }
 }
 
 async function sayPreviousAchievement (state, event, params) {
-  const summary = await userStats.getPercent(state, event)
+  const summary = await userStats.getPercent(event)
 
   if (summary.percentSuccess && !isNaN(summary.percentSuccess)) {
-    const msgPrev = event.reply('#!translated_text-MgfbTk', { 
+    event.reply('#!translated_text-MgfbTk', { 
       state: {
         ...state,
         last_success_percent: summary.percentSuccess,
@@ -243,7 +243,7 @@ function changeOperationNumber(state, event, params) {
 async function sayInitialHelp(state, event, params) {
 
   if (!state.started) {
-    const msg2 = event.reply('#!translated_text-i4OOrP', { state })
+    event.reply('#!translated_text-i4OOrP', { state })
   }
 
   return {
@@ -258,11 +258,26 @@ async function sayInitialHelp(state, event, params) {
 async function badAnswer(state, event, params) {
 
   event.reply(
+    // if not a number  // say bad word               // answer not correct
     isNaN(event.text) ? '#!translated_text-6kmik1' : '#!translated_text-6cJ5JH',
     { state }
   )
   return { ...state }
 }
+
+/**
+ * save the not correct answers to show them
+ */
+async function saveBadAnswer(state, event, params) {
+  userStats.saveBadAnswer(
+    state, 
+    event, 
+    `${state.$op1} x ${state.$op2} = ${state.$op1 * state.$op2}`
+  )
+  return {
+    ...state
+  }
+} 
 
 /**
  * Add a history of operations done
@@ -317,6 +332,7 @@ module.exports = {
   checkAnswer,
   nextQuestion,
   notChange,
+  saveBadAnswer,
   sayAdvance,
   sayInitialHelp,
   sayPreviousAchievement,
