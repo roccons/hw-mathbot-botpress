@@ -322,9 +322,10 @@ async function badAnswer(state, event, params) {
   )
 
   const posibleAns = getAnswerHelp(state)
+
   event.reply(
     '#!translated_text-C19dOi', 
-    { state: { possible_answers: posibleAns.join(', ') } }
+    { state: { ...state, possible_answers: posibleAns.join(', ') } }
   )
   
   return { ...state }
@@ -355,8 +356,22 @@ async function searchPrevBadAnswers(state, event, params) {
   }
 }
 
+async function textToDisplayAtStart(state, event, params) {
+  if (state.review) {
+    event.reply('#!translated_text-TCDRMo', { state })
+  } else {
+    event.reply('#!translated_text-tCfrG1', { state })
+  }
+}
+
 async function askForReview(state, event, params) {
-  let review = phrases.wasSaid('yes', event.text)
+  review = false
+  if (phrases.wasSaid('no', event.text)) {
+    event.reply('#!translated_text-vdi0dC', { state })
+  }
+  if (phrases.wasSaid('yes', event.text)) {
+    review = true
+  }
   return {
     ...state,
     review
@@ -364,7 +379,6 @@ async function askForReview(state, event, params) {
 }
 
 async function removeBadAnswer(state, event) {
-  console.log('INCORES', state.countIncorrect)
   if (state.countIncorrect === 1) {
     return {
       badAnswers: state.badAnswers,
@@ -498,5 +512,6 @@ module.exports = {
   sayPreviousAchievement,
   searchPrevBadAnswers,
   selectLanguage,
-  tableQuestion, 
+  tableQuestion,
+  textToDisplayAtStart,
 }

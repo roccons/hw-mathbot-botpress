@@ -135,7 +135,7 @@
       ],
       "onEnter": [
         "notChange {}",
-        "say #!translated_text-tCfrG1",
+        "textToDisplayAtStart {}",
         "sayInitialHelp {}"
       ],
       "onReceive": null
