@@ -1,5 +1,6 @@
 const helpers = require('./helpers')
 const userStats = require('./userStats')
+const phrases = require('./phrases')
 
 const tableNumbers = [
   '',
@@ -32,28 +33,50 @@ async function selectLanguage(state, event, params) {
  * Create a question to ask with its answer
  */
 async function tableQuestion(state, event, params) {
-  const operando = state.$op2 || Math.floor(Math.random() * 10 + 1)
+
+  let review = state.review
+  let operando = null
   let operInput = null
+  let $op1 = null
+  let badAns = []
 
-  if (state.$tableNumber.toLowerCase().includes('sorpresa') ||
-      state.$tableNumber.toLowerCase().includes('surprise')) {
-    operInput = getRndNumber(getLatest(state, 'op1'))
+  console.log('BAD', state)
+  if (review && state.badAnswers.operations && state.badAnswers.operations.length) {
+    
+    badAns = state.badAnswers.operations.splice(-3)
+
+    const firstOperation = badAns[0].split(' ').filter(n => !isNaN(n)) 
+
+    $op1 = firstOperation[0]
+    operando = firstOperation[1]
+
+    console.log('ASDFASDFASDF')
+
   } else {
-    operInput = await getNumberFromText(state.$tableNumber)
-  }
 
-  const op1 = state.$op1 && state.$op1 > 0 && state.$op1 <= 12
-            ? state.$op1 : null
-  const $op1 = op1  || operInput
+    operando = state.$op2 || Math.floor(Math.random() * 10 + 1)
+
+    if (phrases.wasSaid('surprise', state.$tableNumber)) {
+      operInput = getRndNumber(getLatest(state, 'op1'), [1, 10])
+    } else {
+      operInput = await getNumberFromText(event.text)
+    }
+    const op1 = state.$op1 && state.$op1 > 0 && state.$op1 <= 12
+              ? state.$op1 : null
+  
+    $op1 = op1 || operInput
+  }
 
   return {
     ...state,
     $op1,
     $op2: operando,
+    badAnswers: { operations: badAns},
     toChange: false,
     finish: false,
     answer: $op1 * operando,
-    history: addToHistory(state, { op1: $op1, op2: operando })
+    history: review ? null : addToHistory(state, { op1: $op1, op2: operando }),
+    countIncorrect: 0
   }
 }
 
@@ -64,7 +87,7 @@ async function checkAnswer(state, event, params) {
 
   const text = helpers.toOneBlankSpace(event.text)
   // change number times table
-  if (/times table|table of|la del|tabla del/i.test(text)) {
+  if (phrases.wasSaid('changeTable', text)) {
     const number = parseInt(await getNumberFromText(text))
 
     if (number !== null && !isNaN(number)) {
@@ -78,9 +101,9 @@ async function checkAnswer(state, event, params) {
   }
 
   // change to random times table
-  if (/sorpresa|surprise/.test(text.toLowerCase())) {
+  if (phrases.wasSaid('surprise', text)) {
 
-    const number = getRndNumber(getLatest(state, 'op1'))
+    let number = getRndNumber(getLatest(state, 'op1'), [1, 10])
 
     return {
       ...state,
@@ -91,25 +114,51 @@ async function checkAnswer(state, event, params) {
     }
   }
 
-  if (new RegExp([
-    'dont know', 'don"t know', 'don\'t know', 'idk', 'give up', 'pax', 'other',
-    'no more', 'no', 'enough', 'skip',
-    'no se', 'me rindo', 'otra', 'ya no', 'no más', 'no mas', 'ya', 'no', 'basta',
-    'suficiente', 'paso', 'saltar'
-  ].join('|'), 'i').test(text)) {
+  if (phrases.wasSaid('dontKnow', text)) {
+
+    saveBadAnswer(state, event)
+
     return {
       ...state,
       changeOperation: true
     }
   }
+
   const resp = parseInt(await getNumberFromText(text))
   const isCorrect = resp === state.$op1 * state.$op2
-  await userStats.store(state, event, {
-    table: state.$op1,
-    isCorrect: isCorrect
-  })
+  let countIncorrect = state.countIncorrect || 0
+  let review = null
+
+  if (!isCorrect) { 
+    countIncorrect++ 
+  } else {
+    // remove bad answer if it exists
+    review = await removeBadAnswer(state, event)
+  }
+  
+  if (!state.review) {
+    await userStats.store(state, event, {
+      table: state.$op1,
+      isCorrect: isCorrect
+    })
+  }
+
+  // Change another operation
+  if (countIncorrect > 2) {
+    saveBadAnswer(state, event)
+    return {
+      ...state,
+      changeOperation: true,
+      countIncorrect: 0
+    }
+  }
 
   const summary = await userStats.getPercent(event)
+
+  if (summary.total === 1) {
+    console.log("SUMAS", summary.total)
+    userStats.resetBadAnswers(event)
+  }
 
   return {
     ...state,
@@ -117,13 +166,20 @@ async function checkAnswer(state, event, params) {
     num_operations: summary.totalCorrects,
     success_percent: summary.percentSuccess,
     sayHelp: isCorrect ? 0 : (state.sayHelp ? state.sayHelp + 1 : 1),
-    changeOperation: false
+    changeOperation: false,
+    countIncorrect,
+    review: review ? review.review : false,
+    badAnswers: review ? review.badAnswers : []
   }
 }
 
+/**
+ * Every 10 correct answers, bot says percent of advance
+ */
 async function sayAdvance (state, event, params) {
   const summary = await userStats.getPercent(event)
-  if (summary.totalCorrects % 10 === 0) {
+
+  if (summary.totalCorrects && summary.totalCorrects % 10 === 0) {
     state.num_operations = summary.totalCorrects + 1
     if (summary.totalCorrects <= 10) {
       event.reply('#!translated_text-TWRGez', { state })
@@ -134,6 +190,9 @@ async function sayAdvance (state, event, params) {
   return { ...state, isNotFirst10: true }
 }
 
+/**
+ * 
+ */
 async function sayPreviousAchievement (state, event, params) {
   const summary = await userStats.getPercent(event)
 
@@ -147,7 +206,7 @@ async function sayPreviousAchievement (state, event, params) {
     })
   
   }
-  userStats.reset(state, event)
+  userStats.reset(event)
   return { ...state }
 }
 
@@ -161,9 +220,13 @@ async function toNumber(text) {
 
 /**
  * Get a random number for the next question.
- * @param {array} numbers
+ * @param {array} numbers Number to omit
+ * @param {array} alsoOmit Numbers to omit
  */
-function getRndNumber(numbers) {
+function getRndNumber(numbers, alsoOmit) {
+  if (alsoOmit && alsoOmit.length) {
+    numbers = numbers.concat(alsoOmit)
+  }
   let operando = Math.floor(Math.random() * 10 + 1)
   while (numbers.includes(operando)) {
     operando = Math.floor(Math.random() * 10 + 1)
@@ -262,22 +325,117 @@ async function badAnswer(state, event, params) {
     isNaN(event.text) ? '#!translated_text-6kmik1' : '#!translated_text-6cJ5JH',
     { state }
   )
+
+  const posibleAns = getAnswerHelp(state)
+  event.reply(
+    '#!translated_text-C19dOi', 
+    { state: { possible_answers: posibleAns.join(', ') } }
+  )
+  
   return { ...state }
+}
+
+/**
+ * Detect if there are previous bad answers
+ */
+async function searchPrevBadAnswers(state, event, params) {
+  let badAnswers = await userStats.getBadAnswers(event)
+  badAnswers = JSON.parse(badAnswers)
+  console.log('BASDFSD', badAnswers)
+  if (badAnswers !== null && badAnswers.operations && badAnswers.operations.length) {
+    return {
+      ...state,
+      continue: false,
+      hasBadAnswers: true,
+      badAnswers,
+      $op1: null,
+    }
+  } else {
+    return {
+      ...state,
+      continue: true,
+      review: false,
+      hasBadAnswers: false,
+      $op1: null,
+    }
+  }
+}
+
+async function askForReview(state, event, params) {
+  let review = phrases.wasSaid('yes', event.text)
+  return {
+    ...state,
+    review
+  }
+}
+
+async function removeBadAnswer(state, event) {
+
+  const oper = `${state.$op1} x ${state.$op2} = ${state.$op1 * state.$op2}`
+
+  await userStats.removeBadAnswer(event, oper)
+
+  let badAnswers = state.badAnswers
+
+  if (!badAnswers.operations) {
+    return
+  }
+  if (!badAnswers.operations.length) {
+    return
+  }
+  const exists = badAnswers.operations.find(o => o === oper)
+  if (exists) {
+    const idx = badAnswers.operations.indexOf(exists)
+    badAnswers.operations.splice(idx, 1)
+    console.log('OPER', badAnswers)
+  }
+
+  return {
+    badAnswers,
+    review: badAnswers.operations.length > 0
+  }
 }
 
 /**
  * save the not correct answers to show them
  */
-async function saveBadAnswer(state, event, params) {
+function saveBadAnswer(state, event) {
   userStats.saveBadAnswer(
-    state, 
     event, 
     `${state.$op1} x ${state.$op2} = ${state.$op1 * state.$op2}`
   )
-  return {
-    ...state
+}
+
+function getAnswerHelp(state) {
+  const ans = state.$op1 * state.$op2
+  let nums = []
+  nums.push(ans)
+
+  let next = getRndSequence(ans)
+
+  nums.push(next)
+
+  const max = Math.max.apply(null, nums)
+  
+  let next2 = ans <= 3 ? max : nums[Math.floor(Math.random() * nums.length)]
+  next2 += ((Date.now() % 2 === 0 ? 1 : 2) * (next2 === max ? 1 : -1));
+  nums.push(next2)
+  return nums.sort()
+}
+
+// get a random number, 1 or 2, higher or smaller than num
+function getRndSequence(num) {
+  let n = 1
+  let a = 1
+  if (Date.now() % 2 === 0) {
+    n = num === 1 ? 1 : -1
   }
-} 
+  if (Date.now() % 2 === 0) {
+    a = num <= 2 ? 1 : 2
+  }
+  return a * n + num
+}
+
 
 /**
  * Add a history of operations done
@@ -317,25 +475,26 @@ function getLatest(state, oper) {
  * @param {string} text User input
  */
 function languageChanged(text) {
-  if (/hi|hello|english|ingles|inglés/.test(text)) {
+  if (phrases.wasSaid('hiEnglish', text)) {
     return 'En'
   }
-  if (/hola|español|spanish|espanol/.test(text)) {
+  if (phrases.wasSaid('hiSpanish', text)) {
     return 'Es'
   }
   return false
 }
 
 module.exports = {
+  askForReview,
   badAnswer,
   changeOperationNumber,
   checkAnswer,
   nextQuestion,
   notChange,
-  saveBadAnswer,
   sayAdvance,
   sayInitialHelp,
   sayPreviousAchievement,
+  searchPrevBadAnswers,
   selectLanguage,
   tableQuestion, 
 }

@@ -8,6 +8,7 @@ const {
 const registerCustom = require('./custom')
 const helpers = require('./helpers')
 const userStats = require('./userStats')
+const phrases = require('./phrases')
 
 module.exports = async bp => {
   // This bot template includes a couple of built-in elements and actions
@@ -64,28 +65,19 @@ module.exports = async bp => {
 
     getState(bp, stateId).then(state => {
 
-      if (new RegExp([
-        'ayuda', 'instrucciones', 'que hago', 'como se usa', 'que hacer', 'aiuda', 'k hago', 'k hacer',
-        'help', 'instructions', 'what do i do', 'how do it works', 'what to do',
-      ].join('|'), 'i').test(text)) {
+      if (phrases.wasSaid('help', text)) {
   
         event.reply('#!translated_text-~qze42', { state })
         event.reply('#!translated_text-kyTj5F', { state })
         event.reply('#!translated_text-hlE6gJ', { state })
   
-      } else if (new RegExp([
-        'reiniciar', 'inicio', 'comenzar', 'reinicio',
-        'reset', 'restart', 'start'
-      ].join('|'), 'i').test(text)) {
+      } else if (phrases.wasSaid('start', text)) {
         
         bp.dialogEngine.endFlow(stateId).then(() => {
           bp.dialogEngine.processMessage(stateId, event)
         })
   
-      } else if (new RegExp([
-        'adios', 'adiós', 'terminar', 'fin', 'chao', 'nos vemos', 'me voy', 'hasta mañana', 'ciao',
-        'bye', 'see you', 'finish', 'end',
-      ].join('|'), 'i').test(text)) {
+      } else if (phrases.wasSaid('finish', text)) {
         
         userStats.getPercent(event).then(percent => {
 
@@ -107,19 +99,28 @@ module.exports = async bp => {
             }
           }
 
-          userStats.getBadAnswers(event).then(badAnswers => {
-            if (badAnswers.operantions.length) {
-              event.reply(
-                '#!translated_text-t0ro09',
-                { ...state, badAnswersDesc: badAnswers.operantions.join(' | ') }
-              )
-            }
-          })
+          const getBadAnswers = userStats.getBadAnswers(event)
+          
+          if (getBadAnswers !== null) {
+            getBadAnswers.then(badAnswers => {
+
+              const badAns = JSON.parse(badAnswers)
+              if (badAns.operations && badAns.operations.length) {
+                
+                state.badAnswersDesc = badAns.operations.join('\n')
+
+                event.reply('#!translated_text-t0ro09', { state })
+              }
+
+            }).catch(err => { console.error(err) })
+          }
+
 
           event.reply('#!translated_text-p2BjBr', { state })
           event.reply('#!translated_text-0JtOJ2', { state })
           bp.dialogEngine.endFlow(stateId)
-        })
+
+        }).catch(err => console.error(err))
 
   
       } else if (langChanged) {
@@ -162,10 +163,10 @@ async function getState (bp, stateId) {
 }
 
 function languageChanged(text) {
-  if (/hi|hello|english|ingles|inglés/.test(text)) {
+  if (phrases.wasSaid('hiEnglish', text)) {
     return 'En'
   }
-  if (/hola|español|spanish|espanol/.test(text)) {
+  if (phrases.wasSaid('hiSpanish', text)) {
     return 'Es'
   }
   return false

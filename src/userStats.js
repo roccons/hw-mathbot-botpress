@@ -1,12 +1,19 @@
 module.exports = {
+
+    BAD_ANSWERS: 'badAnswers',
+    USER_STATS: 'userStats',
+
     /**
      * Store  
      * @param {object} state 
      * @param {object} event 
-     * @param {object} val {table, isCorrects}
+     * @param {object} val {table: int, isCorrect: bool}
+     * 
+     * userStats = { t1: { tries: int, corrects: int } }
+     * t1 = t(table number) ...t2. t3, t4, etc
      */
     async store (state, event, val) {
-        const sc = await event.bp.users.getTag(event.user.id, 'userStats')
+        const sc = await event.bp.users.getTag(event.user.id, this.USER_STATS)
 
         let userStats = sc ? JSON.parse(sc) : {}
         let key = 't' + val.table
@@ -20,12 +27,12 @@ module.exports = {
             userStats[key].corrects += 1
         }
 
-        await event.bp.users.tag(event.user.id, 'userStats', JSON.stringify(userStats))
+        await event.bp.users.tag(event.user.id, this.USER_STATS, JSON.stringify(userStats))
     },
 
-    async saveBadAnswer (state, event, operation) {
-        const saved = await event.bp.users.getTag(event.user.id, 'badAnswers')
-        let badAnswers = saved ? JSON.parse(saved) : { operations: [] }
+    async saveBadAnswer (event, operation) {
+        const saved = await event.bp.users.getTag(event.user.id, this.BAD_ANSWERS)
+        let badAnswers = saved && saved !== '{}' ? JSON.parse(saved) : { operations: [] }
 
         const exists = badAnswers.operations.find(op => op === operation)
 
@@ -39,20 +46,55 @@ module.exports = {
 
         badAnswers.operations.push(operation)
 
-        await event.bp.users.tag(event.user.id, 'badAnswers', JSON.stringify(badAnswers))
+        await event.bp.users.tag(event.user.id, this.BAD_ANSWERS, JSON.stringify(badAnswers))
     },
 
-    async getBadAnswers (state, event) {
-        const badAnswers = await event.bp.users.getTag(event.user.id, 'badAnswers')
-        return badAnswers || { operations: [] }
+    async getBadAnswers (event) {
+        const badAnswers = await event.bp.users.getTag(event.user.id, this.BAD_ANSWERS)
+        return badAnswers || null
     },
 
-    async reset (state, event) {
-        await event.bp.users.tag(event.user.id, 'userStats', "{}")
+    async removeBadAnswer (event, operation) {
+        const badAnswers = await this.getBadAnswers(event)
+
+        if (badAnswers === null) {
+            return
+        }
+
+        ba = JSON.parse(badAnswers)
+        
+        if (!ba.operations) {
+            return
+        }
+
+        if (!ba.operations.length) {
+            return
+        }
+
+        const exists = ba.operations.find(op => op === operation)
+
+        if (exists) {
+            const idx = ba.operations.indexOf(exists)
+            ba.operations.splice(idx, 1)
+            await event.bp.users.tag(event.user.id, this.BAD_ANSWERS, JSON.stringify(ba))
+        }
+    },
+
+    async reset (event) {
+        await event.bp.users.tag(event.user.id, this.USER_STATS, "{}")
+    },
+
+    async resetBadAnswers (event) {
+        await event.bp.users.tag(event.user.id, this.BAD_ANSWERS, "{}")
+    },
+
+    async resetAll (event) {
+        this.reset(event)
+        this.resetBadAnswers(event)
     },
 
     async getPercent (event) {
-        const sc = await event.bp.users.getTag(event.user.id, 'userStats')
+        const sc = await event.bp.users.getTag(event.user.id, this.USER_STATS)
         let userStats = sc ? JSON.parse(sc) : {}
         
         let total = 0

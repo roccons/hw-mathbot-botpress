@@ -336,8 +336,8 @@
   {
     "id": "translated_text-TWRGez",
     "formData": {
-      "textEn": "You have answered {{state.num_operations}} multiplications! (write <strong>bye</strong> when you want to finish)",
-      "textEs": "¡Llevas {{ state.num_operations }} multiplicaciones! (escribe <strong>adiós</strong> cuando quieras terminar)"
+      "textEn": "You have answered {{state.num_operations}} multiplications  with {{ state.success_percent }}% of correct answers! \n(write <strong>bye</strong> when you want to finish)",
+      "textEs": "¡Llevas {{ state.num_operations }} multiplicaciones  con {{ state.success_percent }}% de respuestas correctas!\n(escribe <strong>adiós</strong> cuando quieras terminar)"
     },
     "createdBy": "admin",
     "createdOn": "2018-12-06T16:19:13.840Z"
@@ -345,8 +345,8 @@
   {
     "id": "translated_text-ESvvHz",
     "formData": {
-      "textEn": "You have answered {{state.num_operations}} multiplications!",
-      "textEs": "¡Llevas {{ state.num_operations }} multiplicaciones!"
+      "textEn": "You have answered {{state.num_operations}} multiplications with {{ state.success_percent }}% of correct answers!",
+      "textEs": "¡Llevas {{ state.num_operations }} multiplicaciones con {{ state.success_percent }}% de respuestas correctas!"
     },
     "createdBy": "admin",
     "createdOn": "2018-12-06T16:31:58.354Z"
@@ -354,10 +354,37 @@
   {
     "id": "translated_text-t0ro09",
     "formData": {
-      "textEn": "I recommend you review these multiplications: {{ state.badAnswersDesc }}",
-      "textEs": "Te recomiendo repasar estas multiplicaciones: {{ state.badAnswersDesc }}"
+      "textEn": "I recommend you review these multiplications: \n{{ state.badAnswersDesc }}",
+      "textEs": "Te recomiendo repasar estas multiplicaciones: \n{{ state.badAnswersDesc }}"
     },
     "createdBy": "admin",
     "createdOn": "2019-01-09T23:11:40.432Z"
+  },
+  {
+    "id": "translated_text-TCx0MK",
+    "formData": {
+      "textEn": "First let's review some of the ones you made a mistake last time, okay?",
+      "textEs": "Primero repasemos algunas en las que te equivocaste la vez pasada ¿de acuerdo?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-01-10T01:31:09.068Z"
+  },
+  {
+    "id": "translated_text-aIQcJ8",
+    "formData": {
+      "textEn": "Say <b>hi</b> for English 🇬🇧 | Di <b>hola</b> para español 🇪🇸",
+      "textEs": "Say <b>hi</b> for English 🇬🇧 | Di <b>hola</b> para español 🇪🇸"
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-01-10T03:03:26.693Z"
+  },
+  {
+    "id": "translated_text-C19dOi",
+    "formData": {
+      "textEn": "A little help...  it is one of these numbers:  {{ state.possible_answers }}",
+      "textEs": "Una ayudita... es alguno de estos números: {{ state.possible_answers }}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-01-10T22:42:46.065Z"
   }
 ]

@@ -62,7 +62,7 @@
       "id": "a54a82eb7c",
       "name": "start_bot",
       "onEnter": [
-        "say #!builtin_text-s215aM"
+        "say #!translated_text-aIQcJ8"
       ],
       "onReceive": [
         "selectLanguage {}"
@@ -120,8 +120,7 @@
         }
       ],
       "onEnter": [
-        "badAnswer {}",
-        "saveError {}"
+        "badAnswer {}"
       ],
       "onReceive": null
     },
@@ -202,8 +201,12 @@
       "name": "presentation",
       "next": [
         {
-          "condition": "always",
-          "node": "welcome"
+          "condition": "state.continue",
+          "node": "Continue"
+        },
+        {
+          "condition": "state.hasBadAnswers",
+          "node": "askForReview"
         }
       ],
       "onEnter": [
@@ -212,20 +215,54 @@
         "say #!builtin_image-YHIke7",
         "say #!translated_text-wzhzfO",
         "say #!translated_text-0KeI0F",
-        "say #!translated_text-vLNHG8",
-        "getUserVariable {\"output\":\"$r\",\"name\":\"tableNumber\"}"
+        "getUserVariable {\"output\":\"$r\",\"name\":\"tableNumber\"}",
+        "searchPrevBadAnswers {}"
       ],
       "onReceive": null
     },
     {
+      "id": "6772976cce",
+      "name": "askForReview",
+      "next": [
+        {
+          "condition": "!state.review",
+          "node": "Continue"
+        },
+        {
+          "condition": "state.review",
+          "node": "welcome"
+        }
+      ],
+      "onEnter": [
+        "say #!translated_text-TCx0MK"
+      ],
+      "onReceive": [
+        "askForReview {}"
+      ]
+    },
+    {
+      "id": "394159dba5",
+      "name": "Continue",
+      "next": [
+        {
+          "condition": "always",
+          "node": "welcome"
+        }
+      ],
+      "onEnter": [
+        "say #!translated_text-vLNHG8"
+      ],
+      "onReceive": []
+    },
+    {
       "id": "bda0320009",
       "name": "welcome",
-      "onEnter": [],
-      "onReceive": [
+      "onEnter": [
         "setUserVariable {\"name\":\"tableNumber\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}",
         "getUserVariable {\"output\":\"$tableNumber\",\"name\":\"tableNumber\"}",
         "tableQuestion {}"
       ],
+      "onReceive": null,
       "next": [
         {
           "condition": "state.$op1 == null",
