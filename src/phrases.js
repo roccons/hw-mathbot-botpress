@@ -42,8 +42,8 @@ module.exports = {
         ],
 
         yes: [
-            'yes', 'of course', 'yep', 'ok',
-            'si', 'claro', 'por supuesto'
+            'yes', 'of course', 'yep', 'ok', 'okay', 'o.k.',
+            'si', 'claro', 'por supuesto', 'de acuerdo', 'esta bien'
         ],
 
         no: [

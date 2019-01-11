@@ -39,7 +39,7 @@ async function tableQuestion(state, event, params) {
   let operInput = null
   let $op1 = null
   let badAns = []
-
+  console.log('STATE', state)
   if (review && state.badAnswers.operations && state.badAnswers.operations.length) {
     
     badAns = state.badAnswers.operations.splice(-3)
