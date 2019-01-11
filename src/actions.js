@@ -40,7 +40,6 @@ async function tableQuestion(state, event, params) {
   let $op1 = null
   let badAns = []
 
-  console.log('BAD', state)
   if (review && state.badAnswers.operations && state.badAnswers.operations.length) {
     
     badAns = state.badAnswers.operations.splice(-3)
@@ -49,9 +48,6 @@ async function tableQuestion(state, event, params) {
 
     $op1 = firstOperation[0]
     operando = firstOperation[1]
-
-    console.log('ASDFASDFASDF')
-
   } else {
 
     operando = state.$op2 || Math.floor(Math.random() * 10 + 1)
@@ -131,6 +127,7 @@ async function checkAnswer(state, event, params) {
 
   if (!isCorrect) { 
     countIncorrect++ 
+    saveBadAnswer(state, event)
   } else {
     // remove bad answer if it exists
     review = await removeBadAnswer(state, event)
@@ -144,8 +141,7 @@ async function checkAnswer(state, event, params) {
   }
 
   // Change another operation
-  if (countIncorrect > 2) {
-    saveBadAnswer(state, event)
+  if (countIncorrect > 1) {
     return {
       ...state,
       changeOperation: true,
@@ -156,7 +152,6 @@ async function checkAnswer(state, event, params) {
   const summary = await userStats.getPercent(event)
 
   if (summary.total === 1) {
-    console.log("SUMAS", summary.total)
     userStats.resetBadAnswers(event)
   }
 
@@ -179,9 +174,9 @@ async function checkAnswer(state, event, params) {
 async function sayAdvance (state, event, params) {
   const summary = await userStats.getPercent(event)
 
-  if (summary.totalCorrects && summary.totalCorrects % 10 === 0) {
+  if (summary.totalCorrects && summary.totalCorrects % 5 === 0) {
     state.num_operations = summary.totalCorrects + 1
-    if (summary.totalCorrects <= 10) {
+    if (summary.totalCorrects <= 5) {
       event.reply('#!translated_text-TWRGez', { state })
     } else {
       event.reply('#!translated_text-ESvvHz', { state })
@@ -341,7 +336,6 @@ async function badAnswer(state, event, params) {
 async function searchPrevBadAnswers(state, event, params) {
   let badAnswers = await userStats.getBadAnswers(event)
   badAnswers = JSON.parse(badAnswers)
-  console.log('BASDFSD', badAnswers)
   if (badAnswers !== null && badAnswers.operations && badAnswers.operations.length) {
     return {
       ...state,
@@ -370,7 +364,16 @@ async function askForReview(state, event, params) {
 }
 
 async function removeBadAnswer(state, event) {
-
+  console.log('INCORES', state.countIncorrect)
+  if (state.countIncorrect === 1) {
+    return {
+      badAnswers: state.badAnswers,
+      review: state.badAnswers && state.badAnswers.operations 
+            ? state.badAnswers.operations.length > 0 
+            : false
+    }
+  }
+  
   const oper = `${state.$op1} x ${state.$op2} = ${state.$op1 * state.$op2}`
 
   await userStats.removeBadAnswer(event, oper)
@@ -387,7 +390,6 @@ async function removeBadAnswer(state, event) {
   if (exists) {
     const idx = badAnswers.operations.indexOf(exists)
     badAnswers.operations.splice(idx, 1)
-    console.log('OPER', badAnswers)
   }
 
   return {
