@@ -337,7 +337,7 @@ async function sayInitialHelp(state, event, params) {
 
   return {
     ...state,
-    started: true
+    started: !state.review
   }
 }
 
