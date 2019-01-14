@@ -331,7 +331,7 @@ function changeOperationNumber(state, event, params) {
  */
 async function sayInitialHelp(state, event, params) {
 
-  if (!state.started) {
+  if (!state.started && !state.review) {
     event.reply('#!translated_text-i4OOrP', { state })
   }
 
