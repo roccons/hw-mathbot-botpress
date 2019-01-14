@@ -196,8 +196,8 @@
   {
     "id": "translated_text-9NFsqs",
     "formData": {
-      "textEn": "The answer was {{ state.answer }}",
-      "textEs": "La respuesta era {{ state.answer }}",
+      "textEn": "Nooo... the answer was {{ state.answer }}",
+      "textEs": "Nooo... la respuesta era {{ state.answer }}",
       "variationsEn": [],
       "variationsEs": []
     },
@@ -324,7 +324,7 @@
     "id": "translated_text-MgfbTk",
     "formData": {
       "textEn": "Last time you solved {{state.last_num_operations}} multiplications with {{state.last_success_percent}}% of correct answers.",
-      "textEs": "La última vez  resolviste {{ state.last_num_operations }}  multiplicaciones con {{ state.last_success_percent }}% de respuestas correctas."
+      "textEs": "La última vez  resolviste {{ state.last_num_operations }} multiplicaciones con {{ state.last_success_percent }}% de respuestas correctas."
     },
     "createdBy": "admin",
     "createdOn": "2018-12-06T01:16:41.667Z"
@@ -377,8 +377,8 @@
   {
     "id": "translated_text-C19dOi",
     "formData": {
-      "textEn": "A little help...  it is one of these numbers:  {{ state.possible_answers }}",
-      "textEs": "Una ayudita... es alguno de estos números: {{ state.possible_answers }}"
+      "textEn": "A little help...  it is one of these numbers:  \n{{ state.possible_answers }}",
+      "textEs": "Una ayudita... es alguno de estos números: \n{{ state.possible_answers }}"
     },
     "createdBy": "admin",
     "createdOn": "2019-01-10T22:42:46.065Z"
@@ -400,5 +400,23 @@
     },
     "createdBy": "admin",
     "createdOn": "2019-01-11T18:58:22.961Z"
+  },
+  {
+    "id": "translated_text-dqny8V",
+    "formData": {
+      "textEn": "Let's try another one!",
+      "textEs": "¡Intentemos con otra!"
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-01-11T20:24:34.699Z"
+  },
+  {
+    "id": "translated_text-12F1OS",
+    "formData": {
+      "textEn": "You have finished your review",
+      "textEs": "Has finalizado tu repaso"
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-01-14T12:27:29.597Z"
   }
 ]

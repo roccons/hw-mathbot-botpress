@@ -94,12 +94,17 @@
       "name": "goodAnswer",
       "next": [
         {
+          "condition": "state.review && state.reviewFinished",
+          "node": "Continue"
+        },
+        {
           "condition": "always",
           "node": "tableQuestion"
         }
       ],
       "onEnter": [
         "say #!translated_text-bNtBOx",
+        "checkIfReview {}",
         "sayAdvance {}",
         "nextQuestion {}",
         "tableQuestion {}"
@@ -110,10 +115,6 @@
       "id": "72424e210a",
       "name": "badAnswer",
       "next": [
-        {
-          "condition": "state.sayHelp > 0 &&  state.sayHelp % 3 == 0",
-          "node": "help"
-        },
         {
           "condition": "always",
           "node": "tableQuestion"
@@ -165,32 +166,22 @@
       "onReceive": null
     },
     {
-      "id": "ddbc52703c",
-      "name": "help",
-      "next": [
-        {
-          "condition": "always",
-          "node": "tableQuestion"
-        }
-      ],
-      "onEnter": [
-        "say #!translated_text-g5Lvxn",
-        "say #!translated_text-s~GgCU"
-      ],
-      "onReceive": null
-    },
-    {
       "id": "d5eb7042d2",
       "name": "changeOperation",
       "next": [
         {
+          "condition": "state.review && state.reviewFinished",
+          "node": "Continue"
+        },
+        {
           "condition": "always",
           "node": "tableQuestion"
         }
       ],
       "onEnter": [
-        "say #!translated_text-oFi29v",
         "say #!translated_text-9NFsqs",
+        "checkIfReview {}",
+        "tryAnotherMessage {}",
         "changeOperationNumber {}",
         "tableQuestion {}"
       ],
@@ -250,7 +241,8 @@
         }
       ],
       "onEnter": [
-        "say #!translated_text-vLNHG8"
+        "say #!translated_text-vLNHG8",
+        "setReviewToFalse {}"
       ],
       "onReceive": []
     },

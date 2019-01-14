@@ -105,9 +105,9 @@ module.exports = async bp => {
             getBadAnswers.then(badAnswers => {
 
               const badAns = JSON.parse(badAnswers)
-              if (badAns.operations && badAns.operations.length) {
+              if (badAns && badAns.length) {
                 
-                state.badAnswersDesc = badAns.operations.join('\n')
+                state.badAnswersDesc = badAns.join('\n')
 
                 event.reply('#!translated_text-t0ro09', { state })
               }

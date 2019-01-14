@@ -5,6 +5,36 @@ module.exports = {
         return text.replace(/\s+/g, ' ')
     },
 
+    /**
+     * 
+     * @param {string} text Text to detect
+     */
+    wasLanguageChange (text) {
+        if (phrases.wasSaid('hiEnglish', text)) {
+            return 'En'
+        }
+        if (phrases.wasSaid('hiSpanish', text)) {
+            return 'Es'
+        }
+        return false;
+    },
+
+    /**
+     * Get a random number 1 or 2, higher or smaller than num
+     * @param {int} num Number to omit
+     */
+    getRandomSequence (num) {
+        let n = 1
+        let a = 1
+        if (Date.now() % 2 === 0) {
+          n = num === 1 ? 1 : -1
+        }
+        if (Date.now() % 2 === 0) {
+          a = num <= 2 ? 1 : 2
+        }
+        return a * n + num
+    },
+
     clearChat (userId) {
         const pg = new Client({
             user: process.env.PG_USER,

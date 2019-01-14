@@ -32,19 +32,19 @@ module.exports = {
 
     async saveBadAnswer (event, operation) {
         const saved = await event.bp.users.getTag(event.user.id, this.BAD_ANSWERS)
-        let badAnswers = saved && saved !== '{}' ? JSON.parse(saved) : { operations: [] }
+        let badAnswers = saved && !/{}|\[\]/i.test(saved) ? JSON.parse(saved) : []
 
-        const exists = badAnswers.operations.find(op => op === operation)
+        const exists = badAnswers.find(op => op === operation)
 
         if (exists) {
-            const idx = badAnswers.operations.indexOf(exists)
-            badAnswers.operations.splice(idx, 1)
+            const idx = badAnswers.indexOf(exists)
+            badAnswers.splice(idx, 1)
         }
-        if(badAnswers.operations.length === 5) {
-            badAnswers.operations.splice(0, 1)
+        if(badAnswers.length === 5) {
+            badAnswers.splice(0, 1)
         }
 
-        badAnswers.operations.push(operation)
+        badAnswers.push(operation)
 
         await event.bp.users.tag(event.user.id, this.BAD_ANSWERS, JSON.stringify(badAnswers))
     },
@@ -62,20 +62,16 @@ module.exports = {
         }
 
         ba = JSON.parse(badAnswers)
-        
-        if (!ba.operations) {
+
+        if (!ba.length) {
             return
         }
 
-        if (!ba.operations.length) {
-            return
-        }
-
-        const exists = ba.operations.find(op => op === operation)
+        const exists = ba.find(op => op === operation)
 
         if (exists) {
-            const idx = ba.operations.indexOf(exists)
-            ba.operations.splice(idx, 1)
+            const idx = ba.indexOf(exists)
+            ba.splice(idx, 1)
             await event.bp.users.tag(event.user.id, this.BAD_ANSWERS, JSON.stringify(ba))
         }
     },
@@ -85,7 +81,7 @@ module.exports = {
     },
 
     async resetBadAnswers (event) {
-        await event.bp.users.tag(event.user.id, this.BAD_ANSWERS, "{}")
+        await event.bp.users.tag(event.user.id, this.BAD_ANSWERS, "[]")
     },
 
     async resetAll (event) {

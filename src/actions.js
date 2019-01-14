@@ -22,7 +22,7 @@ const tableNumbers = [
  * Set the language selected when the bot is initialized
  */
 async function selectLanguage(state, event, params) {
-  let language = languageChanged(event.text.toLowerCase()) || 'Es'
+  let language = helpers.wasLanguageChange(event.text.toLowerCase()) || 'Es'
   return {
     ...state,
     language
@@ -34,22 +34,26 @@ async function selectLanguage(state, event, params) {
  */
 async function tableQuestion(state, event, params) {
 
+  if (state.review && state.reviewFinished) {
+    return { ...state }
+  }
+
   let review = state.review
   let operando = null
   let operInput = null
   let $op1 = null
   let badAns = []
   console.log('STATE', state)
-  if (review && state.badAnswers.operations && state.badAnswers.operations.length) {
-    
-    badAns = state.badAnswers.operations.splice(-3)
+
+  if (review) {
+    badAns = state.badAnswers.splice(-3)
 
     const firstOperation = badAns[0].split(' ').filter(n => !isNaN(n)) 
 
     $op1 = firstOperation[0]
     operando = firstOperation[1]
-  } else {
 
+  } else {
     operando = state.$op2 || Math.floor(Math.random() * 10 + 1)
 
     if (phrases.wasSaid('surprise', state.$tableNumber)) {
@@ -67,12 +71,12 @@ async function tableQuestion(state, event, params) {
     ...state,
     $op1,
     $op2: operando,
-    badAnswers: { operations: badAns},
+    badAnswers: badAns,
     toChange: false,
     finish: false,
     answer: $op1 * operando,
     history: review ? null : addToHistory(state, { op1: $op1, op2: operando }),
-    countIncorrect: 0
+    countIncorrect: 0,
   }
 }
 
@@ -91,7 +95,8 @@ async function checkAnswer(state, event, params) {
         ...state,
         toChange: true,
         $op1: number,
-        changeOperation: false
+        changeOperation: false,
+        review: false
       }
     }
   }
@@ -142,10 +147,20 @@ async function checkAnswer(state, event, params) {
 
   // Change another operation
   if (countIncorrect > 1) {
+    
+    let badAns = []
+    if (state.review) {
+      badAns = state.badAnswers
+      if (badAns.length) {
+        badAns.splice(0, 1)
+      }
+    }
+
     return {
       ...state,
       changeOperation: true,
-      countIncorrect: 0
+      countIncorrect: 0,
+      badAnswers: badAns
     }
   }
 
@@ -162,9 +177,7 @@ async function checkAnswer(state, event, params) {
     success_percent: summary.percentSuccess,
     sayHelp: isCorrect ? 0 : (state.sayHelp ? state.sayHelp + 1 : 1),
     changeOperation: false,
-    countIncorrect,
-    review: review ? review.review : false,
-    badAnswers: review ? review.badAnswers : []
+    countIncorrect
   }
 }
 
@@ -178,6 +191,7 @@ async function sayAdvance (state, event, params) {
     state.num_operations = summary.totalCorrects + 1
     if (summary.totalCorrects <= 5) {
       event.reply('#!translated_text-TWRGez', { state })
+      event.reply('#!translated_text-s~GgCU', { state })
     } else {
       event.reply('#!translated_text-ESvvHz', { state })
     }
@@ -259,6 +273,10 @@ async function getNumberFromText(text) {
  */
 async function nextQuestion(state, event, params) {
 
+  if (state.review && state.reviewFinished) {
+    return { ...state }
+  }
+
   let nextNumber = getRndNumber(getLatest(state, 'op2')) 
 
   if (nextNumber == 1 || nextNumber == 10) {
@@ -268,6 +286,15 @@ async function nextQuestion(state, event, params) {
   return {
     ...state,
     $op2: nextNumber
+  }
+}
+
+async function tryAnotherMessage(state, event, params) {
+  if (!state.reviewFinished) {
+    event.reply('#!translated_text-dqny8V', { state })
+  }
+  return {
+    ...state
   }
 }
 
@@ -286,6 +313,10 @@ function notChange(state, event, params) {
  * Change the operation (the second operand)
  */
 function changeOperationNumber(state, event, params) {
+
+  if (state.review && state.reviewFinished) {
+    return { ...state }
+  }
 
   const nextNumber = getRndNumber(getLatest(state, 'op2')).toString()
 
@@ -337,7 +368,7 @@ async function badAnswer(state, event, params) {
 async function searchPrevBadAnswers(state, event, params) {
   let badAnswers = await userStats.getBadAnswers(event)
   badAnswers = JSON.parse(badAnswers)
-  if (badAnswers !== null && badAnswers.operations && badAnswers.operations.length) {
+  if (badAnswers !== null && badAnswers.length) {
     return {
       ...state,
       continue: false,
@@ -365,12 +396,9 @@ async function textToDisplayAtStart(state, event, params) {
 }
 
 async function askForReview(state, event, params) {
-  review = false
-  if (phrases.wasSaid('no', event.text)) {
+  review = !phrases.wasSaid('no', event.text) 
+  if (!review) {
     event.reply('#!translated_text-vdi0dC', { state })
-  }
-  if (phrases.wasSaid('yes', event.text)) {
-    review = true
   }
   return {
     ...state,
@@ -378,13 +406,39 @@ async function askForReview(state, event, params) {
   }
 }
 
+async function checkIfReview(state, event, params) {
+
+  if (state.review) {
+
+    if (!state.badAnswers.length) {
+      event.reply('#!translated_text-12F1OS', { state })
+    }
+
+    return {
+      ...state,
+      reviewFinished: !state.badAnswers.length
+    }
+  }
+
+  return {
+    ... state
+  }
+}
+
+async function setReviewToFalse(state, event, params) {
+  return {
+    ...state,
+    review: false,
+    reviewFinished: false,
+    $op1: null
+  }
+}
+
 async function removeBadAnswer(state, event) {
   if (state.countIncorrect === 1) {
     return {
+      ...state,
       badAnswers: state.badAnswers,
-      review: state.badAnswers && state.badAnswers.operations 
-            ? state.badAnswers.operations.length > 0 
-            : false
     }
   }
   
@@ -394,21 +448,22 @@ async function removeBadAnswer(state, event) {
 
   let badAnswers = state.badAnswers
 
-  if (!badAnswers.operations) {
+  if (!badAnswers) {
     return
   }
-  if (!badAnswers.operations.length) {
-    return
+  if (!badAnswers.length) {
+    return {
+      ...state
+    }
   }
-  const exists = badAnswers.operations.find(o => o === oper)
-  if (exists) {
-    const idx = badAnswers.operations.indexOf(exists)
-    badAnswers.operations.splice(idx, 1)
+  const exists = badAnswers.find(o => o === oper)
+  if (exists.length) {
+    const idx = badAnswers.indexOf(exists)
+    badAnswers.splice(idx, 1)
   }
 
   return {
-    badAnswers,
-    review: badAnswers.operations.length > 0
+    badAnswers
   }
 }
 
@@ -422,36 +477,30 @@ function saveBadAnswer(state, event) {
   )
 }
 
+/**
+ * Get 
+ * @param {object} state 
+ */
 function getAnswerHelp(state) {
+  // correct answer
   const ans = state.$op1 * state.$op2
   let nums = []
   nums.push(ans)
 
-  let next = getRndSequence(ans)
+  // get next number
+  let next = helpers.getRandomSequence(ans)
 
   nums.push(next)
 
   const max = Math.max.apply(null, nums)
-  
+
+  // If the answer is less than 3, get the maximum value to avoid negative numbers  
   let next2 = ans <= 3 ? max : nums[Math.floor(Math.random() * nums.length)]
+            // Just for get a random number
   next2 += ((Date.now() % 2 === 0 ? 1 : 2) * (next2 === max ? 1 : -1));
   nums.push(next2)
-  return nums.sort()
+  return nums.sort((a, b) => a - b)
 }
-
-// get a random number, 1 or 2, higher or smaller than num
-function getRndSequence(num) {
-  let n = 1
-  let a = 1
-  if (Date.now() % 2 === 0) {
-    n = num === 1 ? 1 : -1
-  }
-  if (Date.now() % 2 === 0) {
-    a = num <= 2 ? 1 : 2
-  }
-  return a * n + num
-}
-
 
 /**
  * Add a history of operations done
@@ -486,25 +535,12 @@ function getLatest(state, oper) {
   return state.history[oper].slice(-2)
 }
 
-/**
- * Detect if the user want to change the language
- * @param {string} text User input
- */
-function languageChanged(text) {
-  if (phrases.wasSaid('hiEnglish', text)) {
-    return 'En'
-  }
-  if (phrases.wasSaid('hiSpanish', text)) {
-    return 'Es'
-  }
-  return false
-}
-
 module.exports = {
   askForReview,
   badAnswer,
   changeOperationNumber,
   checkAnswer,
+  checkIfReview,
   nextQuestion,
   notChange,
   sayAdvance,
@@ -512,6 +548,8 @@ module.exports = {
   sayPreviousAchievement,
   searchPrevBadAnswers,
   selectLanguage,
+  setReviewToFalse,
   tableQuestion,
   textToDisplayAtStart,
+  tryAnotherMessage,
 }
