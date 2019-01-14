@@ -180,9 +180,9 @@
       ],
       "onEnter": [
         "say #!translated_text-9NFsqs",
+        "changeOperationNumber {}",
         "checkIfReview {}",
         "tryAnotherMessage {}",
-        "changeOperationNumber {}",
         "tableQuestion {}"
       ],
       "onReceive": null

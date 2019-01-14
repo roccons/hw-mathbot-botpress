@@ -166,10 +166,6 @@ async function checkAnswer(state, event, params) {
 
   const summary = await userStats.getPercent(event)
 
-  if (summary.total === 1) {
-    userStats.resetBadAnswers(event)
-  }
-
   return {
     ...state,
     isCorrect,
@@ -239,8 +235,13 @@ function getRndNumber(numbers, alsoOmit) {
   let operando = Math.floor(Math.random() * 10 + 1)
   while (numbers.includes(operando)) {
     operando = Math.floor(Math.random() * 10 + 1)
+    if (!numbers.includes(operando)) {
+      return operando;
+    }
   }
-  return operando;
+  if (!numbers.includes(operando)) {
+    return operando
+  }
 }
 
 /**
@@ -316,6 +317,17 @@ function changeOperationNumber(state, event, params) {
 
   if (state.review && state.reviewFinished) {
     return { ...state }
+  }
+
+  if (state.review) {
+    const badAns = state.badAnswers
+    if (badAns.length) {
+      badAns.splice(0, 1)
+    }
+    return {
+      ...state,
+      badAnswers: badAns
+    }
   }
 
   const nextNumber = getRndNumber(getLatest(state, 'op2')).toString()
