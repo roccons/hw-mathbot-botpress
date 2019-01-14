@@ -80,7 +80,7 @@
       "next": [
         {
           "condition": "always",
-          "node": "welcome"
+          "node": "Continue"
         }
       ],
       "onEnter": [

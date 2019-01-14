@@ -97,10 +97,12 @@ async function checkAnswer(state, event, params) {
     if (number !== null && !isNaN(number)) {
       return {
         ...state,
+        badAnswers: [],
+        changeOperation: false,
+        review: false,
+        reviewFinished: false,
         toChange: true,
         $op1: number,
-        changeOperation: false,
-        review: false
       }
     }
   }
@@ -112,10 +114,13 @@ async function checkAnswer(state, event, params) {
 
     return {
       ...state,
+      badAnswers: [],
+      changeOperation: false,
+      history: addToHistory(state, {op1: number}),
+      review: false,
+      reviewFinished: false,
       toChange: true,
       $op1: number,
-      changeOperation: false,
-      history: addToHistory(state, {op1: number})
     }
   }
 
