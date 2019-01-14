@@ -46,8 +46,12 @@ async function tableQuestion(state, event, params) {
   console.log('STATE', state)
 
   if (review) {
+    // get the last three
     badAns = state.badAnswers.splice(-3)
 
+    // get the first one 
+    // (this will be deleted when it will be answered correctly or failed twice
+    // that's the reason we always get the first one)
     const firstOperation = badAns[0].split(' ').filter(n => !isNaN(n)) 
 
     $op1 = firstOperation[0]
@@ -128,14 +132,13 @@ async function checkAnswer(state, event, params) {
   const resp = parseInt(await getNumberFromText(text))
   const isCorrect = resp === state.$op1 * state.$op2
   let countIncorrect = state.countIncorrect || 0
-  let review = null
 
   if (!isCorrect) { 
     countIncorrect++ 
     saveBadAnswer(state, event)
   } else {
     // remove bad answer if it exists
-    review = await removeBadAnswer(state, event)
+    await removeBadAnswer(state, event)
   }
   
   if (!state.review) {
@@ -447,16 +450,8 @@ async function setReviewToFalse(state, event, params) {
 }
 
 async function removeBadAnswer(state, event) {
-  if (state.countIncorrect === 1) {
-    return {
-      ...state,
-      badAnswers: state.badAnswers,
-    }
-  }
-  
-  const oper = `${state.$op1} x ${state.$op2} = ${state.$op1 * state.$op2}`
 
-  await userStats.removeBadAnswer(event, oper)
+  const oper = `${state.$op1} x ${state.$op2} = ${state.$op1 * state.$op2}`
 
   let badAnswers = state.badAnswers
 
@@ -464,19 +459,22 @@ async function removeBadAnswer(state, event) {
     return
   }
   if (!badAnswers.length) {
-    return {
-      ...state
-    }
+    return
   }
   const exists = badAnswers.find(o => o === oper)
+
   if (exists.length) {
     const idx = badAnswers.indexOf(exists)
     badAnswers.splice(idx, 1)
   }
 
-  return {
-    badAnswers
+  if (state.countIncorrect === 1) {
+    return
   }
+
+  await userStats.removeBadAnswer(event, oper)
+
+  return badAnswers
 }
 
 /**
