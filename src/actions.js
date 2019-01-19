@@ -43,7 +43,6 @@ async function tableQuestion(state, event, params) {
   let operInput = null
   let $op1 = null
   let badAns = []
-  console.log('STATE', state)
 
   if (review) {
     // get the last three
@@ -102,7 +101,7 @@ async function checkAnswer(state, event, params) {
         review: false,
         reviewFinished: false,
         toChange: true,
-        $op1: number,
+        $op1: number
       }
     }
   }
@@ -138,8 +137,8 @@ async function checkAnswer(state, event, params) {
   const isCorrect = resp === state.$op1 * state.$op2
   let countIncorrect = state.countIncorrect || 0
 
-  if (!isCorrect) { 
-    countIncorrect++ 
+  if (!isCorrect && !isNaN(resp)) {
+    countIncorrect++
     saveBadAnswer(state, event)
   } else {
     // remove bad answer if it exists
@@ -366,19 +365,21 @@ async function sayInitialHelp(state, event, params) {
  */
 async function badAnswer(state, event, params) {
 
-  event.reply(
-    // if not a number  // say bad word               // answer not correct
-    isNaN(event.text) ? '#!translated_text-6kmik1' : '#!translated_text-6cJ5JH',
-    { state }
-  )
+  let translated_text = '#!translated_text-6cJ5JH' // no correct
+  if (isNaN(event.text)) {
+    translated_text = '#!translated_text-6kmik1' //
+  }
 
-  const posibleAns = getAnswerHelp(state)
+  event.reply(translated_text, { state })
 
-  event.reply(
-    '#!translated_text-C19dOi', 
-    { state: { ...state, possible_answers: posibleAns.join(', ') } }
-  )
+  if (!isNaN(event.text)) {
+    const posibleAns = getAnswerHelp(state)
   
+    event.reply(
+      '#!translated_text-C19dOi', 
+      { state: { ...state, possible_answers: posibleAns.join(', ') } }
+    )
+  }
   return { ...state }
 }
 
