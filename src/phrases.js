@@ -48,7 +48,7 @@ module.exports = {
 
         no: [
             'not', 'no', 'dont', "don't",
-            'en otra ocasión', 'en otra ocasion'
+            'en otra ocasión', 'en otra ocasion', 'para la otra'
         ]
     },
 
