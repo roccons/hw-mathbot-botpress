@@ -9,14 +9,14 @@
   "dependencies": {
     "@botpress/audience": "10.17.3",
     "@botpress/builtins": "10.17.3",
-    "@botpress/channel-web": "10.17.3",
+    "@botpress/channel-web": "^10.51.10",
     "@botpress/hitl": "10.17.3",
     "@botpress/nlu": "^10.51.0",
     "@botpress/skill-choice": "10.17.3",
     "botpress": "^10.51.0",
     "jsdoc-api": "^4.0.3",
-    "lodash": "^4.17.10",
-    "pg": "^7.4.3",
+    "lodash": "^4.17.11",
+    "pg": "^7.8.0",
     "yn": "^2.0.0"
   },
   "scripts": {
