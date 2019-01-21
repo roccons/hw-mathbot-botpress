@@ -145,7 +145,7 @@ async function checkAnswer(state, event, params) {
     await removeBadAnswer(state, event)
   }
   
-  if (!state.review) {
+  if (!state.review && !isNaN(resp)) {
     await userStats.store(state, event, {
       table: state.$op1,
       isCorrect: isCorrect
@@ -367,7 +367,7 @@ async function badAnswer(state, event, params) {
 
   let translated_text = '#!translated_text-6cJ5JH' // no correct
   if (isNaN(event.text)) {
-    translated_text = '#!translated_text-6kmik1' //
+    translated_text = '#!translated_text-6kmik1' // uknown word
   }
 
   event.reply(translated_text, { state })
