@@ -22,7 +22,7 @@ module.exports = {
 
         finish: [
             'adios', 'adiós', 'terminar', 'fin', 'chao', 'nos vemos', 'me voy', 
-            'hasta mañana', 'ciao', 
+            'hasta mañana', 'ciao', 'chaito',
             'bye', 'see you', 'finish', 'end',
         ],
 
