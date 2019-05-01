@@ -172,8 +172,8 @@
   {
     "id": "translated_text-hlE6gJ",
     "formData": {
-      "textEn": "• <b>table of...</b> to change the times table, \n• <b>help</b> to see this message, \n• <b>another</b> or <em>skip</em> when you don't know the answer, \n• <b>hi</b> to start again, \n• <b>hola</b> to restart in Spanish,\n• <b>bye</b> or <em>finish</em> to end the conversation.",
-      "textEs": "• <b>la del...</b> para cambiar de tabla,\n• <b>ayuda</b> para ver este mensaje,\n• <b>otra</b> o <em>no sé</em> cuando no te sabes una multiplicación,\n• <b>hola</b> para iniciar de nuevo,\n• <b>hi</b> para reiniciar en inglés,\n• <b>adiós</b> o <em>terminar</em> para finalizar la conversación."
+      "textEn": "• <b>table of...</b> to change the times table,  \n• <b>help</b> to see this message, \n• <b>another</b> or <em>skip</em> when you don't know the answer,  \n• <b>hi</b> to start again, \n• <b>hola</b> to restart in Spanish,\n• <b>bye</b> or <em>finish</em> to end the conversation.",
+      "textEs": "• <b>la del...</b> para cambiar de tabla,  \n• <b>ayuda</b> para ver este mensaje, \n• <b>otra</b> o <em>no sé</em> cuando no te sabes una multiplicación,\n• <b>hola</b> para iniciar de nuevo,\n• <b>hi</b> para reiniciar en inglés,\n• <b>adiós</b> o <em>terminar</em> para finalizar la conversación."
     },
     "createdBy": "admin",
     "createdOn": "2018-11-24T00:06:40.759Z"
